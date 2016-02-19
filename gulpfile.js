@@ -91,7 +91,7 @@ gulp.task('serve', ['build'], function() {
 	// WATCH js --> build:scripts:serve
 	gulp.watch('app/_assets/scripts/**/*.js', ['build:scripts:serve']);
 	// WATCH images --> build:images
-	gulp.watch('app/_assets/images/**/*.(jpg|png|jpeg|gif)', ['build:images']);
+	gulp.watch('app/_assets/images/**/*.+(jpg|png|jpeg|gif)', ['build:images']);
 	// WATCH svg --> build:svg
 	gulp.watch('app/_assets/svg/**/*.svg', ['build:svg']);
 	// WATCH _posts --> build:jekyll:serve
@@ -102,7 +102,7 @@ gulp.task('serve', ['build'], function() {
 	// WATCH rss feed --> build:jekyll:serve
 	gulp.watch('feed.xml', ['build:jekyll:serve']);
 	// WATCH _data --> build:jekyll:serve
-	gulp.watch('app/_data/**.+(yml|yaml|csv|json)', ['build:jekyll:serve']);
+	gulp.watch('app/_data/*.+(yml|yaml|csv|json)', ['build:jekyll:serve']);
 	// WATCH favicon --> build:jekyll:serve
 	gulp.watch('favicon.ico', ['build:jekyll:serve']);
 });
