@@ -2,8 +2,14 @@
 <html lang="en-ca">
 {% include head.html %}
 <body>
+	{% if page.path == 'index.html' %}
+	  {% include header.html %}
+	{% else %}
+	  {% include header.html base="index.html" %}
+	{% endif %}
 	<main>
 	{{ content }}
 	</main>
 </body>
+<script type="text/javascript" src="/assets/scripts.min.js"></script>
 </html>
