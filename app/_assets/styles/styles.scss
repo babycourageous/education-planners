@@ -1,12 +1,16 @@
 /*
  * 2- PLUGINS
  */
-
+@import 'plugins/normalize';
+@import 'plugins/bourbon/bourbon';
+@import 'plugins/base/base';
+@import 'plugins/neat/neat';
 
 /*
  * 1- UTILS
  */
-
+@import 'utils/variables';
+@import 'utils/mixins';
 
  /*
  * 3- BASE
@@ -16,7 +20,7 @@
 /*
  * 4- LAYOUT
  */
-
+@import 'layout/navigation';
 
 /*
  * 5- MODULES
