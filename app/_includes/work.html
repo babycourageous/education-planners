@@ -1,0 +1,22 @@
+<section id="work">
+  <h1>Our Work</h1>
+  <div class="icons">
+  	<a href="#"><img src="http://lorempixel.com/200/200/business" alt=""></a>
+  	<a href="#"><img src="http://lorempixel.com/200/200/abstract" alt=""></a>
+  	<a href="#"><img src="http://lorempixel.com/200/200/technics" alt=""></a>
+  	<a href="#"><img src="http://lorempixel.com/200/200" alt=""></a>
+</section>
+<section class="quotes">
+	<svg class="icon-quote" role="img" aria-labelledby="title">
+	  <use xlink:href="#quote"></use>
+  </svg>
+  <h1>What Our Clients Say</h1>
+  <div class="quote-carousel">
+  {% for quote in site.data.quotes %}
+  	<div class="item">
+			<p class="quote">&ldquo;{{ quote.quote }}&rdquo;</p>
+			<p class="author">- {{ quote.author }}</p>
+		</div>
+	{% endfor %}
+	</div>
+</section>

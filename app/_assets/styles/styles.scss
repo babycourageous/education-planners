@@ -26,6 +26,8 @@
  * 5- MODULES
  */
 @import 'modules/hero';
+@import 'slick.scss';
+@import 'modules/quotes';
 
 
  /*
@@ -33,3 +35,4 @@
  */
 @import 'pages/about';
 @import 'pages/what';
+@import 'pages/work';
