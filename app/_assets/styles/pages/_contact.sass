@@ -1,0 +1,41 @@
+#contact
+	@extend %section
+	background-color: $accent-light
+	
+	h1
+		color: #fff
+
+	.contact-container
+		+media($bp-medium)
+			+outer-container()
+
+		.location
+			+media($bp-medium)
+				+span-columns(3)
+				+shift(9)
+				+omega
+				
+			h2
+				color: #fff
+				font-weight: 400
+
+			p, a
+				color: $dark-gray
+
+		form
+			+media($bp-medium)
+				+span-columns(9)
+				+shift(-12)
+				
+			label
+				display: none
+
+			input, textarea
+				border-radius: 0
+				border-color: #fff
+				background-color: $accent-light
+				&::placeholder
+					color: #fff
+			input[type="submit"]
+				background-color: $accent-dark
+				float: right
