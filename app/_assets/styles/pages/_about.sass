@@ -1,0 +1,51 @@
+#about
+	@extend %section
+
+.blurb
+  +outer-container
+  color: $dark-gray
+
+.schools
+  @extend %section
+  /*+outer-container*/
+  color: #fff
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/stairs.jpg) center center no-repeat
+
+  .metrics
+  	margin-top: em(75)
+  	display: flex
+  	flex-direction: column
+  	justify-content: center
+  	width: 100%
+  	
+
+  	+media($bp-small)
+  		flex-direction: row
+	  	flex-wrap: wrap
+	  	justify-content: space-around
+
+		.metric
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-bottom: em(25)
+			+media($bp-small)
+				width: 30%
+				
+			.icon
+				+size(100px)
+				background-color: $primary-light
+				border-radius: 50%
+
+				/* target all icons with attribute wildcard selector that searches for "begins with..." */
+				[class^="icon-"]
+					+size(100px)
+					fill: $primary-dark
+					padding: em(15)
+
+			.number
+				font-size: rem(48)
+				margin-bottom: 0
+			.text
+				font-size: rem(14)
+				text-transform: uppercase

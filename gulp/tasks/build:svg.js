@@ -5,7 +5,7 @@ module.exports = function(gulp, plugins, config) {
 		.pipe(plugins.plumber())
     .pipe(plugins.svgSprite(config.svg.options))
     .on('error', function(error) {
-
+    	console.log(error);
     })
     .pipe(gulp.dest(config.svg.jekylldest));
   }
