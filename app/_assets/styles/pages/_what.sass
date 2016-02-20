@@ -1,0 +1,55 @@
+.services-container
+	@extend %section
+	background-color: #f5f5f5
+
+	p
+		text-align: center
+		margin: 0 auto
+	.services
+		margin-top: em(50)
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+		+media($bp-medium)
+			justify-content: space-around
+			flex-wrap: nowrap
+
+		.service
+			background: #fff
+			margin: 0 10px 10px
+			padding: 15px
+			display: flex
+			flex-direction: column
+			align-items: center
+			flex: 0 1 em(330)
+			+media($bp-medium)
+				width: 30%
+
+			.icon
+				+size(125px)
+				border: 1px solid $primary-gray
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				margin: 0 0 em(10)
+
+				/* target all icons with attribute wildcard selector that searches for "begins with..." */
+				[class^="icon-"]
+					+size(70px)
+					fill: $primary-gray
+
+			h2
+				color: $dark-gray
+				text-transform: uppercase
+				font-size: rem(14)
+				margin: 0 0 em(10)
+
+			ul
+			  text-align: left
+			  color: $light-gray
+  			font-size: rem(14)
+  			list-style-type: disc
+  			list-style-position: inside
