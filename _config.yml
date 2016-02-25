@@ -5,5 +5,9 @@ title: Education Planners, LLC
 exclude: ["_assets"]
 keep_files: ["assets"]
 
+collections:
+  team:
+    output: true
+
 source: ./app
 destination: ./dist
