@@ -2,6 +2,7 @@
 name: Sherri Sallinger
 position: President
 email: ssallinger@edplanners.org
+featured: true
 ---
 Sherri Sallinger, President of Education Planners, is a nationally known professional development specialist/speaker who focuses on ‘leadership development.’ She brings a special level of expertise and experience as her career spans over 35 years. She had the distinction of serving in multiple leadership roles, touching almost every facet of education. Ms. Sallinger also has experience as a sales and marketing representative for an Atlanta based National Corporation. This experience was invaluable as she created and delivered customized sales promotions for each client.
 
