@@ -1,4 +1,9 @@
 <section id="team">
 	<h1>The Team</h1>
-	<p>Members Placeholder</p>
+	<div class="members">
+	{% for member in site.team %}
+	{% assign thesize = member.content | size %}
+	<p>{% if thesize > 1 %}<a href="{{member.url}}">{% endif %}{{member.name}}{% if thesize > 1 %}</a>{% endif %}</p>
+	{% endfor %}
+	</div>
 </section>
