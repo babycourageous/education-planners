@@ -9,5 +9,13 @@ collections:
   team:
     output: true
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: team
+    values:
+      layout: member
+
 source: ./app
 destination: ./dist
