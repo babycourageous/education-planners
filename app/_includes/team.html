@@ -1,9 +1,21 @@
 <section id="team">
 	<h1>The Team</h1>
+	{% assign featured_members = site.team | where:"featured",true %}
+	<div class="featured">
+		{% for member in featured_members %}
+		<div class="member">
+			<h4><a href="{{member.url}}">{{member.name}}</a></h4>
+			<p>{{ member.position }}</p>
+		</div>
+		{% endfor %}
+	</div>
+	{% assign members = site.team | where:"featured", '' or null or false %}
 	<div class="members">
-	{% for member in site.team %}
-	{% assign thesize = member.content | size %}
-	<p>{% if thesize > 1 %}<a href="{{member.url}}">{% endif %}{{member.name}}{% if thesize > 1 %}</a>{% endif %}</p>
-	{% endfor %}
+		{% for member in members %}
+		{% assign thesize = member.content | size %}
+		<div class="member">
+			<p>{% if thesize > 1 %}<a href="{{member.url}}">{{member.name}}</a>{% else %}{{member.name}}{% endif %}</p>
+		</div>
+		{% endfor %}
 	</div>
 </section>
