@@ -1,5 +1,3 @@
-- name: "Home"
-  href: "#top"
 - name: "About Us"
   href: "#about"
 - name: "What We Do"
