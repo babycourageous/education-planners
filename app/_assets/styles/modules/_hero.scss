@@ -1,8 +1,8 @@
-.hero {  
+.hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE; 
+  $hero-background-top: #7F99BE;
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
@@ -19,7 +19,7 @@
   height: 50vh;
 
   @include media($large-screen) {
-    height: 100vh;
+    height: calc(100vh - #{$navigation-height});
   }
 
   .hero-inner {
@@ -34,7 +34,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      
+
       h1 {
         color: $hero-color;
         font-size: 1.6em;
