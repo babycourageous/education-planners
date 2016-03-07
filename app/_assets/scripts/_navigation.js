@@ -15,25 +15,20 @@ $(document).ready(function() {
       header.removeClass('smaller');
       /*$('body').removeClass('shrink');*/
     }
-
-    /*
-
-    // when scroll distance > 0 (stickDistance)
-    if ($(window).scrollTop() > stickDistance) {
-      // have "fixed" position classes been added?
-      if (!header.hasClass('header--fixed')) {
-        header.addClass('header--fixed');
-        $('body').addClass('body--fixed');
-      }
-    // when scroll distance is back to top
-    } else if (scroll <= stickDistance) {
-      // have "fixed" position classes been removed?
-      if (header.hasClass('header--fixed')) {
-        header.removeClass('header--fixed');
-        $('body').removeClass('body--fixed');
-      }
-    }
-    */
-
   });
+
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+
+  menuToggle.on('click', function(e) {
+    console.log('nav click');
+
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
 });

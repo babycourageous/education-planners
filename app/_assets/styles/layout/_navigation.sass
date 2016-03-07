@@ -31,8 +31,6 @@ header
         transition: all .3s
         width: 300px
 
-
-
     &__toggle
       position: absolute
       top: 50%
@@ -47,10 +45,15 @@ header
 
     &__items
       display: none
+      position: absolute
+      width: 100%
       text-align: center
+      background-color: $navigation-background
       +media($horizontal-bar-mode)
+        position: relative
         display: flex
         flex-direction: row
+        width: auto
         margin: 0
         padding: 0
 
@@ -58,15 +61,26 @@ header
         display: block
 
     &__item
-      line-height: $navigation-height
       border-bottom: solid 1px black
+      background-color: $primary-light
       transition: all 0.3s
       +media ($horizontal-bar-mode)
         flex: 1
         border-bottom: none
+        line-height: $navigation-height
+        background-color: $navigation-background
 
     &__link
       display: block
+      color: white
+      font-weight: 700
+      text-transform: uppercase
+      padding: em(10)
+      +media($horizontal-bar-mode)
+        color: $primary-gray
+        padding: 0
+      &:hover
+        color: $primary-dark
 
 .header--fixed
   position: fixed
@@ -88,4 +102,5 @@ header.smaller
 
 
   .navigation__item
-    line-height: $navigation-resize
+    +media($horizontal-bar-mode)
+      line-height: $navigation-resize
