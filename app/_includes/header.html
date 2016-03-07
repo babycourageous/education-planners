@@ -1,19 +1,17 @@
-<header class="navigation" role="banner">
-  <div class="navigation-wrapper">
-    <a href="javascript:void(0)" class="logo">
+<header role="banner" class="header--fixed">
+  <nav role="navigation" class="navigation">
+    <a href="{{site.baseurl}}" class="navigation__logo">
       <img src="{{site.baseurl}}/assets/images/logo.png" alt="Logo Image">
     </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-        {% for navitem in site.data.nav %}
-        <li class="nav-link">
-          {% if include.base %}<a href="{{site.url}}/{{include.base}}{{ navitem.href }}">{{ navitem.name }}</a>
-          {% else %}<a href="{{ navitem.href }}">{{ navitem.name }}</a>
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </div>
+    <a href="javascript:void(0)" class="navigation__toggle" id="js-mobile-menu">MENU</a>
+    <ul id="js-navigation-menu" class="navigation__items">
+      {% for navitem in site.data.nav %}
+      <li class="navigation__item">
+        {% if include.base %}<a href="{{site.url}}/{{include.base}}{{ navitem.href }}">{{ navitem.name }}</a>
+        {% else %}<a href="{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
