@@ -1,0 +1,74 @@
+/* Colors */
+$primary-color: #0077b0;
+$primary-dark: #00486a;
+$primary-light: #0badfb;
+$accent-dark: #005d89;
+$accent-light: #00aafc;
+
+$primary-gray: #666;
+$dark-gray: #333;
+$light-gray: #999;
+
+$nav-link-color: $primary-gray;
+$nav-hover-color: $primary-color;
+$text-color: $primary-gray;
+$headline-light: #fff;
+$headline-dark: $dark-gray;
+
+/* NAVIGATION */
+$navigation-padding: 1em;
+$navigation-background: #FFF;
+$navigation-color: $primary-gray;
+$navigation-color-hover: $primary-gray;
+$navigation-active-link-color: transparentize(white, 0.5);
+$navigation-height: 100px;
+$navigation-resize: 60px;
+$navigation-submenu-padding: 1em;
+$navigation-submenu-width: 12em;
+$large-screen: em(860) !default;
+$horizontal-bar-mode: $large-screen;
+
+
+/* ABOUT US */
+$icon-background-color: $primary-light;
+$icon-color: $primary-dark;
+
+/* WHAT WE DO */
+$section-background: lighten($accent-dark, 55);
+$icon-color: $primary-gray;
+$icon-hover: $accent-dark;
+$sevices-title-color: $dark-gray;
+$services-list-color: $light-gray;
+
+
+/* WHO WE ARE */
+$quote-icon-color: $primary-light;
+
+/* CONTACT */
+$section-contact-background: $primary-light;
+
+/* FOOTER */
+$footer-background-color: $primary-dark;
+$footer-icon-color: #fff;
+
+
+/* Neat Breakpoints */
+$small: em(575);
+$medium: em(900);
+$large: ($max-width);
+
+$bp-small: new-breakpoint(min-width $small);
+$bp-medium: new-breakpoint(min-width $medium);
+$bp-large: new-breakpoint(min-width $large);
+
+/* SLICK CAROUSEL DEFAULTS */
+$slick-arrow-color: white !default;
+$slick-dot-color: white !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "←" !default;
+$slick-next-character: "→" !default;
+$slick-dot-character: "•" !default;
+$slick-dot-size: 20px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
