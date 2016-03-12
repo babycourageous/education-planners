@@ -1,54 +1,43 @@
 /* Colors */
-$primary-color: #0077b0;
-$primary-dark: #00486a;
-$primary-light: #0badfb;
-$accent-dark: #005d89;
-$accent-light: #00aafc;
+$ep-color-key: 'base' !default;
+$ep-primary-color: #0077b0;
 
-$primary-gray: #666;
-$dark-gray: #333;
-$light-gray: #999;
-
-$nav-link-color: $primary-gray;
-$nav-hover-color: $primary-color;
-$text-color: $primary-gray;
-$headline-light: #fff;
-$headline-dark: $dark-gray;
-
-/* NAVIGATION */
-$navigation-padding: 1em;
-$navigation-background: #FFF;
-$navigation-color: $primary-gray;
-$navigation-color-hover: $primary-gray;
-$navigation-active-link-color: transparentize(white, 0.5);
-$navigation-height: 100px;
-$navigation-resize: 60px;
-$navigation-submenu-padding: 1em;
-$navigation-submenu-width: 12em;
-$large-screen: em(860) !default;
-$horizontal-bar-mode: $large-screen;
-
+$ep-colors: (
+  'primary': (
+    'base': $ep-primary-color,
+    'dark': #00486a,
+    'light': #0badfb
+  ),
+  'accent': (
+    'dark': #005d89,
+    'light': #00aafc
+  ),
+  'gray': (
+    'base': #666,
+    'dark': #333,
+    'light': #999
+  )
+);
 
 /* ABOUT US */
-$icon-background-color: $primary-light;
-$icon-color: $primary-dark;
+$icon-background-color: ep-color('primary', 'light');
+$icon-color: ep-color('primary', 'dark');
 
 /* WHAT WE DO */
-$section-background: lighten($accent-dark, 55);
-$icon-color: $primary-gray;
-$icon-hover: $accent-dark;
-$sevices-title-color: $dark-gray;
-$services-list-color: $light-gray;
+$icon-color: ep-color('gray');
+$icon-hover: ep-color('accent', 'dark');
+$sevices-title-color: ep-color('gray', 'dark');
+$services-list-color: ep-color('gray', 'light');
 
 
 /* WHO WE ARE */
-$quote-icon-color: $primary-light;
+$quote-icon-color: ep-color('primary', 'light');
 
 /* CONTACT */
-$section-contact-background: $primary-light;
+$section-contact-background: ep-color('primary', 'light');
 
 /* FOOTER */
-$footer-background-color: $primary-dark;
+$footer-background-color: ep-color('primary', 'dark');
 $footer-icon-color: #fff;
 
 
