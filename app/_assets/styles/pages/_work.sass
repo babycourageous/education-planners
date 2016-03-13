@@ -1,33 +1,38 @@
-#work
+// Portfolio Section
+.portfolio
 	@extend %section
 
-h1
-	margin: 0 0 em(25)
+	h1
+		margin: 0 0 em(25)
 
-.icons
-	width: 100%
-	display: flex
-	flex-wrap: wrap
-	justify-content: space-around
+	&__container
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
 
+// Quotes Section
 .quotes
-  @extend %section
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/quotes-bg.jpg) center center no-repeat
-  min-height: 400px
-  color: #fff
+	@extend %section
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/quotes-bg.jpg) center center no-repeat
+	min-height: 400px
+	color: #fff
 
-  .icon-quote
-  	+size(50px)
-  	fill: ep-color('accent', 'light')
-  	display: block
-  	margin: 0 auto
+	h1
+		margin: 0 0 em(25)
 
-  .quote-carousel
-	  max-width: em(660)
-	  margin: auto
+	&__icon
+		+size(50px)
+		fill: ep-color('accent', 'light')
+		display: block
+		margin: 0 auto
 
-  .item
+.carousel
+  max-width: em(660)
+  margin: auto
+
+  &__item
   	text-align: center
 
-  	.author
-	  	font-style: italic
+  &__.author
+		font-style: italic

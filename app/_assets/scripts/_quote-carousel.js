@@ -4,7 +4,7 @@ var slick = require('slick-carousel')
 
 $(function() {
 	console.log('slick!');
-	$('.quote-carousel').slick({
+	$('.carousel').slick({
 		autoplay: false,
     pauseOnHover: true,
     dots: true,
