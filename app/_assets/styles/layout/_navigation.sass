@@ -1,18 +1,33 @@
-header
+/* NAVIGATION */
+$color-navigation__bg: #FFF
+$color-nav__link: ep-color('gray')
+$color-nav__link--hover: ep-color('primary', 'dark')
+
+$navigation-padding: 1em
+$navigation-height: 100px
+$navigation-resize: 60px
+$navigation-submenu-padding: 1em
+$navigation-submenu-width: 12em
+
+.header
   position: relative
-  background-color: $navigation-background
+  background-color: $color-navigation__bg
   width: 100%
   height: $navigation-height
   z-index: 999
   transition: height 0.3s
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1)
+  &--fixed
+    position: fixed
+    top: 0
+    left: 0
 
   .navigation
     +clearfix
     +outer-container
     position: relative
 
-    +media($horizontal-bar-mode)
+    /*+media($horizontal-bar-mode)*/
 
     &__logo
       height: $navigation-height
@@ -48,7 +63,7 @@ header
       position: absolute
       width: 100%
       text-align: center
-      background-color: $navigation-background
+      background-color: $color-navigation__bg
       +media($horizontal-bar-mode)
         position: relative
         display: flex
@@ -62,13 +77,13 @@ header
 
     &__item
       border-bottom: solid 1px black
-      background-color: $primary-light
+      background-color: ep-color('primary', 'light')
       transition: all 0.3s
       +media ($horizontal-bar-mode)
         flex: 1
         border-bottom: none
         line-height: $navigation-height
-        background-color: $navigation-background
+        background-color: $color-navigation__bg
 
     &__link
       display: block
@@ -77,15 +92,10 @@ header
       text-transform: uppercase
       padding: em(10)
       +media($horizontal-bar-mode)
-        color: $primary-gray
+        color: $color-nav__link
         padding: 0
       &:hover
-        color: $primary-dark
-
-.header--fixed
-  position: fixed
-  top: 0
-  left: 0
+        color: $color-nav__link--hover
 
 header.smaller
   height: $navigation-resize

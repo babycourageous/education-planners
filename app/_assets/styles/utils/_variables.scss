@@ -1,0 +1,42 @@
+/* Colors */
+$ep-color-key: 'base' !default;
+$ep-primary-color: #0077b0;
+
+$ep-colors: (
+  'primary': (
+    'base': $ep-primary-color,
+    'dark': #00486a,
+    'light': #0badfb
+  ),
+  'accent': (
+    'dark': #005d89,
+    'light': #00aafc
+  ),
+  'gray': (
+    'base': #666,
+    'dark': #333,
+    'light': #999
+  )
+);
+
+/* Neat Breakpoints */
+$small: em(575);
+$medium: em(900);
+$large: ($max-width);
+$horizontal-bar-mode: em(860);
+
+$bp-small: new-breakpoint(min-width $small);
+$bp-medium: new-breakpoint(min-width $medium);
+$bp-large: new-breakpoint(min-width $large);
+
+/* SLICK CAROUSEL DEFAULTS */
+$slick-arrow-color: white !default;
+$slick-dot-color: white !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "←" !default;
+$slick-next-character: "→" !default;
+$slick-dot-character: "•" !default;
+$slick-dot-size: 20px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
