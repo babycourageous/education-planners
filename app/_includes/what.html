@@ -1,11 +1,11 @@
-<section id="what">
-  <div class="services-container">
+<section id="what" class="services">
+  <div class="services__container">
     <h1>What We Do</h1>
     <p>Education Planners, LLC is a partnership of education professionals with decades of experience serving school districts in all facets of operations including:</p>
-    <div class="services">
+    <div class="services__items">
     	{% for service in site.data.services %}
-    	<div class="service">
-    		<span class="icon"><svg class="icon-{{ service.icon }}" role="img" aria-labelledby="title">
+    	<div class="services__item">
+    		<span class="services__icon"><svg class="services__icon-{{ service.icon }}" role="img" aria-labelledby="title">
           <use xlink:href="#{{service.icon}}"></use>
         </svg></span>
     		<h2>{{ service.name }}</h2>

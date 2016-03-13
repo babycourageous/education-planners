@@ -4,14 +4,16 @@ $icon-hover: ep-color('accent', 'dark')
 $sevices-title-color: ep-color('gray', 'dark')
 $services-list-color: ep-color('gray', 'light')
 
-.services-container
-	@extend %section
-	background-color: #f5f5f5
+.services
+	&__container
+		@extend %section
+		background-color: #f5f5f5
 
-	p
-		text-align: center
-		margin: 0 auto
-	.services
+		p
+			text-align: center
+			margin: 0 auto
+
+	&__items
 		margin-top: em(50)
 		width: 100%
 		display: flex
@@ -22,40 +24,40 @@ $services-list-color: ep-color('gray', 'light')
 			justify-content: space-around
 			flex-wrap: nowrap
 
-		.service
-			background: #fff
-			margin: 0 10px 10px
-			padding: 15px
-			display: flex
-			flex-direction: column
-			align-items: center
-			flex: 0 1 em(330)
-			+media($bp-medium)
-				width: 30%
+	&__item
+		background: #fff
+		margin: 0 10px 10px
+		padding: 15px
+		display: flex
+		flex-direction: column
+		align-items: center
+		flex: 0 1 em(330)
+		+media($bp-medium)
+			width: 30%
 
-			.icon
-				+size(125px)
-				border: 1px solid ep-color('gray')
-				border-radius: 50%
-				display: flex
-				align-items: center
-				justify-content: center
-				margin: 0 0 em(10)
+		h2
+			color: ep-color('gray', 'dark')
+			text-transform: uppercase
+			font-size: rem(14)
+			margin: 0 0 em(10)
 
-				/* target all icons with attribute wildcard selector that searches for "begins with..." */
-				[class^="icon-"]
-					+size(70px)
-					fill: ep-color('gray')
+		ul
+			text-align: left
+			color: ep-color('gray', 'light')
+			font-size: rem(14)
+			list-style-type: disc
+			list-style-position: inside
 
-			h2
-				color: ep-color('gray', 'dark')
-				text-transform: uppercase
-				font-size: rem(14)
-				margin: 0 0 em(10)
+	&__icon
+		+size(125px)
+		border: 1px solid ep-color('gray')
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0 0 em(10)
 
-			ul
-			  text-align: left
-			  color: ep-color('gray', 'light')
-  			font-size: rem(14)
-  			list-style-type: disc
-  			list-style-position: inside
+		/* target all icons with attribute wildcard selector that searches for "begins with..." */
+		[class^="services__icon-"]
+			+size(70px)
+			fill: ep-color('gray')
