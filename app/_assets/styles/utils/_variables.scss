@@ -19,32 +19,11 @@ $ep-colors: (
   )
 );
 
-/* ABOUT US */
-$icon-background-color: ep-color('primary', 'light');
-$icon-color: ep-color('primary', 'dark');
-
-/* WHAT WE DO */
-$icon-color: ep-color('gray');
-$icon-hover: ep-color('accent', 'dark');
-$sevices-title-color: ep-color('gray', 'dark');
-$services-list-color: ep-color('gray', 'light');
-
-
-/* WHO WE ARE */
-$quote-icon-color: ep-color('primary', 'light');
-
-/* CONTACT */
-$section-contact-background: ep-color('primary', 'light');
-
-/* FOOTER */
-$footer-background-color: ep-color('primary', 'dark');
-$footer-icon-color: #fff;
-
-
 /* Neat Breakpoints */
 $small: em(575);
 $medium: em(900);
 $large: ($max-width);
+$horizontal-bar-mode: em(860);
 
 $bp-small: new-breakpoint(min-width $small);
 $bp-medium: new-breakpoint(min-width $medium);

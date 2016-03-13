@@ -1,3 +1,9 @@
+/* WHAT WE DO */
+$icon-color: ep-color('gray')
+$icon-hover: ep-color('accent', 'dark')
+$sevices-title-color: ep-color('gray', 'dark')
+$services-list-color: ep-color('gray', 'light')
+
 .services-container
 	@extend %section
 	background-color: #f5f5f5
@@ -29,7 +35,7 @@
 
 			.icon
 				+size(125px)
-				border: 1px solid $primary-gray
+				border: 1px solid ep-color('gray')
 				border-radius: 50%
 				display: flex
 				align-items: center
@@ -39,17 +45,17 @@
 				/* target all icons with attribute wildcard selector that searches for "begins with..." */
 				[class^="icon-"]
 					+size(70px)
-					fill: $primary-gray
+					fill: ep-color('gray')
 
 			h2
-				color: $dark-gray
+				color: ep-color('gray', 'dark')
 				text-transform: uppercase
 				font-size: rem(14)
 				margin: 0 0 em(10)
 
 			ul
 			  text-align: left
-			  color: $light-gray
+			  color: ep-color('gray', 'light')
   			font-size: rem(14)
   			list-style-type: disc
   			list-style-position: inside

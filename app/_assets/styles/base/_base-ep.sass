@@ -1,11 +1,16 @@
+$color-text: ep-color('gray')
+$color-headline--light: #fff
+$color-headline--dark: ep-color('gray', 'dark')
+
 body
   font-size: 100%
+  color: $color-text
   padding:
-    top: 60px
+    top: em(60)
 
   +media($horizontal-bar-mode)
     padding:
-      top: 100px
+      top: em(100)
 
 img
   height: auto

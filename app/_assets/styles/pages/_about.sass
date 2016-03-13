@@ -1,9 +1,13 @@
+/* ABOUT US */
+$icon-background-color: ep-color('primary', 'light')
+$icon-color: ep-color('primary', 'dark')
+
 #about
 	@extend %section
 
 .blurb
   +outer-container
-  color: $dark-gray
+  color: ep-color('gray', 'dark')
 
 .schools
   @extend %section
@@ -17,7 +21,7 @@
   	flex-direction: column
   	justify-content: center
   	width: 100%
-  	
+
 
   	+media($bp-small)
   		flex-direction: row
@@ -31,16 +35,16 @@
 			margin-bottom: em(25)
 			+media($bp-small)
 				width: 30%
-				
+
 			.icon
 				+size(100px)
-				background-color: $primary-light
+				background-color: ep-color('primary', 'light')
 				border-radius: 50%
 
 				/* target all icons with attribute wildcard selector that searches for "begins with..." */
 				[class^="icon-"]
 					+size(100px)
-					fill: $primary-dark
+					fill: ep-color('primary', 'dark')
 					padding: em(15)
 
 			.number
