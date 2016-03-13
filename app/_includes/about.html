@@ -1,22 +1,21 @@
-<section id="about">
-	<div class="about-container">
-	  <div class="blurb">
-	  	<p>Education Planners is an educational consulting firm helping schools districts across the Southeast handle organizational challenges and operate more efficiently. The Education Planners team represents more than 200 years of combined professional experience in educational leadership. Education Planners specializes in helping K-12 school systems succeed in overall performance by evaluating and making recommendations for the personnel, systems, and processes already in place.</p>
-			<p>Education Planners has solutions for the wide range of challenges that impact all school systems.</p>
-	  </div>
-	</div>
+<section id="about" class="info">
+  <div class="info__blurb">
+  	<p>Education Planners is an educational consulting firm helping schools districts across the Southeast handle organizational challenges and operate more efficiently. The Education Planners team represents more than 200 years of combined professional experience in educational leadership. Education Planners specializes in helping K-12 school systems succeed in overall performance by evaluating and making recommendations for the personnel, systems, and processes already in place.</p>
+		<p>Education Planners has solutions for the wide range of challenges that impact all school systems.</p>
+  </div>
 </section>
-<section id="achievements">
-  <div class="schools">
+
+<section id="achievements" class="schools">
+  <div class="schools__container">
 		<h1>School Systems Assisted</h1>
-		<div class="metrics">
+		<div class="schools__metrics">
 			{% for item in site.data.metrics %}
-			<div class="metric">
-				<span class="icon"><svg class="icon-{{ item.icon }}" role="img" aria-labelledby="title">
+			<div class="schools__metric">
+				<span class="schools__icon"><svg class="schools__icon-{{ item.icon }}" role="img" aria-labelledby="title">
 				  <use xlink:href="#{{item.icon}}"></use>
 				</svg></span>
-				<p class="number">{{ item.number }}</p>
-				<p class="text">{{ item.text }}</p>
+				<p class="schools__number">{{ item.number }}</p>
+				<p class="schools__text">{{ item.text }}</p>
 			</div>
 			{% endfor %}
 		</div>

@@ -2,54 +2,55 @@
 $icon-background-color: ep-color('primary', 'light')
 $icon-color: ep-color('primary', 'dark')
 
-#about
+.info
 	@extend %section
-
-.blurb
-  +outer-container
-  color: ep-color('gray', 'dark')
+	+outer-container()
 
 .schools
-  @extend %section
-  /*+outer-container*/
-  color: #fff
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/stairs.jpg) center center no-repeat
+	@extend %section
+	color: #fff
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/stairs.jpg) center center no-repeat
 
-  .metrics
-  	margin-top: em(75)
-  	display: flex
-  	flex-direction: column
-  	justify-content: center
-  	width: 100%
+	&__metrics
+		margin:
+			top: em(75)
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 100%
 
+		+media($bp-small)
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-around
 
-  	+media($bp-small)
-  		flex-direction: row
-	  	flex-wrap: wrap
-	  	justify-content: space-around
+	&__metric
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin:
+			bottom: em(25)
 
-		.metric
-			display: flex
-			flex-direction: column
-			align-items: center
-			margin-bottom: em(25)
-			+media($bp-small)
-				width: 30%
+		+media($bp-small)
+			width: 30%
 
-			.icon
-				+size(100px)
-				background-color: ep-color('primary', 'light')
-				border-radius: 50%
+	&__icon
+		+size(100px)
+		background:
+			color: ep-color('primary', 'light')
+		border-radius: 50%
 
-				/* target all icons with attribute wildcard selector that searches for "begins with..." */
-				[class^="icon-"]
-					+size(100px)
-					fill: ep-color('primary', 'dark')
-					padding: em(15)
+		/* target all icons with attribute wildcard selector that searches for "begins with..." */
+		[class^="schools__icon-"]
+			+size(100px)
+			fill: ep-color('primary', 'dark')
+			padding: em(15)
 
-			.number
-				font-size: rem(48)
-				margin-bottom: 0
-			.text
-				font-size: rem(14)
-				text-transform: uppercase
+	&__number
+		font-size: rem(48)
+		margin:
+			bottom: 0
+
+	&__text
+		font-size: rem(14)
+		text-transform: uppercase
