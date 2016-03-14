@@ -1,19 +1,19 @@
-<section id="team">
+<section id="team" class="team">
 	<h1>The Team</h1>
 	{% assign featured_members = site.team | where:"featured",true %}
-	<div class="featured">
+	<div class="team__members team__members--featured">
 		{% for member in featured_members %}
-		<div class="member">
+		<div class="team__member">
 			<h4><a href="{{member.url}}">{{member.name}}</a></h4>
 			<p>{{ member.position }}</p>
 		</div>
 		{% endfor %}
 	</div>
 	{% assign members = site.team | where:"featured", '' or null or false %}
-	<div class="members">
+	<div class="team__members">
 		{% for member in members %}
 		{% assign thesize = member.content | size %}
-		<div class="member">
+		<div class="team__member">
 			<p>{% if thesize > 1 %}<a href="{{member.url}}">{{member.name}}</a>{% else %}{{member.name}}{% endif %}</p>
 		</div>
 		{% endfor %}

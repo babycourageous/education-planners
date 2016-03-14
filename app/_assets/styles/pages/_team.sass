@@ -1,17 +1,30 @@
 /* WHO WE ARE */
 $quote-icon-color: ep-color('primary', 'light')
 
-#team
+.team
   @extend %section
 
-  .members, .featured
+  &__members
     display: flex
     flex-wrap: wrap
 
-    .member
-      flex: 1 1 50%
-      text-align: center
-      min-height: 5em
+  &__member
+    flex: 1 1 50%
+    text-align: center
+    min-height: 5em
 
-      +media($bp-small)
-        flex-basis: 33%
+    +media($bp-small)
+      flex-basis: 33%
+
+// .members, .featured
+//   display: flex
+//   flex-wrap: wrap
+//
+//   .member
+//     flex: 1 1 50%
+//     text-align: center
+//     min-height: 5em
+//
+//     +media($bp-small)
+//       flex-basis: 33%
+//
