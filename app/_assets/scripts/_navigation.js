@@ -3,16 +3,18 @@ var $ = require('jquery');
 
 $(document).ready(function() {
   var header = $('header[role=banner]');
+  var nav = $('nav');
 
   $(window).scroll(function() {
     var stickDistance = 0;
     var scroll = $(window).scrollTop();
 
     if ( scroll >= 40 ) {
-      header.addClass('smaller');
-      /*$('body').addClass('shrink');*/
+      header.addClass('header--small');
+      nav.addClass('navigation--small');
     } else {
-      header.removeClass('smaller');
+      header.removeClass('header--small');
+      nav.removeClass('navigation--small');
       /*$('body').removeClass('shrink');*/
     }
   });
