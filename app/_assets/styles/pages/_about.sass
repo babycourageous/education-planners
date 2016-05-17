@@ -4,10 +4,11 @@ $icon-color: ep-color('primary', 'dark')
 
 .info
 	@extend %section
-	+outer-container()
 	&__blurb
-		+span-columns(10)
-		+shift(1)
+		text-align: center
+		+media($bp-medium)
+			+span-columns(10)
+			+shift(1)
 
 .schools
 	@extend %section
