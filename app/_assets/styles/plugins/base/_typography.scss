@@ -27,11 +27,11 @@ a {
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
-  &:active,
-  &:focus,
-  &:hover {
-    color: shade($action-color, 25%);
-  }
+  // &:active,
+  // &:focus,
+  // &:hover {
+  //   color: shade($action-color, 25%);
+  // }
 }
 
 hr {
