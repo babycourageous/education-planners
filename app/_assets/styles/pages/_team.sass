@@ -1,31 +1,32 @@
 /* WHO WE ARE */
 $quote-icon-color: ep-color('primary', 'light')
 
-// .team
-//   @extend %section
-//
-//   &__members
-//     display: flex
-//     flex-wrap: wrap
-//
-//   &__member
-//     flex: 1 1 50%
-//     text-align: center
-//     min-height: 5em
-//
-//     +media($bp-small)
-//       flex-basis: 33%
-
 .team
   @extend %section
 
   &__members
-    +outer-container()
+    display: flex
+    flex-wrap: wrap
 
   &__member
-    +span-columns(6)
-    +omega(2n)
+    flex: 1 1 50%
+    text-align: center
+    min-height: 5em
 
     +media($bp-small)
-      +span-columns(4)
-      +omega(3n)
+      flex-basis: 33%
+
+// .team
+//   @extend %section
+//
+//   &__members
+//     @extend %container
+//
+//   &__member
+//     +span-columns(6)
+//     +omega(2n)
+//
+//     +media($bp-small)
+//       +omega-reset(2n)
+//       +span-columns(4)
+//       +omega(3n)
