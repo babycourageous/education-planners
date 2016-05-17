@@ -8,6 +8,8 @@ keep_files: ["assets"]
 collections:
   team:
     output: true
+  projects:
+    output: true
 
 defaults:
   -
@@ -16,6 +18,12 @@ defaults:
       type: team
     values:
       layout: member
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
 
 source: ./app
 destination: ./dist
