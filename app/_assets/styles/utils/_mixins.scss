@@ -1,5 +1,8 @@
 /* PLACEHOLDERS */
-%section {
+%container {
 	@include outer-container();
-	padding: em(50) em(10);
+	padding: 0 em(10);
+}
+%section {
+	padding: em(50) 0;
 }
