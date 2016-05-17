@@ -16,8 +16,7 @@ $color-contact__background: ep-color('accent', 'light')
 		color: ep-color('gray', 'dark')
 
 	&__container
-		+media($bp-medium)
-			+outer-container()
+		@extend %container
 
 	&__location
 		+media($bp-medium)
