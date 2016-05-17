@@ -7,7 +7,7 @@
     <ul id="js-navigation-menu" class="navigation__items">
       {% for navitem in site.data.nav %}
       <li class="navigation__item">
-        {% if include.base %}<a href="{{site.url}}/{{include.base}}{{ navitem.href }}">{{ navitem.name }}</a>
+        {% if include.base %}<a href="{{site.baseurl}}/{{include.base}}{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
         {% else %}<a href="{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
         {% endif %}
       </li>
