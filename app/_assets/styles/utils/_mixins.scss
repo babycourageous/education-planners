@@ -1,4 +1,5 @@
 /* PLACEHOLDERS */
 %section {
-	padding: em(50);
+	@include outer-container();
+	padding: em(50) em(10);
 }
