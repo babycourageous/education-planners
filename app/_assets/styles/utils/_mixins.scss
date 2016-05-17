@@ -1,10 +1,12 @@
 /* PLACEHOLDERS */
 %container {
 	@include outer-container();
-	padding: 0 em(10);
+	padding-left: em(10);
+	padding-right: em(10);
 }
 %section {
-	padding: em(50) 0;
+	padding-top: em(50);
+	padding-bottom: em(50);
 }
 
 // ------------------------------------------------------------
