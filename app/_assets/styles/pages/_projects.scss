@@ -1,0 +1,22 @@
+.project {
+
+  &__heading {
+    padding: 0;
+    //margin: 0;
+  }
+  &__header {
+    background-color: ep-color('primary', 'light');
+    padding: em(30);
+    color: white;
+  }
+  &__content {
+    @extend %container;
+  }
+
+  &__description {
+    @include media($bp-medium) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+  }
+}
