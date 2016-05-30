@@ -1,10 +1,18 @@
 <section id="work" class="portfolio">
   <h1>Our Work</h1>
   <div class="portfolio__container">
-  	<a href="#"><img src="http://lorempixel.com/200/200/business" alt=""></a>
-  	<a href="#"><img src="http://lorempixel.com/200/200/abstract" alt=""></a>
-  	<a href="#"><img src="http://lorempixel.com/200/200/technics" alt=""></a>
-  	<a href="#"><img src="http://lorempixel.com/200/200" alt=""></a>
+    <div class="portfolio__blurb">
+      <p>Education Planners, LLC, has experience in all aspects of human resources management and coaching to train your future leaders. Our experts know the wide range of challenges that can confront your organization. Our knowledge and experience can help your staff function at its best. </p>
+      <p>Educational Planners is proud to partner with school systems in Georgia and all over the country to help them overcome their specific challenges. Here are just a few examples of how we have helped school systems and universities:</p>
+    </div>
+
+    <div class="portfolio__projects">
+      {% for project in site.projects %}
+      <div class="portfolio__case-study">
+        <a href="{{project.url}}" class="portfolio__link">{{project.title}}</a>
+      </div>
+      {% endfor %}
+    </div>
 </section>
 
 <section class="quotes">
