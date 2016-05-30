@@ -6,10 +6,32 @@
 		margin: 0 0 em(25)
 
 	&__container
-		width: 100%
-		display: flex
-		flex-wrap: wrap
-		justify-content: space-around
+		@extend %container
+		text-align: center
+
+	&__blurb
+		+media($bp-medium)
+			+span-columns(10)
+			+shift(1)
+
+	&__projects
+		clear: both
+		+media($bp-small)
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+
+	&__case-study
+		//width: 30%
+		border: 1px solid ep-color('primary', 'dark')
+		margin: 10px
+		flex: 0 1 calc(33.33% - 20px)
+
+	&__link
+		text-align: center
+		padding: em(15)
+		display: block
+
 
 // Quotes Section
 .quotes
