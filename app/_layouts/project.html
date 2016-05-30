@@ -1,7 +1,20 @@
 ---
 layout: default
 ---
-<h1>{{page.title}}</h1>
-<h2>The Challenge:</h2>
-<p class="project__challenge">{{page.challenge}}</p>
-{{content}}
+<div class="project">
+  <div class="project__header">
+      <div class="wrapper">
+      <h1>{{page.title}}</h1>
+      {% if page.challenge %}
+      <h2 class="project__label">The Challenge:</h2>
+      <p class="project__challenge">{{page.challenge}}</p>
+      {% endif %}
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="project__description">
+      {{content}}
+    </div>
+  </div>
+  <a href="{{site.baseurl}}/#work" class="link-back"><< Return to Case Studies</a>
+</div>
