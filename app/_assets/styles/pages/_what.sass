@@ -5,13 +5,19 @@ $sevices-title-color: ep-color('gray', 'dark')
 $services-list-color: ep-color('gray', 'light')
 
 .services
-	&__container
-		@extend %section
-		background-color: #f5f5f5
+	@extend %section
+	background-color: #f5f5f5
 
-		p
+	&__container
+		@extend %container
+
+	&__blurb
+		margin-bottom: 1.5em
+		+media($bp-small)
+			+span-columns(8)
+			+shift(2)
+		& p
 			text-align: center
-			margin: 0 auto
 
 	&__items
 		margin-top: em(50)
@@ -35,19 +41,7 @@ $services-list-color: ep-color('gray', 'light')
 		+media($bp-medium)
 			width: 30%
 
-		h2
-			color: ep-color('gray', 'dark')
-			text-transform: uppercase
-			font-size: rem(14)
-			margin: 0 0 em(10)
-
-		ul
-			text-align: left
-			color: ep-color('gray', 'light')
-			font-size: rem(14)
-			list-style-type: disc
-			list-style-position: inside
-
+.service
 	&__icon
 		+size(125px)
 		border: 1px solid ep-color('gray')
@@ -58,6 +52,19 @@ $services-list-color: ep-color('gray', 'light')
 		margin: 0 0 em(10)
 
 		/* target all icons with attribute wildcard selector that searches for "begins with..." */
-		[class^="services__icon-"]
+		[class^="service__icon-"]
 			+size(70px)
 			fill: ep-color('gray')
+
+	&__name
+		color: ep-color('gray', 'dark')
+		text-transform: uppercase
+		font-size: rem(14)
+		margin: 0 0 em(10)
+
+	&__list
+		text-align: left
+		color: ep-color('gray', 'light')
+		font-size: rem(14)
+		list-style-type: disc
+		list-style-position: inside

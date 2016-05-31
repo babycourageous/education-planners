@@ -1,17 +1,19 @@
 <section id="what" class="services">
   <div class="services__container">
     <h1>What We Do</h1>
-    <p>Education Planners, LLC is a partnership of education professionals with decades of experience serving school districts in all facets of operations including:</p>
+    <div class="services__blurb">
+      {{site.data.info.what | markdownify}}
+    </div>
     <div class="services__items">
     	{% for service in site.data.services %}
-    	<div class="services__item">
-    		<span class="services__icon"><svg class="services__icon-{{ service.icon }}" role="img" aria-labelledby="title">
-          <use xlink:href="#{{service.icon}}"></use>
-        </svg></span>
-    		<h2>{{ service.name }}</h2>
-    		<ul>
+    	<div class="services__item service">
+    		<span class="service__icon">
+          <svg class="service__icon-{{ service.icon }}" role="img" aria-labelledby="title"><use xlink:href="#{{service.icon}}"></use></svg>
+        </span>
+    		<h2 class="service__name">{{ service.name }}</h2>
+    		<ul class="service__list">
     			{% for item in service.items %}
-    			<li>{{ item }}</li>
+    			<li class="service__item">{{ item }}</li>
     			{% endfor %}
     		</ul>
     	</div>
