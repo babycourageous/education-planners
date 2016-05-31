@@ -4,17 +4,17 @@
   </div>
 </section>
 
-<section id="achievements" class="schools">
-  <div class="schools__container">
-		<h1>School Systems Assisted</h1>
-		<div class="schools__metrics">
+<section id="achievements" class="achievements">
+  <div class="achievements__container">
+		<h1>School System Achievements</h1>
+		<div class="achievements__metrics">
 			{% for item in site.data.metrics %}
-			<div class="schools__metric">
-				<span class="schools__icon"><svg class="schools__icon-{{ item.icon }}" role="img" aria-labelledby="title">
-				  <use xlink:href="#{{item.icon}}"></use>
-				</svg></span>
-				<p class="schools__number">{{ item.number }}</p>
-				<p class="schools__text">{{ item.text }}</p>
+			<div class="achievements__metric">
+				<span class="achievements__icon">
+          <svg class="achievements__icon-{{ item.icon }}" role="img" aria-labelledby="title"><use xlink:href="#{{item.icon}}"></use></svg>
+        </span>
+				<p class="achievements__number">{{ item.number }}</p>
+				<p class="achievements__text">{{ item.text }}</p>
 			</div>
 			{% endfor %}
 		</div>
