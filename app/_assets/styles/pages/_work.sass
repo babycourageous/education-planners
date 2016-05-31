@@ -2,9 +2,6 @@
 .portfolio
 	@extend %section
 
-	h1
-		margin: 0 0 em(25)
-
 	&__container
 		@extend %container
 		text-align: center
@@ -50,11 +47,15 @@
 		margin: 0 auto
 
 .carousel
-  max-width: em(660)
-  margin: auto
+	@extend %container
 
-  &__item
-  	text-align: center
+	&__item
+		text-align: center
 
-  &__.author
+	&__author
 		font-style: italic
+
+.slick-list
+	+media($bp-small)
+		+span-columns(8)
+		+shift(2)
