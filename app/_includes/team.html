@@ -3,6 +3,7 @@
 	<div class="team__blurb">
 		{{site.data.info.team | markdownify}}
 	</div>
+	<hr>
 	{% assign featured_members = site.team | where:"featured",true %}
 	<div class="team__members team__members--featured">
 		{% for member in featured_members %}
