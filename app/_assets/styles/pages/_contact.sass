@@ -1,0 +1,42 @@
+/* CONTACT */
+$color-contact__background: ep-color('accent', 'light')
+
+.contact
+	@extend %section
+	background-color: $color-contact__background
+
+	h1
+		color: #fff
+
+	h2
+		color: #fff
+		font-weight: 400
+
+	p, a
+		color: ep-color('gray', 'dark')
+
+	&__container
+		@extend %container
+
+	&__location
+		+media($bp-medium)
+			+span-columns(3)
+			+shift(9)
+
+.form
+	+media($bp-medium)
+		+span-columns(9)
+		+shift(-12)
+
+	&__label
+		display: none
+
+	input, textarea
+		border-radius: 0
+		border-color: #fff
+		background-color: ep-color('accent', 'light')
+		&::placeholder
+			color: #fff
+	input[type="submit"]
+		background-color: ep-color('accent', 'dark')
+		float: right

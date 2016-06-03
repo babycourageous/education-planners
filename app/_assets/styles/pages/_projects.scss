@@ -1,0 +1,60 @@
+// STICKY footer - http://cbracco.me/css-sticky-footer-effect/
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.project {
+
+  &__heading {
+    padding: 0;
+    //margin: 0;
+  }
+  &__header {
+    background-color: ep-color('primary', 'light');
+    padding: em(10) 0 em(30);
+    color: white;
+    min-height: 20vh;
+
+    & h1 {
+    text-align: left;
+    }
+  }
+  &__label {
+    font-size: 3rem;
+  }
+  &__challenge {
+    @include media($bp-small) {
+      @include span-columns(7);
+    }
+  }
+
+  &__description {
+    padding: em(20) 0;
+    @include media($bp-medium) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+
+    & ul {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+  }
+}
+
+.link-back {
+  @include clearfix;
+  @include shift(1);
+}

@@ -1,0 +1,23 @@
+<section id="what" class="services">
+  <div class="services__container">
+    <h1>What We Do</h1>
+    <div class="services__blurb">
+      {{site.data.info.what | markdownify}}
+    </div>
+    <div class="services__items">
+    	{% for service in site.data.services %}
+    	<div class="services__item service">
+    		<span class="service__icon">
+          <svg class="service__icon-{{ service.icon }}" role="img" aria-labelledby="title"><use xlink:href="#{{service.icon}}"></use></svg>
+        </span>
+    		<h2 class="service__name">{{ service.name }}</h2>
+    		<ul class="service__list">
+    			{% for item in service.items %}
+    			<li class="service__item">{{ item }}</li>
+    			{% endfor %}
+    		</ul>
+    	</div>
+    	{% endfor %}
+    </div>
+  </div>
+</section>

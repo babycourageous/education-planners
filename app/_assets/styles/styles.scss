@@ -1,0 +1,46 @@
+/*
+ * 2- PLUGINS
+ */
+@import 'plugins/normalize';
+@import 'plugins/bourbon/bourbon';
+@import 'plugins/base/base';
+@import 'plugins/neat/neat';
+
+/*
+ * 1- UTILS
+ */
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';
+
+ /*
+ * 3- BASE
+ */
+@import 'base/base-ep';
+@import 'base/typography';
+
+/*
+ * 4- LAYOUT
+ */
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';
+
+/*
+ * 5- MODULES
+ */
+@import 'modules/hero';
+@import 'slick.scss';
+@import 'modules/quotes';
+
+
+ /*
+ * 6- PAGES
+ */
+@import 'pages/about';
+@import 'pages/what';
+@import 'pages/work';
+@import 'pages/team';
+@import 'pages/contact';
+@import 'pages/projects';

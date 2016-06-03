@@ -1,0 +1,102 @@
+/* NAVIGATION */
+$color-navigation__bg: #FFF
+$color-nav__link: ep-color('gray')
+$color-nav__link--hover: ep-color('primary', 'dark')
+
+$navigation-padding: 1em
+$navigation-height: 100px
+$navigation-resize: 60px
+$navigation-submenu-padding: 1em
+$navigation-submenu-width: 12em
+
+.navigation
+  +clearfix
+  +outer-container
+  position: relative
+
+  &__logo
+    height: $navigation-height
+    line-height: $navigation-height
+    transition: all 0.3s
+    width: 300px
+    display: block
+    padding: 0 em(10)
+
+    +media($horizontal-bar-mode)
+      float: left
+
+    img
+      display: inline-block
+      vertical-align: middle
+      transition: all .3s
+      width: 300px
+
+  &__toggle
+    position: absolute
+    top: 50%
+    right: 0
+    margin-top: -10px
+    padding:
+      left: em(10)
+      right: em(20)
+
+    +media($horizontal-bar-mode)
+      display: none
+
+  &__items
+    display: none
+    position: absolute
+    width: 100%
+    text-align: center
+    background-color: $color-navigation__bg
+    +media($horizontal-bar-mode)
+      position: relative
+      display: flex
+      flex-direction: row
+      width: auto
+      margin: 0
+      padding: 0
+
+    &--visible
+      display: block
+
+  &__item
+    border-bottom: solid 1px black
+    background-color: ep-color('primary', 'light')
+    transition: all 0.3s
+    +media ($horizontal-bar-mode)
+      flex: 1
+      border-bottom: none
+      line-height: $navigation-height
+      background-color: $color-navigation__bg
+
+  &__link
+    display: block
+    color: white
+    font-weight: 700
+    text-transform: uppercase
+    padding: em(10)
+    +media($horizontal-bar-mode)
+      color: $color-nav__link
+      padding: 0
+    &:hover
+      color: $color-nav__link--hover
+    &--active
+      color: $action-color
+
+.navigation--small
+
+  .navigation__logo
+    height: $navigation-resize
+    line-height: $navigation-resize
+
+    img
+      width: 225px
+      +media($horizontal-bar-mode)
+        width: 75%
+        line-height: $navigation-resize
+
+
+  .navigation__item
+    +media($horizontal-bar-mode)
+      line-height: $navigation-resize

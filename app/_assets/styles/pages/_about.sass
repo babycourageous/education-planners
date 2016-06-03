@@ -1,0 +1,59 @@
+/* ABOUT US */
+$icon-background-color: ep-color('primary', 'light')
+$icon-color: ep-color('primary', 'dark')
+
+.info
+	@extend %section
+	@extend %container
+	&__blurb
+		text-align: center
+		+media($bp-medium)
+			+span-columns(10)
+			+shift(1)
+
+.achievements
+	@extend %section
+	color: #fff
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/stairs.jpg) center center no-repeat
+
+	&__metrics
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 100%
+
+		+media($bp-small)
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-around
+
+	&__metric
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin:
+			bottom: em(25)
+
+		+media($bp-small)
+			width: 30%
+
+	&__icon
+		+size(100px)
+		background:
+			color: ep-color('primary', 'light')
+		border-radius: 50%
+
+		/* target all icons with attribute wildcard selector that searches for "begins with..." */
+		[class^="achievements__icon-"]
+			+size(100px)
+			fill: ep-color('primary', 'dark')
+			padding: em(15)
+
+	&__number
+		font-size: rem(48)
+		margin:
+			bottom: 0
+
+	&__text
+		font-size: rem(14)
+		text-transform: uppercase

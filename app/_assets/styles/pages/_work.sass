@@ -1,0 +1,61 @@
+// Portfolio Section
+.portfolio
+	@extend %section
+
+	&__container
+		@extend %container
+		text-align: center
+
+	&__blurb
+		+media($bp-medium)
+			+span-columns(10)
+			+shift(1)
+
+	&__projects
+		clear: both
+		+media($bp-small)
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+
+	&__case-study
+		//width: 30%
+		border: 1px solid ep-color('primary', 'dark')
+		margin: 10px
+		flex: 0 1 calc(33.33% - 20px)
+
+	&__link
+		text-align: center
+		padding: em(15)
+		display: block
+
+
+// Quotes Section
+.quotes
+	@extend %section
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/quotes-bg.jpg) center center no-repeat
+	min-height: 400px
+	color: #fff
+
+	h1
+		margin: 0 0 em(25)
+
+	&__icon
+		+size(50px)
+		fill: ep-color('accent', 'light')
+		display: block
+		margin: 0 auto
+
+.carousel
+	@extend %container
+
+	&__item
+		text-align: center
+
+	&__author
+		font-style: italic
+
+.slick-list
+	+media($bp-small)
+		+span-columns(8)
+		+shift(2)

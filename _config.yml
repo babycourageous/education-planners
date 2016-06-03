@@ -1,0 +1,29 @@
+url: "http://www.edplanners.com" # the base hostname & protocol for your site
+baseurl: ""                      # the subpath of your site, e.g. /blog/
+
+title: Education Planners, LLC
+exclude: ["_assets"]
+keep_files: ["assets"]
+
+collections:
+  team:
+    output: true
+  projects:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: team
+    values:
+      layout: member
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+source: ./app
+destination: ./dist

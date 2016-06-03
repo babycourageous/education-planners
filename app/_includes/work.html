@@ -1,0 +1,30 @@
+<section id="work" class="portfolio">
+  <h1>Our Work</h1>
+  <div class="portfolio__container">
+    <div class="portfolio__blurb">
+      {{site.data.info.work | markdownify}}
+    </div>
+
+    <div class="portfolio__projects">
+      {% for project in site.projects %}
+      <div class="portfolio__case-study">
+        <a href="{{project.url}}" class="portfolio__link">{{project.title}}</a>
+      </div>
+      {% endfor %}
+    </div>
+</section>
+
+<section class="quotes">
+	<svg class="quotes__icon" role="img" aria-labelledby="title">
+	  <use xlink:href="#quote"></use>
+  </svg>
+  <h1>What Our Clients Say</h1>
+  <div class="carousel">
+  {% for quote in site.data.quotes %}
+  	<div class="carousel__item">
+			<p class="carousel__quote">&ldquo;{{ quote.quote }}&rdquo;</p>
+			<p class="carousel__author">- {{ quote.author }}</p>
+		</div>
+	{% endfor %}
+	</div>
+</section>
