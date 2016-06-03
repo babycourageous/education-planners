@@ -1,5 +1,8 @@
 <section id="team" class="team">
 	<h1>The Team</h1>
+	<div class="team__blurb">
+		{{site.data.info.team | markdownify}}
+	</div>
 	{% assign featured_members = site.team | where:"featured",true %}
 	<div class="team__members team__members--featured">
 		{% for member in featured_members %}
