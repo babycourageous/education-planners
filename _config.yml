@@ -1,5 +1,5 @@
 url: "http://www.edplanners.com" # the base hostname & protocol for your site
-baseurl: "http://babycourageous.github.com/education-planners" # the subpath of your site, e.g. /blog/
+baseurl: "http://babycourageous.github.io/education-planners" # the subpath of your site, e.g. /blog/
 
 title: Education Planners, LLC
 exclude: ["_assets"]
