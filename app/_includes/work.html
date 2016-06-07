@@ -8,7 +8,7 @@
     <div class="portfolio__projects">
       {% for project in site.projects %}
       <div class="portfolio__case-study">
-        <a href="{{project.url}}" class="portfolio__link">{{project.title}}</a>
+        <a href="{{site.baseurl}}{{project.url}}" class="portfolio__link">{{project.title}}</a>
       </div>
       {% endfor %}
     </div>
