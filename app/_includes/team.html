@@ -8,7 +8,7 @@
 	<div class="team__members team__members--featured">
 		{% for member in featured_members %}
 		<div class="team__member">
-			<h4><a href="{{member.url}}">{{member.name}}</a></h4>
+			<h4><a href="{{site.baseurl}}{{member.url}}">{{member.name}}</a></h4>
 			<p>{{ member.position }}</p>
 		</div>
 		{% endfor %}
@@ -18,7 +18,7 @@
 		{% for member in members %}
 		{% assign thesize = member.content | size %}
 		<div class="team__member">
-			<p>{% if thesize > 1 %}<a href="{{member.url}}">{{member.name}}</a>{% else %}{{member.name}}{% endif %}</p>
+			<p>{% if thesize > 1 %}<a href="{{site.baseurl}}{{member.url}}">{{member.name}}</a>{% else %}{{member.name}}{% endif %}</p>
 		</div>
 		{% endfor %}
 	</div>
