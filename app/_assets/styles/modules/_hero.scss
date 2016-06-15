@@ -6,11 +6,11 @@
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: 'images/hero-v3.jpg';
+  $hero-image: 'images/hero-v4.jpg';
 
   @include background(url($hero-image), no-repeat $hero-background-top scroll);
   background-color: #324766;
-  background-position: 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   //padding-top: em(40);
