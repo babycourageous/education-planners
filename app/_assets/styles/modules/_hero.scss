@@ -5,6 +5,7 @@
   $hero-background-top: #7F99BE;
   $hero-background-bottom: #20392B;
   $hero-color: white;
+  $hero-text-background: rgba(0, 0, 0, .5);
   $gradient-angle: 10deg;
   $hero-image: 'images/hero-v4.jpg';
 
@@ -46,7 +47,7 @@
       }
 
       p {
-        background-color: rgba(0, 0, 0, .5);
+        line-height: 1;
         color: $hero-color;
         //line-height: 1.4em;
         font-size: rem(16);
@@ -55,6 +56,7 @@
         margin-bottom: 5px;
         display: inline-block;
         &+p {
+          line-height: 1;
           font-size: rem(36);
         }
 
