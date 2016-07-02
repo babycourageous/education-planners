@@ -16,6 +16,12 @@ $icon-color: ep-color('primary', 'dark')
 	color: #fff
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/stairs.jpg) center center no-repeat
 
+	&__container
+			@extend %container
+
+	&__blurb
+		text-align: center
+
 	&__metrics
 		display: flex
 		flex-direction: column
