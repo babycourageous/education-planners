@@ -1,0 +1,23 @@
+.location {
+
+  &__img {
+    background-image: url('images/hero-v3.jpg');
+    background-size: cover;
+    background-position: center;
+    @include fill-parent;
+    height: 75vh;
+    @include media($bp-medium) {
+      width: 50%;
+      float: left;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 75vh;
+    @include media($bp-medium) {
+      width: 50%;
+      float:left;
+    }
+  }
+}
