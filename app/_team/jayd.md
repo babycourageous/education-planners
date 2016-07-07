@@ -3,6 +3,7 @@ name: Jay Dillon
 position: Chief Operating Officer
 email: jdillon@edplanners.org
 featured: true
+linkedin: https://www.linkedin.com/in/jay-dillon-03579180
 ---
 Before joining Ed Planners in January 2015, Mr. Dillon was Director of Communications for the Cobb County School District for 17 years. During that time he managed the communications staff and oversaw internal/external communications and strategic communications planning for the 110,000-student and 14,500-employee school system including:
 
