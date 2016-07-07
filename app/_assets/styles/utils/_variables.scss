@@ -22,11 +22,13 @@ $ep-colors: (
 
 /* Neat Breakpoints */
 $small: em(575);
+$team: em(770);
 $medium: em(900);
 $large: ($max-width);
 $horizontal-bar-mode: em(860);
 
 $bp-small: new-breakpoint(min-width $small);
+$bp-team: new-breakpoint(min-width $team);
 $bp-medium: new-breakpoint(min-width $medium);
 $bp-large: new-breakpoint(min-width $large);
 

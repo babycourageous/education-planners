@@ -3,6 +3,7 @@ name: James Wilson
 position: Founder, CEO
 email: jwilson@edplanners.org
 featured: true
+linkedin: https://www.linkedin.com/in/james-wilson-79b1b223
 ---
 Mr. Wilson is the founder and CEO of Education Planners, providing solutions for educational success. Education Planners, is a partnership of education professionals with decades of experience leading school systems in all facets of improvement. Mr. Wilson is a dedicated educational professional working with school districts in efficiency and effectiveness improvements. He is a frequent presenter at national, state and local conferences. He is a certified executive coach and provides in-service training on “Coaching Future Education Leaders”. Mr. Wilson continues his life-long learning with advanced degree studies at St. John’s University while writing a text on leadership entitled, “Now, Let’s Think About This”.
 
