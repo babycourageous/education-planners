@@ -7,11 +7,9 @@ layout: default
   {% assign featured_members = site.team | where:"featured",true %}
   {% for member in featured_members %}
   <div class="team__member member member--featured">
-    <div class="member__photo"><img src="http://www.fillmurray.com/450/280"></div>
     <div class="member__info">
-      <h4>{{member.name}}</h4>
+      <h4><a href="{{member.linkedin}}" target="blank">{{member.name}}</a></h4>
       <p>{{ member.position }}</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et reprehenderit ullam facilis recusandae facere, dignissimos ducimus eveniet. Unde autem, blanditiis corporis. Quaerat tenetur amet ad quibusdam, quisquam harum incidunt quia autem, voluptatibus odit accusamus rem, fugiat voluptas facilis vitae vero id quae minima iste accusantium sed expedita. Quo ullam perspiciatis illo qui, eius unde? Quae sunt quos sed maxime natus culpa possimus quo sapiente qui!</p>
     </div>
   </div>
   {% endfor %}
@@ -19,10 +17,8 @@ layout: default
   {% assign members = site.team | where:"featured", '' or null or false %}
   {% for member in members %}
   <div class="team__member member">
-    <div class="member__photo"><img src="http://www.fillmurray.com/450/280"></div>
     <div class="member__info">
       <h4>{{member.name}}</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sit quae placeat porro saepe doloribus. Voluptates dicta fugit expedita totam?</p>
     </div>
   </div>
   {% endfor %}
