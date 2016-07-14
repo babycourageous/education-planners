@@ -11,7 +11,11 @@
 			{% for item in site.data.metrics.info %}
 			<div class="achievements__metric">
 				<span class="achievements__icon">
-          <svg class="achievements__icon-{{ item.icon }}" role="img" aria-labelledby="title"><use xlink:href="#{{item.icon}}"></use></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="achievements__icon-{{ item.icon }}" role="img" aria-labelledby="title">
+            <switch>
+              <use xlink:href="#{{item.icon}}"></use>
+              <foreignObject><img src="assets/images/png_fallback/{{item.icon}}.png"></foreignObject>
+          </svg>
         </span>
 				<p class="achievements__number">{{ item.number }}</p>
 				<p class="achievements__text">{{ item.text }}</p>
