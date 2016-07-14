@@ -8,7 +8,12 @@
     	{% for service in site.data.services %}
     	<div class="services__item service">
     		<span class="service__icon">
-          <svg class="service__icon-{{ service.icon }}" role="img" aria-labelledby="title"><use xlink:href="#{{service.icon}}"></use></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="service__icon-{{ service.icon }}" role="img" aria-labelledby="title">
+            <switch>
+              <use xlink:href="#{{service.icon}}"></use>
+              <foreignObject><img src="assets/images/png_fallback/{{service.icon}}.png"></foreignObject>
+            </switch>
+          </svg>
         </span>
     		<h2 class="service__name">{{ service.name }}</h2>
     		<ul class="service__list">

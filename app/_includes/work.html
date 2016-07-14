@@ -15,8 +15,11 @@
 </section>
 
 <section class="quotes">
-	<svg class="quotes__icon" role="img" aria-labelledby="title">
-	  <use xlink:href="#quote"></use>
+	<svg xmlns="http://www.w3.org/2000/svg" class="quotes__icon" role="img" aria-labelledby="title">
+    <switch>
+      <use xlink:href="#quote"></use>
+      <foreignObject><img src="assets/images/png_fallback/quote.png"></foreignObject>
+    </switch>
   </svg>
   <h1>What Our Clients Say</h1>
   <div class="carousel">
