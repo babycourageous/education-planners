@@ -21,6 +21,7 @@ config.images = {
 config.svg = {
   src: config.assets + 'svg/**/*',
   jekylldest: config.app + '_includes',
+  fallbackdest: config.dist + 'assets/images/png_fallback',
   options: {
     svg: {
       xmlDeclaration: false,
