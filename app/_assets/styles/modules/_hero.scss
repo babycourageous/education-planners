@@ -9,8 +9,7 @@
   $gradient-angle: 10deg;
   $hero-image: 'images/hero-v4.jpg';
 
-  @include background(url($hero-image), no-repeat $hero-background-top scroll);
-  background-color: #324766;
+  background: url($hero-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,37 +23,30 @@
   }
 
   .hero-inner {
-    //@include outer-container;
+    @extend %container;
     //@include clearfix;
-    margin: 0 1em 0 0;
+    //margin: 0 1em 0 0;
     padding-top: 3.5em;
-    //text-align: center;
+    text-align: right;
 
     .hero-copy {
       text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-      h1 {
-        color: $hero-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
+      @include media($bp-medium) {
+        @include span-columns(6);
+        @include shift(6);
       }
+      //display: flex;
+      //flex-direction: column;
+      //align-items: flex-end;
 
       p {
         line-height: 1;
         color: $hero-color;
-        //line-height: 1.4em;
         font-size: rem(16);
-        //margin: 0;
         padding: 5px;
         margin-bottom: 5px;
-        display: inline-block;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.75);
+        //display: inline-block;
         &+p {
           line-height: 1;
           font-size: rem(36);
@@ -62,7 +54,7 @@
 
         @include media($large-screen) {
           font-size: 1.1em;
-          max-width: 40%;
+          //max-width: 40%;
         }
       }
     }
