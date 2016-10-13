@@ -8,7 +8,7 @@
   {% for member in featured_members %}
   <div class="team__member member member--featured">
     <div class="member__info">
-      <h4><a href="{{member.url}}">{{member.name}}</a></h4>
+      <h4><a href="{{site.baseurl}}{{member.url}}">{{member.name}}</a></h4>
       <p>{{ member.position }}</p>
     </div>
   </div>
@@ -22,5 +22,5 @@
     </div>
   </div>
   {% endfor %}
-	
+
 </section>
