@@ -30,6 +30,7 @@ gulp.task('build:styles', getTask('build:styles'));
 gulp.task('build:scripts', getTask('build:scripts'));
 gulp.task('build:images', getTask('build:images'));
 gulp.task('build:svg', getTask('build:svg'));
+gulp.task('build:svg2png', getTask('build:svg2png'));
 gulp.task('build:jekyll', getTask('build:jekyll'));
 gulp.task('build:jekyll:dev', getTask('build:jekyll:dev'));
 gulp.task('rebuild:jekyll', getTask('rebuild:jekyll'));
@@ -50,7 +51,7 @@ gulp.task('clean', ['clean:styles', 'clean:images', 'clean:svg', 'clean:scripts'
 /**
  * Batch Assets Build Task
  */
-gulp.task('build:assets', ['build:images', 'build:scripts', 'build:styles', 'build:svg']);
+gulp.task('build:assets', ['build:images', 'build:scripts', 'build:styles', 'build:svg', 'build:svg2png']);
 
 /**
  * Batch Build Task
@@ -111,7 +112,9 @@ gulp.task('serve', ['build:dev'], function() {
 	// WATCH images --> build:images
 	gulp.watch('app/_assets/images/**/*.+(jpg|png|jpeg|gif)', ['build:images']);
 	// WATCH svg --> build:svg
-	gulp.watch('app/_assets/svg/**/*.svg', ['build:svg']);
+	gulp.watch('app/_assets/svg/**/*.svg', function(evt) {
+    plugins.runsequence('build:svg', 'build:svg2png');
+  });
 	// WATCH _posts --> build:jekyll:serve
   gulp.watch('app/_posts/**/*.+(md|markdown|MD)', ['build:jekyll:serve']);
   gulp.watch('app/_team/**/*.+(md|markdown|MD)', ['build:jekyll:serve']);

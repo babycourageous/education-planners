@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<p class="who__link"><a href="team.html">View the entire team</a></p>
+
 <div class="team">
   <h1>Meet the Education Planners team</h1>
 
@@ -8,7 +10,7 @@ layout: default
   {% for member in featured_members %}
   <div class="team__member member member--featured">
     <div class="member__info">
-      <h4><a href="{{member.linkedin}}" target="blank">{{member.name}}</a></h4>
+      <h4><a href="{{member.url}}">{{member.name}}</a></h4>
       <p>{{ member.position }}</p>
     </div>
   </div>

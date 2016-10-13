@@ -4,5 +4,23 @@
 		{{site.data.info.team | markdownify}}
 	</div>
 	<hr>
-	<p class="who__link"><a href="team.html">View the entire team</a></p>
+	{% assign featured_members = site.team | where:"featured",true %}
+  {% for member in featured_members %}
+  <div class="team__member member member--featured">
+    <div class="member__info">
+      <h4><a href="{{site.baseurl}}{{member.url}}">{{member.name}}</a></h4>
+      <p>{{ member.position }}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% assign members = site.team | where:"featured", '' or null or false %}
+  {% for member in members %}
+  <div class="team__member member">
+    <div class="member__info">
+      <h4>{{member.name}}</h4>
+    </div>
+  </div>
+  {% endfor %}
+
 </section>

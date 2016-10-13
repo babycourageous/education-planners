@@ -1,8 +1,11 @@
 <footer id="footer" class="footer">
   <div class="footer__logo">
   	<a class="footer__link" href="#top">
-  		<svg class="footer__icon" role="img" aria-labelledby="title">
-  			<use xlink:href="#logo"></use>
+  		<svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" role="img" aria-labelledby="title">
+        <switch>
+          <use xlink:href="#logo"></use>
+          <foreignObject><img src="assets/images/png_fallback/logo.png"></foreignObject>
+        </switch>
   		</svg>
   	</a>
   </div>
