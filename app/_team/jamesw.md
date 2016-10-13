@@ -5,28 +5,30 @@ email: jwilson@edplanners.org
 featured: true
 linkedin: https://www.linkedin.com/in/james-wilson-79b1b223
 ---
-Mr. Wilson is the founder and CEO of Education Planners, providing solutions for educational success. Education Planners, is a partnership of education professionals with decades of experience leading school systems in all facets of improvement. Mr. Wilson is a dedicated educational professional working with school districts in efficiency and effectiveness improvements. He is a frequent presenter at national, state and local conferences. He is a certified executive coach and provides in-service training on “Coaching Future Education Leaders”. Mr. Wilson continues his life-long learning with advanced degree studies at St. John’s University while writing a text on leadership entitled, “Now, Let’s Think About This”.
+James Wilson is an educational professional with over 30 years of experience leading school systems in all facets of operation including: personnel and financial management, school construction oversight and project development, bond and tax referendum preparation, technology integration, leadership training and stakeholder communications.
 
-He has participated in the Harvard University Superintendent Institute, the Harvard University Institute for Educational Leaders, the Vanderbilt University Principal’s Institute and is a member of the Atlanta Regional Commission (ARC) leadership institute. While serving as Superintendent of Schools in Fulton County, he expanded instructional technology, creating a greater capacity for distance learning and “virtual classrooms” where students take coursework from Universities while staying in their home setting.
+Mr. Wilson is currently the CEO of Education Planners, providing solutions for educational success. Education Planners is a partnership of education professionals with decades of experience leading school systems in all facets of improvement. His firm works to achieve “The classroom of tomorrow today”.
 
-## Professional Registrations/Affiliations
+He has participated in the Harvard University Superintendent Institute, the Harvard University Institute for Educational Leaders and is a member of the Atlanta Regional Commission (ARC) for leadership institute. While serving as Superintendent of Schools in Fulton County, he expanded instructional technology, creating “virtual classrooms” where students take coursework from Georgia Tech while staying in their home setting.
+
+## Professional Organizations
 - American Association of School Administrators
-- Board of Directors of Benjamin Mayes Academy for Young Men
-- Council of Educational Facility Planners
+- Council of Urban Boards of Education
+- Council of Education Facility Planners
+- Metropolitan Regional Educational Services Agency
 - EdNet Superintendent Executive Board Member
-- Kennesaw State University Advisory
+- Kennesaw State University Adjunct Professor
+- Board of Directors of Benjamin Mayes Academy for Young Men
+
 
 ## Publications and Training
-- Board Governance Training
-- Building Positive Public Awareness
-- Efficiency and Effectiveness
-- GIS
-- Haberman Administrator Selection
-- Innovations in Facility Management
-- Leadership Is
 - Leadership through Turbulent Times
-- Leveraging Technology for Student Achievement
-- NASSP
-- Now Let's Think About This
-- Professional Coaching
+-	Building Positive Public Awareness
+- Efficiency and Effectiveness
+- Innovations in Facility Management
+- Now Let’s Think About This
+- NASSP Personnel Assessment
+- Leadership Is
+- Hagerman Administrator Selection
 - Purpose of Schooling
+- Leveraging Technology for Student Achievement
