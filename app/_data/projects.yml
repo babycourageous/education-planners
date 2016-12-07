@@ -1,0 +1,44 @@
+- school: Atlanta Public Schools
+  school_id: aps
+  projects:
+    - type: HR Management
+      date: July 2012-present
+      info: |
+        Provide experienced and qualified personnel to be responsible for all matters during the transition of the Human Resources Department including but not limited to:
+        - Recruitment, performance and retention of its personnel
+        - Be in compliance with all federal, state, and local laws/regulations regarding - employment.
+    - type: Customer Service Training
+      date: October 2012-November 2012
+      info: Customer Service Training for Transportation and Food Service Personnel
+    - type: Classification & Compensation Study
+      date: 2014
+      info: A Classification and Compensation Study using the Factor Evaluation System (FES)
+    - type: Community Conversations
+      date: November 2013-February 2014
+      info: Listening Services at series of community conversations to determine future of K-8 schools
+    - type: Departmental Training
+      date: November 2012
+      info: Training for Department of Strategy Development
+- school: Bartow County School System
+  school_id: bcss
+  projects:
+    - type: Compensation & Classification Analysis
+      date: 2010
+      info: |
+        Compensation and Classification Analysis including:
+        - Research to compare like districts in all four certification levels
+        - Findings and recommendations
+        - Proposals and costs to the district"
+    - type: 10-Year Enrollment Study
+      date: 2015
+      project: |
+        10-year enrollment study that included:
+        - A comprehensive analysis of school district population trends
+        - 10-year projections of student population changes for each Bartow County school
+        - A narrative describing methodology, data used, and summary findings of results"
+    - type: Administrative Training & Professional Support
+      date:	2015
+      project: Professional service, training and support for administrators in three high schools improving the scheduling process.
+    - type: Whole Board Governance Training
+      date: 2016
+      project: Whole Board Governance Training (State-approved local board governance provider)
