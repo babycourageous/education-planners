@@ -1,0 +1,53 @@
+.portfolio {
+	@extend %section;
+
+	&__container {
+		@extend %container;
+		text-align: center;
+	}
+}
+
+// Quotes Section
+
+.quotes {
+	@extend %section;
+	background: url('images/quotes-bg.jpg') center center no-repeat;
+	//background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/hero-v3.jpg) center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/quotes-bg.jpg) center center no-repeat;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+
+	h1 {
+		margin: 0 0 em(25);
+	}
+
+	&__icon {
+		@include size(50px);
+		fill: ep-color('accent', 'light');
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.carousel {
+	//@extend %container;
+	@include outer-container;
+
+	&__item {
+		text-align: center;
+		padding-left: em(10);
+		padding-right: em(10);
+	}
+
+	&__author {
+		font-style: italic;
+	}
+}
+
+.slick-list {
+	@include media($bp-small) {
+		@include span-columns(8);
+		@include shift(2);
+	}
+}
