@@ -5,10 +5,121 @@
 		@extend %container;
 		text-align: center;
 	}
+
+	&__projects {
+		@include clearfix;
+		margin-top: em(25);
+	}
+
+	&__case-study {
+		@include span-columns(2);
+		@include omega(6n);
+		height: 100px;
+		margin-bottom: 10px;
+	}
 }
 
-// Quotes Section
+.project {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 
+	&__logo {
+		display: block;
+		margin: 0 auto;
+		//height: 100px;
+		max-height: 100px;
+		//width: auto;
+	}
+
+	&__heading {
+		text-transform: uppercase;
+		font-size: em(22);
+		text-align: center;
+		margin-bottom: em(15);
+		margin-top: em(15);
+
+	}
+
+	&__item {
+		text-align: center;
+	}
+
+	&__date {
+		font-size: .85em;
+		color: $medium-gray;
+	}
+
+	&__info {
+		ul {
+			list-style-type: disc;
+	    list-style-position: outside;
+	    text-align: left;
+	    margin: 0 auto;
+	    width: 70%;
+		}
+	}
+
+	&__dots {
+	  list-style: none;
+	  //display: block;
+	  text-align: center;
+	  padding: 0;
+	  width: 100%;
+
+	  li {
+	    position: relative;
+	    display: inline-block;
+	    @include size(15px);
+	    margin: 0 5px;
+	    padding: 0;
+	    cursor: pointer;
+
+	    button {
+	      border: 1px solid $light-gray;
+				border-radius: 50%;
+	      background-color: rgba(0, 0, 0, .1);
+	      display: block;
+	      @include size(15px);
+				outline: none;
+	      line-height: 0px;
+	      font-size: 0px;
+	      color: transparent;
+	      padding: 5px;
+	      cursor: pointer;
+
+	      &:hover, &:focus {
+	        outline: none;
+
+	        &:before {
+	          opacity: $slick-opacity-on-hover;
+					}
+				}
+
+			}
+
+	    &.slick-active button {
+				border: 1px solid #00486A;
+				border-radius: 50%;
+	      background-color: #00AAFC;
+			}
+		}
+	}
+}
+
+.project__popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+
+	@include clearfix;
+}
+
+
+// Quotes Section
 .quotes {
 	@extend %section;
 	background: url('images/quotes-bg.jpg') center center no-repeat;
@@ -45,7 +156,7 @@
 	}
 }
 
-.slick-list {
+.quotes .slick-list {
 	@include media($bp-small) {
 		@include span-columns(8);
 		@include shift(2);
