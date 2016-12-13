@@ -44,7 +44,11 @@ config.styles = {
   src: config.assets + 'styles/styles.scss',
   jekylldest: config.dist + 'assets',
 
-  includePaths: [config.assets+'styles', config.nodedir+'/slick-carousel/slick'],
+  includePaths: [
+    config.assets+'styles',
+    config.nodedir+'/slick-carousel/slick',
+    config.nodedir + '/magnific-popup/src/css',
+  ],
 
 	autoprefixer: {
     browsers: [
