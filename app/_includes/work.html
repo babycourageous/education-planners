@@ -6,12 +6,13 @@
     </div>
 
     <div class="portfolio__projects">
-      {% for project in site.projects %}
+      {% for project in site.data.projects %}
       <div class="portfolio__case-study">
-        <a href="{{site.baseurl}}{{project.url}}" class="portfolio__link">{{project.title}}</a>
+        {% include project.html proj=project %}
       </div>
       {% endfor %}
     </div>
+
 </section>
 
 <section class="quotes">
