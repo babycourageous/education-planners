@@ -12,10 +12,17 @@
 	}
 
 	&__case-study {
-		@include span-columns(2);
-		@include omega(6n);
+		@include span-columns(4);
+		@include omega(3n);
 		height: 100px;
 		margin-bottom: 10px;
+
+		@include media($bp-small) {
+			@include span-columns(2);
+			@include omega-reset(3n);
+			@include omega(6n);
+		}
+
 	}
 }
 

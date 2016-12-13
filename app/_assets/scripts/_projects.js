@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('.project__link').magnificPopup({
     type:'inline',
     midClick: true,
-    closeBtnInside: false,
+    //closeBtnInside: false,
     callbacks: {
       open: function() {
         this.content.find('.project__carousel').slick({
