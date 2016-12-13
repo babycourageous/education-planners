@@ -14,8 +14,11 @@
   </div>
   {% endfor %}
 
-  {% assign members = site.team | where:"featured", '' or null or false %}
+  {% assign members = site.team %}
   {% for member in members %}
+	{% if member.featured %}
+		{% continue %}
+  {% endif %}
   <div class="team__member member">
     <div class="member__info">
       <h4>{{member.name}}</h4>
