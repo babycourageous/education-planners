@@ -54,7 +54,7 @@
 
 	&__date {
 		font-size: .85em;
-		color: $medium-gray;
+		color: ep-color('gray');
 	}
 
 	&__info {
@@ -64,6 +64,18 @@
 	    text-align: left;
 	    margin: 0 auto;
 	    width: 70%;
+		}
+	}
+
+	&__pdf {
+		color: ep-color('primary', 'dark');
+		text-decoration: underline;
+	}
+
+	&__icon {
+		&-link {
+			@include size(.8rem);
+			fill: ep-color('primary', 'dark');
 		}
 	}
 
@@ -83,7 +95,7 @@
 	    cursor: pointer;
 
 	    button {
-	      border: 1px solid $light-gray;
+	      border: 1px solid ep-color('gray', 'light');
 				border-radius: 50%;
 	      background-color: rgba(0, 0, 0, .1);
 	      display: block;

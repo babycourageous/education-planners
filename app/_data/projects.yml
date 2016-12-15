@@ -18,6 +18,7 @@
     - type: Community Conversations
       date: November 2013-February 2014
       info: Listening Services at series of community conversations to determine future of K-8 schools
+      file: atlanta-public-schools-community-conversations.pdf
     - type: Departmental Training
       date: November 2012
       info: Training for Department of Strategy Development
@@ -36,6 +37,7 @@
         - Proposals and costs to the district
     - type: 10-Year Enrollment Study
       date: 2015
+      file: bartow-county-schools-10-year-enrollment-study.pdf
       info: |
         10-year enrollment study that included:
 
@@ -59,6 +61,7 @@
       info: Whole Board Governance Training (State-approved local board governance provider)
     - type: 10-Year Enrollment Study
       date: 2015
+      file: cartersville-school-system-10-year-enrollment-study.pdf
       info: |
         10-year enrollment study that included:
 
@@ -109,6 +112,7 @@
         - Recommendations for next steps working toward SPLOST V
     - type: 10-Year Enrollment Study
       date: 2015
+      file: cobb-county-school-district-10-year-enrollment-study.pdf
       info: |
         10-year enrollment study that included:
 
@@ -128,6 +132,7 @@
   projects:
     - type: Five-Year Strategic Plan Development
       date: 2015
+      file: douglas-county-school-system-strategic-plan.pdf
       info: |
         Development of five-year district Strategic Plan, including:
 
@@ -139,6 +144,7 @@
         - Plan development and Board approval
     - type: 10-Year Enrollment Study
       date: 2015
+      file: douglas-county-school-system-10-year-enrollment-study.pdf
       info: |
         10-year enrollment study that included:
 
@@ -155,6 +161,7 @@
   projects:
     - type: Secondary School Facility Planning & Feasibility Study
       date: 2016
+      file: dekalb-county-school-district-secondary-school-facility-planning-study.pdf
       info: |
         Secondary School Facility Planning & Feasibility Study to address projected overcrowding in the district’s 40 middle schools and high schools:
 
@@ -396,6 +403,7 @@
           - Project prioritization
     - type: Turf Athletic Fields Implementation
       date: 2015
+      file: paulding-county-school-district-turf-athletic-fields-implementation.pdf
       info: Oversight for replacing all high school football fields with turf
 
 - school: Polk County Schools
