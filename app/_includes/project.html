@@ -1,9 +1,9 @@
 {% assign project = include.proj %}
 <div class="project">
-  <a class="project__link" href="#{{project.school_id}}"><img src="{{site.baseurl}}/assets/images/schools/{{project.logo}}" class="project__logo" alt="{{project.school}}"></a>
+  <a class="project__link" href="#{{project.school_id}}"><img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="project__logo" alt="{{project.school}}"></a>
 
   <div id="{{project.school_id}}" class="project__popup mfp-hide">
-    <img src="{{site.baseurl}}/assets/images/schools/{{project.logo}}" class="project__logo" alt="{{project.school}}">
+    <img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="project__logo" alt="{{project.school}}">
     <h2 class="project__heading">{{project.school}}</h2>
 
     <div class="project__carousel">
