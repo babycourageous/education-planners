@@ -12,6 +12,18 @@
         <p><strong>{{item.type}}</strong></p>
         <p class="project__date">{{item.date}}</p>
         <div class="project__info">{{item.info | markdownify}}</div>
+        {% if item.file %}
+        <div class="project__file">
+          <a href="{{site.url}}{{site.baseurl}}/assets/images/schools/pdfs/{{item.file}}" target="_blank" class="project__pdf">{{item.type}}.pdf</a>
+          <span class="project__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="project__icon-link" role="img" aria-labelledby="title">
+              <switch>
+                <use xlink:href="#link"></use>
+                <foreignObject><img src="assets/images/png_fallback/link.png"></foreignObject>
+            </svg>
+          </span>
+        </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
