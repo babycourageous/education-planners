@@ -15,13 +15,13 @@ config.browsersync = {
 
 config.images = {
   src: config.assets + 'images/**/*',
-  jekylldest: config.dist + 'assets/images'
+  jekylldest: config.dist + 'assets/images/'
 };
 
 config.svg = {
   src: config.assets + 'svg/**/*',
-  jekylldest: config.app + '_includes',
-  fallbackdest: config.dist + 'assets/images/png_fallback',
+  jekylldest: config.app + '_includes/',
+  fallbackdest: config.dist + 'assets/images/png_fallback/',
   options: {
     svg: {
       xmlDeclaration: false,
@@ -37,12 +37,12 @@ config.svg = {
 
 config.scripts = {
   src: config.assets + 'scripts/**/*.js',
-  jekylldest: config.dist + 'assets',
+  jekylldest: config.dist + 'assets/',
 };
 
 config.styles = {
   src: config.assets + 'styles/styles.scss',
-  jekylldest: config.dist + 'assets',
+  jekylldest: config.dist + 'assets/',
 
   includePaths: [
     config.assets+'styles',

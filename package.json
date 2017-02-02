@@ -4,7 +4,9 @@
   "description": "Website for Education Planners.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "gulp serve",
+    "deploy": "gulp build:dev",
+    "stage": "gulp build"
   },
   "repository": {
     "type": "git",
