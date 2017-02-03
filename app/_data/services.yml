@@ -1,26 +1,29 @@
 - name: "Facilities"
-  icon: "building"
-  items:
-    - "Bond and Tax Referendum Preparation (Development of SPLOST Program)"
-    - "Facility Management & Facility Plan Development"
-    - "Demographic & Enrollment Studies"
-    - "Classroom Utilization Studies"
-    - "Plant Services and Facility Assessment"
-    - "School Construction Oversight and Project Development"
-- name: "Operations & Finance"
-  icon: "finance"
-  items:
-    - "Efficiency and Effectiveness Reviews"
-    - "Personnel Department Management and Organizational Structure"
-    - "Personnel Reviews, Evaluations, and Investigations"
-    - "Financial Evaluation and Management, including Accounting, Reporting, and Audits"
-    - "Communications/Public Relations audits"
+  icon: "facilities"
+  items: |
+    - Bond and Tax Referendum Preparation (Development of SPLOST Program)
+    - Facility Management & Facility Plan Development
+    - Demographic & Enrollment Studies
+    - Classroom Utilization Studies
+    - Plant Services and Facility Assessment
+    - School Construction Oversight and Project Development
+- name: "HR, Operations & Finance"
+  icon: "hr"
+  items: |
+    - [Human Resources Services](/assets/images/HR_One_Pager2.pdf){:target="_blank"}:
+      -	Personnel Department Management and Organizational Structure
+      - Personnel Reviews, Evaluations, and Investigations
+    - Efficiency and Effectiveness Reviews
+    - Personnel Department Management and Organizational Structure
+    - Personnel Reviews, Evaluations, and Investigations
+    - Financial Evaluation and Management, including Accounting, Reporting, and Audits
+    - Communications/Public Relations audits
 - name: "Coaching/Training"
   icon: "coach"
-  items:
-    - "Strategic Planning, strategy and change management"
-    - "Local Board Governance Training"
-    - "Leadership Training & Coaching"
-    - "Customer Service and Communication"
-    - "Teaching and Learning, Professional Development and Curriculum Planning"
-    - "Program Evaluation"
+  items: |
+    - Strategic Planning, strategy and change management
+    - Local Board Governance Training
+    - Leadership Training & Coaching
+    - Customer Service and Communication
+    - Teaching and Learning, Professional Development and Curriculum Planning
+    - Program Evaluation

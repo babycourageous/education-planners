@@ -53,8 +53,9 @@ $services-list-color: ep-color('gray', 'light')
 
 		/* target all icons with attribute wildcard selector that searches for "begins with..." */
 		[class^="service__icon-"]
-			+size(70px)
+			+size(125px)
 			fill: ep-color('gray')
+			padding: 15px
 
 	&__name
 		color: ep-color('gray', 'dark')
@@ -63,8 +64,10 @@ $services-list-color: ep-color('gray', 'light')
 		margin: 0 0 em(10)
 
 	&__list
-		text-align: left
-		color: ep-color('gray', 'light')
-		font-size: rem(14)
-		list-style-type: disc
-		list-style-position: inside
+		ul
+			text-align: left
+			color: ep-color('gray', 'light')
+			font-size: rem(14)
+			list-style-type: disc
+			list-style-position: outside
+			padding-left: em(15)
