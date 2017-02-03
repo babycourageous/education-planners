@@ -10,7 +10,7 @@
 - name: "HR, Operations & Finance"
   icon: "hr"
   items: |
-    - [Human Resources Services](link):
+    - [Human Resources Services](/assets/images/HR_One_Pager2.pdf){:target="_blank"}:
       -	Personnel Department Management and Organizational Structure
       - Personnel Reviews, Evaluations, and Investigations
     - Efficiency and Effectiveness Reviews
