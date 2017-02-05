@@ -16,11 +16,11 @@
           </svg>
         </span>
     		<h2 class="service__name">{{ service.name }}</h2>
-    		<ul class="service__list">
+    		<div class="service__list">
     			{% for item in service.items %}
-    			<li class="service__item">{{ item }}</li>
+    			{{ item | markdownify }}
     			{% endfor %}
-    		</ul>
+    		</div>
     	</div>
     	{% endfor %}
     </div>
