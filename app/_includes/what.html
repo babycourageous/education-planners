@@ -18,7 +18,7 @@
     		<h2 class="service__name">{{ service.name }}</h2>
     		<div class="service__list">
     			{% for item in service.items %}
-    			{{ item | markdownify }}
+      			{{ item | replace: '!BASE_URL!', site.baseurl | markdownify }}
     			{% endfor %}
     		</div>
     	</div>
