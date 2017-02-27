@@ -1,3 +1,3 @@
 ---
-name: Rendy Reece
+name: Randy Reece
 ---
