@@ -5,7 +5,8 @@ var slick = require('slick-carousel');
 $(function() {
 	console.log('slick!');
 	$('.carousel').slick({
-		autoplay: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
     pauseOnHover: true,
     dots: true,
     speed: 500,
