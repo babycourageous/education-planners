@@ -6,7 +6,7 @@ $(function() {
 	console.log('slick!');
 	$('.carousel').slick({
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 8000,
     pauseOnHover: true,
     dots: true,
     speed: 500,
