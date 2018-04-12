@@ -3,24 +3,29 @@
   logo: atlanta-public-schools.png
   projects:
     - type: HR Management
-      date: July 2012-present
+      year: 2012
+      project_date: 2012 - present
       info: |
         Provide experienced and qualified personnel to be responsible for all matters during the transition of the Human Resources Department including but not limited to:
 
         - Recruitment, performance and retention of its personnel
         - Be in compliance with all federal, state, and local laws/regulations regarding - employment.
     - type: Customer Service Training
-      date: October 2012-November 2012
+      year: 2012
+      project_date: 2012
       info: Customer Service Training for Transportation and Food Service Personnel
     - type: Classification & Compensation Study
-      date: 2014
+      year: 2014
+      project_date: 2014
       info: A Classification and Compensation Study using the Factor Evaluation System (FES)
     - type: Community Conversations
-      date: November 2013-February 2014
+      year: 2013
+      project_date: 2013 - 2014
       info: Listening Services at series of community conversations to determine future of K-8 schools
       file: atlanta-public-schools-community-conversations.pdf
     - type: Departmental Training
-      date: November 2012
+      year: 2012
+      project_date: 2012
       info: Training for Department of Strategy Development
 
 - school: Bartow County School System
@@ -28,7 +33,8 @@
   logo: bartow-county-school-system.png
   projects:
     - type: Compensation & Classification Analysis
-      date: 2010
+      year: 2010
+      project_date: 2010
       info: |
         Compensation and Classification Analysis including:
 
@@ -36,7 +42,8 @@
         - Findings and recommendations
         - Proposals and costs to the district
     - type: 10-Year Enrollment Study
-      date: 2015
+      year: 2015
+      project_date: 2015
       file: bartow-county-schools-10-year-enrollment-study.pdf
       info: |
         10-year enrollment study that included:
@@ -45,11 +52,12 @@
         - 10-year projections of student population changes for each Bartow County school
         - A narrative describing methodology, data used, and summary findings of results
     - type: Administrative Training & Professional Support
-      date:
-        2015
+      year: 2015
+      project_date: 2015
       info: Professional service, training and support for administrators in three high schools improving the scheduling process.
     - type: Whole Board Governance Training
-      date: 2016
+      year: 2016
+      project_date: 2016
       info: Whole Board Governance Training (State-approved local board governance provider)
 
 - school: Cartersville City Schools
@@ -57,10 +65,12 @@
   logo: cartersville-city-schools.png
   projects:
     - type: Whole Board Governance Training
-      date: 2013
+      year: 2013
+      project_date: 2013
       info: Whole Board Governance Training (State-approved local board governance provider)
     - type: 10-Year Enrollment Study
-      date: 2015
+      year: 2015
+      project_date: 2015
       file: cartersville-school-system-10-year-enrollment-study.pdf
       info: |
         10-year enrollment study that included:
@@ -69,7 +79,8 @@
         - 10-year projections of student population changes for each Cartersville City school
         - A narrative describing methodology, data used, and summary findings of results
     - type: 10-Year Enrollment Study
-      date: 2016
+      year: 2016
+      project_date: 2016
       info: One-year update of enrollment study
 
 - school: Cobb County School District
@@ -77,7 +88,8 @@
   logo: cobb-county-school-district.png
   projects:
     - type: Human Resources Management
-      date: November-December 2011
+      year: 2011
+      project_date: 2011
       info: |
         Oversee a complete transformation of the Human Resources department, providing expertise in every facet of re-engineering the department until the transition was complete. Those services included, but were not limited to:
 
@@ -90,7 +102,8 @@
         - Efficiency and effectiveness training
         - Compliance with all federal, state, and local laws/regulations regarding employment
     - type: Business Services Audit
-      date: July 2015
+      year: 2015
+      project_date: 2015
       info: |
         Business Services Audit – Using the Baldrige Criteria including:
 
@@ -100,7 +113,8 @@
         - Factors to consider
         - Findings and Recommendations
     - type: Classroom Utilization Study
-      date: July 2015
+      year: 2015
+      project_date: 2015
       info: |
         Classroom Utilization Study
 
@@ -111,7 +125,8 @@
         - Methodology
         - Recommendations for next steps working toward SPLOST V
     - type: 10-Year Enrollment Study
-      date: 2015
+      year: 2015
+      project_date: 2015
       file: cobb-county-school-district-10-year-enrollment-study.pdf
       info: |
         10-year enrollment study that included:
@@ -120,18 +135,34 @@
         - 10-year projections of student population changes for each Cobb County school
         - A narrative describing methodology, data used, and summary findings of results
     - type: Oversight for High School Rebuild
-      date: July 2014-present
+      year: 2014
+      project_date: 2014
       info: Oversight for rebuild of Walton High School, including construction management, budget, and general process
     - type: SPLOST Program Development
-      date: August 2012-present
+      year: 2012
+      project_date: 2012 - present
       info: Development of SPLOST IV & SPLOST V project lists, and ongoing consultation throughout program implementation
+
+- school: Coweta County School System, GA
+  school_id: ccss
+  logo: coweta-county-school-system.png
+  projects:
+    - year: 2017
+      project_date: 2017
+      info: |
+        - Demographic Analysis Master Plan
+        - Enrollment Forecasting
+        - Capacity Analysis/Utilization Evaluation
+        - Needs Assessment Development/Master Plan
+        - Community/Local School Input/Communication.
 
 - school: Douglas County School System
   school_id: dcss
   logo: douglas-county-school-system.png
   projects:
     - type: Five-Year Strategic Plan Development
-      date: 2015
+      year: 2015
+      project_date: 2015
       file: douglas-county-school-system-strategic-plan.pdf
       info: |
         Development of five-year district Strategic Plan, including:
@@ -143,7 +174,8 @@
         - Stakeholder engagement and surveying
         - Plan development and Board approval
     - type: 10-Year Enrollment Study
-      date: 2015
+      year: 2015
+      project_date: 2015
       file: douglas-county-school-system-10-year-enrollment-study.pdf
       info: |
         10-year enrollment study that included:
@@ -152,15 +184,23 @@
         - 10-year projections of student population changes for each Douglas County school
         - A narrative describing methodology, data used, and summary findings of result
     - type: Whole Board Governance/Flexibility Training
-      date: 2016
+      year: 2016
+      project_date: 2016
       info: Whole Board Governance Training (State-approved local board governance provider), along with presentation on district flexibility and choosing between IE2 and Strategic Waiver options
+    - type: QBE Funding Efficiency Project
+      year: 2017
+      project_date: 2017
+      info: |
+        - Partnership with Lexalutions Education Technology
+        - Identified additional EIP students eligible for QBE funding
 
 - school: DeKalb County School District
   school_id: dcsd
   logo: dekalb-county-school-district.png
   projects:
     - type: Secondary School Facility Planning & Feasibility Study
-      date: 2016
+      year: 2016
+      project_date: 2016
       file: dekalb-county-school-district-secondary-school-facility-planning-study.pdf
       info: |
         Secondary School Facility Planning & Feasibility Study to address projected overcrowding in the district’s 40 middle schools and high schools:
@@ -177,67 +217,21 @@
   logo: fulton-county-schools.png
   projects:
     - type: Leadership Training & Coaching
-      date: 2016-present
-      info: |
-        Leadership Training and Coaching for Principals as part of growth and opportunity for improvement performance management as follows:
-
-        - Each principal was paired with an EP coach
-        - Each EP coach:
-          - Was qualified, certified, experienced, and LKES accredited
-          - Developed a coaching plan for each principal including, but not limited to:
-            - Support
-            - Resources
-            - Accountability processes
-          - Provided leadership coaching sessions as determined by individual coaching plan
-          - Provided Support Work for each principal
-        - Prepare and facilitate PLC and CFA introduction for new teachers
-        - Prepare and facilitate leadership with grade level chairs and selected additional school leaders to review recommendations from summer leadership and make additional recommendations for remainder of Fall semester
-        - Prepare and facilitate pre-planning PLC/shared leadership update/training, as well as present recommendations
-        - Meet with Principal and selected admin team members to discuss and analyze status of first semester recommendations and make recommendations/plan for second semester
-        - Create a greater knowledge and skill base for specific elementary school’s teachers included:
-          - Developed and delivered three PLU sessions (3 hours each)
-          - Facilitate a brainstorming session for more streamlined process for Data and Collaboration teacher meetings
-          - Share the process and follow up by visiting teacher meetings
-          - Offer insight and support about the process
-          - Prepared, administered, and analyzed staff PLC survey to determine growth patterns and PLC challenges
-          - Prepared and facilitated training at each grade level
-        - IB Implementation Support
-          - Facilitate Feasibility Study with specific high school with school and community groups as required by IBO
-            - Arrange site visits
-            - Co-Lead focus groups with teachers, leadership team and parents
-            - Analysis of mission, program requirements, current state of school and readiness for IB DP program
-            - Document results
-          - Complete communication plan for move to IB DP program
-          - On-going communication support and development of communication products
-          - Complete implementation timeline for work to candidacy application, to include professional development plan, goals, scope and sequence
-          - Prepare and facilitate leadership retreat concluding in DP curriculum, CAS and TOK implementation and teacher development recommendations
-          - Assist with planning, organizing and supporting IB DP professional development opportunities
-          - Follow-up meetings with administrative team to share feedback and recommendations for Summer/Fall
-          - Plan for support
-          - Plan and facilitate PLIP first semester team meetings
-          - Assist personalized learning professional learning plan for staff
-          - Provide one day of classroom observations/data collection/feedback
-          - Provide follow and status check with Admin team
-          - Make plans for second semester personalized learning rollout and continuation
-        - Prepare and facilitate pre-planning PLC/shared leadership update/training as well as present recommendations from leadership retreat
-        - Prepare and facilitate leadership day with grade level chairs and selected additional school leaders (without administration) to strengthen leadership skills
-          - Status check recommendations from summer leadership
-          - Make additional recommendations for remainder of Fall semester
-        - Observe each grade level at work during collaborative planning and give feedback/recommendations to grade level chair and administrative team
-        - Observe leadership meeting and give feedback/recommendations to principal
-        - Meet with principal and selected admin team members to discuss and analyze status of first semester recommendations and make recommendations/plan for second semester
-        - Professional Learning Community Refresh and Status Check for specific schools to include making recommendations and plans for structuring the work
-        - Common Formative Assessment for specific elementary
+      year: 2016
+      project_date: 2016 - present
+      info: Leadership Training and Coaching for Principals
 
 - school: Greene County School System
   school_id: gcss
   logo: greene-county-school-system.png
   projects:
     - type: District Operations Consulting
-      date: 2015-present
+      year: 2015
+      project_date: 2015 - present
       info: Regular consultation with superintendent regarding district operational needs
     - type: Superintendent Search
-      date: January 2014
+      year: 2014
+      project_date: 2014
       info: |
         Conducted board training to assist Board members with hiring process, including but not limited to:
 
@@ -247,19 +241,24 @@
 
         Developed a brochure to advertise the position
     - type: Salary Study
-      date: 2012-2013
+      year: 2012
+      project_date: 2012-2013
       info: Conducted salary study and provided complete analysis of existing employee compensation structure. Revised all job descriptions, and created and provided a competitive formula/band position document for all business-related positions and functions
     - type: SPLOST Program Development and Renewal
-      date: 2012
+      year: 2012
+      project_date: 2012
       info: SPLOST program and project list development
     - type: SPLOST Program Development and Renewal
-      date: November 2013 - March 2014
+      year: 2013
+      project_date: 2013 - 2014
       info: SPLOST renewal
     - type: Development of Five-Year Facility Plan
-      date: 2012
+      year: 2012
+      project_date: 2012
       info: Development of a 5-year state facilities plan
     - type: Whole Board Governance Training
-      date: February 2013
+      year: 2013
+      project_date: 2013
       info: Whole Board Governance Training (State-approved local board governance provider)
 
 - school: Georgia School Boards Association
@@ -267,7 +266,8 @@
   logo: georgia-school-boards-association.png
   projects:
     - type: Efficiency & Effectiveness Financial Training
-      date: 2013-2014
+      year: 2013
+      project_date: 2013-2014
       info: Conducted workshops on Efficiency & Effectiveness of Financial Management training
 
 - school: Haralson County Schools
@@ -275,7 +275,8 @@
   logo: haralson-county-schools.png
   projects:
     - type: Efficiency & Effectiveness Audit
-      date: 2011
+      year: 2011
+      project_date: 2011
       info: |
         Efficiency and Effectiveness Audit to maximize the current organizational structure including:
 
@@ -284,7 +285,8 @@
         - Providing recommendations for improvement
         - A comprehensive activity based cost analysis
     - type: Compensation Study
-      date: 2011
+      year: 2011
+      project_date: 2011
       info: |
         Compensation Study including work-related research, analysis and recommendations
 
@@ -294,7 +296,8 @@
         - Evaluate salary schedule, calculations and use of vacation leave
         - Provide a clear understanding of the designated work days/year
     - type: SPLOST Program Development
-      date: 2010
+      year: 2010
+      project_date: 2010
       info: |
         SPLOST Program Development
 
@@ -305,19 +308,69 @@
   logo: huntsville-city-schools.png
   projects:
     - type: Facility Utilization Study
-      date: 2011
+      year: 2011
+      project_date: 2011
       info: |
         Enrollment projections for each school, plus:
 
         - Recommendations on potential school utilization, such as closures or alternative uses
         - Community Conversations with stakeholders
 
+- school: Jefferson County Schools, AL
+  school_id: jcsal
+  logo: jefferson-county-board-of-education.png
+  projects:
+    - year: 2017
+      project_date: 2017
+      info: |
+        - Enrollment Plan Update from previous projection performance based on current data
+        - Analysis of district’s enrollment status/history
+        - Capital plan development assistance
+
+- school: Madison City Schools, AL
+  school_id: mcsal
+  logo: madison-city-schools.png
+  projects:
+    - year: 2017
+      project_date: 2017
+      info: |
+        - 10-year Enrollment Projection by schools and grades
+        - Development of the Capital Plan
+
+- school: Marietta City Schools
+  school_id: mcs
+  logo: marietta-city-schools.png
+  projects:
+    - year: 2016
+      project_date: 2016
+      info: |
+        - 10-Year Enrollment Projection Study
+        - HR Investigations
+
+- school: Newton County Schools
+  school_id: ncs
+  logo: newton-county-schools.png
+  projects:
+    - type: Facility Master Plan Study
+      year: 2017
+      project_date: 2017
+      info: |
+        - Enrollment Projections
+        - Map/Graphic Data
+        - Capacity Analysis
+        - Facility Space Utilization Evaluation
+        - Educational Adequacy/Environment
+        - Facility Condition Assessment
+        - Local Facility Plan Update
+        - Master Plan Development
+
 - school: Northwest Georgia RESA
   school_id: ngr
   logo: northwest-georgia-resa.png
   projects:
     - type: Leadership Training
-      date: 2009-present
+      year: 2009
+      project_date: 2009-present
       info: |
         Provided leadership services at the request of Northwest Georgia RESA for school leaders as well as central office personnel, including:
 
@@ -339,7 +392,8 @@
   logo: oconee-county-schools.png
   projects:
     - type: Efficiency & Effectiveness Audit
-      date: 2011
+      year: 2011
+      project_date: 2011
       info: |
         Efficiency & Effectiveness Audit to maximize the current organizational structure, including:
 
@@ -348,7 +402,8 @@
         - Providing recommendations for improvement
         - Comprehensive activity-based cost analysis
     - type: Administrative HS Scheduling Training
-      date: 2011
+      year: 2011
+      project_date: 2011
       info: Provide Professional Service, Training and Support for the high school’s administrators in the high school scheduling process
 
 - school: Paulding County School District
@@ -356,7 +411,8 @@
   logo: paulding-county-school-district.png
   projects:
     - type: Efficiency & Effectiveness Review
-      date: 2011
+      year: 2011
+      project_date: 2011
       info: |
         Efficiency & Effectiveness Review of Central Office Support, including:
 
@@ -367,29 +423,33 @@
         - Provided a means of comparison with peer organizations
         - Recommendations for improvement
     - type: Financial Services Staff Augmentation
-      date: 2012
+      year: 2012
+      project_date: 2012
       info: |
         Provided experienced and qualified personnel for emergency temporary staffing services for Financial Services Department, including:
 
         - Directed all operations of the district’s Financial Service Department
         - Complied with all federal, state, and local laws, including:
-        - Regulations regarding employment and immigration
-        - Nondiscrimination
-        - Compensation Taxation
-        - Benefits
-        - Access to proprietary and confidential information
+          - Regulations regarding employment and immigration
+          - Nondiscrimination
+          - Compensation Taxation
+          - Benefits
+          - Access to proprietary and confidential information
     - type: Salary Compensation Analysis
-      date: 2015
+      year: 2015
+      project_date: 2015
       info: |
         Complete Salary Compensation Analysis.
 
         - Review all positions to insure competitiveness with other metro school districts
         - Assurances of correct compensation for job requirement and expectations
     - type: Whole Board Governance Training
-      date: 2013
+      year: 2013
+      project_date: 2013
       info: Whole Board Governance Training (State-approved local board governance provider)
     - type: SPLOST Program Development
-      date: 2014
+      year: 2014
+      project_date: 2014
       info: |
         SPLOST Program Development:
 
@@ -402,7 +462,8 @@
           - SPLOST forecast
           - Project prioritization
     - type: Turf Athletic Fields Implementation
-      date: 2015
+      year: 2015
+      project_date: 2015
       file: paulding-county-school-district-turf-athletic-fields-implementation.pdf
       info: Oversight for replacing all high school football fields with turf
 
@@ -411,7 +472,8 @@
   logo: polk-county-schools.png
   projects:
     - type: Compensation Study
-      date: 2010
+      year: 2010
+      project_date: 2010
       info: |
         Compensation Study
 
@@ -422,13 +484,19 @@
           - Analysis of actual duties and responsibilities for current employees noting their essential functions
           - Analysis of salaries, supplements, benefits and positions structure with comparable data for other school districts in Georgia
           - Analysis of financial impact of any appropriate recommendations made
+    - year: 2017
+      project_date: 2017
+      info: |
+        - Superintendent Search
+        - SPLOST Plan Development & Community Outreach
 
 - school: Richmond County School System
   school_id: rcss
   logo: richmond-county-school-system.png
   projects:
     - type: Transportation Procedural Audit
-      date: 2016
+      year: 2016
+      project_date: 2016
       info: |
         Conducted comprehensive Transportation Services audit, including:
 
@@ -442,7 +510,8 @@
   logo: savannah-chatham-county-public-school-system.png
   projects:
     - type: Whole Board Governance Training
-      date: May 2015
+      year: 2015
+      project_date: 2015
       info: Whole Board Governance Training (State-approved local board governance provider)
 
 - school: Southwest Georgia RESA
@@ -450,7 +519,8 @@
   logo: southwest-georgia-resa.png
   projects:
     - type: Leadership Training
-      date: 2013-present
+      year: 2013
+      project_date: 2013-present
       info: In support of Southwest Georgia RESA’s efforts to develop new leaders, EP provided a "Developing New Leaders" class which helping school districts to build future capacity and enhance leadership skills that impact student achievement
 
 - school: Troup County Schools
@@ -458,7 +528,8 @@
   logo: troup-county-schools.png
   projects:
     - type: Leadership Training
-      date: 2015-2016
+      year: 2015
+      project_date: 2015-2016
       info: EP provided Leadership Training
 
 - school: Walker County Schools
@@ -466,7 +537,8 @@
   logo: walker-county-schools.png
   projects:
     - type: Efficiency & Effectiveness Audit
-      date: 2011
+      year: 2011
+      project_date: 2011
       info: |
         Efficiency and Effectiveness Audit to maximize the current organizational structure, including:
 
@@ -476,3 +548,11 @@
         - Surveyed departmental management, detailing time allocations for all department positions and identifying perceived process issues
         - Discussed and documented key issues with department leaders
         - Providing recommendations for improvement"
+
+#- school:
+#  school_id:
+#  logo:
+#  projects:
+#    - type:
+#      project_date:
+#      info: |
