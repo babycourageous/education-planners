@@ -24,6 +24,7 @@
     "jquery": "^2.2.0",
     "magnific-popup": "^1.1.0",
     "flickity": "^2.1.1",
+    "smooth-scroll": "^12.1.5",
   },
   "devDependencies": {
     "ansi-colors": "^1.1.0",
