@@ -21,10 +21,14 @@
   },
   "homepage": "https://github.com/babycourageous/education-planners#readme",
   "dependencies": {
-    "jquery": "^2.2.0",
-    "magnific-popup": "^1.1.0",
+    "bourbon-neat": "2.1.0",
+    "breakpoint-sass": "^2.7.1",
     "flickity": "^2.1.1",
+    "lodash": "^4.17.5",
+    "normalize.css": "^8.0.0",
     "smooth-scroll": "^12.1.5",
+    "vanilla-modal": "^1.6.5",
+    "vex-js": "^4.1.0"
   },
   "devDependencies": {
     "ansi-colors": "^1.1.0",
