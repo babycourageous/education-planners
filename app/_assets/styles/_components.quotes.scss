@@ -1,5 +1,11 @@
+.slides {
+}
+
+.slide {
+}
+
 // Quotes Section
-.quotes {
+.c-quotes {
   background: url("images/quotes-bg.jpg") center center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/quotes-bg.jpg) center center no-repeat;
@@ -15,7 +21,7 @@
   }
 }
 
-.quotes__carousel {
+.c-quotes__carousel {
   @include grid-container();
 
   /* ---- page dots ---- */
@@ -45,19 +51,23 @@
   }
 }
 
-.slides {
+.c-slides {
+  position: relative;
+
   @include respond-to(small) {
     @include grid-column(8);
     @include grid-shift(2);
   }
+}
 
-  .slide {
-    text-align: center;
-    padding-left: em(10);
-    padding-right: em(10);
+.c-slide {
+  width: 100%; /* full width */
+  display: block;
+  text-align: center;
+  padding-left: em(10);
+  padding-right: em(10);
 
-    &__author {
-      font-style: italic;
-    }
+  &__author {
+    font-style: italic;
   }
 }

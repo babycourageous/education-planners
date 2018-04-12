@@ -1,0 +1,20 @@
+<section class="o-section c-quotes">
+	<svg xmlns="http://www.w3.org/2000/svg" class="c-quotes__icon" role="img" aria-labelledby="title">
+    <switch>
+      <use xlink:href="#quote"></use>
+      <foreignObject><img src="assets/images/png_fallback/quote.png" alt="quote icon"></foreignObject>
+    </switch>
+  </svg>
+  <h1>What Our Clients Say</h1>
+
+  <div class="c-carousel c-quotes__carousel">
+    <ul id="js-slides" class="c-slides">
+      {% for quote in site.data.quotes %}
+      <li id="js-slide" class="c-slides__item c-slide">
+        <p class="c-slide__quote">&ldquo;{{ quote.quote }}&rdquo;</p>
+        <p class="c-slide__author">- {{ quote.author }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+	</div>
+</section>
