@@ -1,28 +1,10 @@
-<section id="what" class="services">
-  <div class="services__container">
+<section id="what" class="o-section o-section--alt-bg">
+  <div class="o-container">
+
     <h1>What We Do</h1>
-    <div class="services__blurb">
-      {{site.data.info.what | markdownify}}
+    <div class="c-blurb">
+      <div class="c-blurb__text">{{site.data.info.what | markdownify}}</div>
     </div>
-    <div class="services__items">
-    	{% for service in site.data.services %}
-    	<div class="services__item service">
-    		<span class="service__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" class="service__icon-{{ service.icon }}" role="img" aria-labelledby="title">
-            <switch>
-              <use xlink:href="#{{service.icon}}"></use>
-              <foreignObject><img src="assets/images/png_fallback/{{service.icon}}.png"></foreignObject>
-            </switch>
-          </svg>
-        </span>
-    		<h2 class="service__name">{{ service.name }}</h2>
-    		<div class="service__list">
-    			{% for item in service.items %}
-      			{{ item | replace: '!BASE_URL!', site.baseurl | markdownify }}
-    			{% endfor %}
-    		</div>
-    	</div>
-    	{% endfor %}
-    </div>
+
   </div>
 </section>

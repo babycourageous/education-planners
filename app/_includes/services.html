@@ -1,0 +1,22 @@
+<section class="o-section o-section--alt-bg">
+  <div class="o-container c-services">
+    {% for service in site.data.services %}
+    <div class="c-services__item c-service">
+      <span class="c-service__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="c-service__icon-{{ service.icon }}" role="img" aria-labelledby="title">
+          <switch>
+            <use xlink:href="#{{service.icon}}"></use>
+            <foreignObject><img src="assets/images/png_fallback/{{service.icon}}.png" alt="{{service.name}} icon"></foreignObject>
+          </switch>
+        </svg>
+      </span>
+      <h2 class="c-service__name">{{ service.name }}</h2>
+      <div class="c-service__list">
+        {% for item in service.items %}
+        {{ item | replace: '!BASE_URL!', site.baseurl | markdownify }}
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
