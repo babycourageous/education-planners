@@ -1,0 +1,63 @@
+// Quotes Section
+.quotes {
+  background: url("images/quotes-bg.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/quotes-bg.jpg) center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  color: #fff;
+
+  &__icon {
+    @include size(50px);
+    fill: $color__accent--light;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.quotes__carousel {
+  @include grid-container();
+
+  /* ---- page dots ---- */
+  .flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .flickity-page-dots .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+.slides {
+  @include respond-to(small) {
+    @include grid-column(8);
+    @include grid-shift(2);
+  }
+
+  .slide {
+    text-align: center;
+    padding-left: em(10);
+    padding-right: em(10);
+
+    &__author {
+      font-style: italic;
+    }
+  }
+}

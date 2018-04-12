@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #COLORS
+   ========================================================================== */
+
+/**
+ * Color Palette variables.
+ *
+ * 1. Set the default primary color along with a dark and light version.
+ * 2. Set an alternate primary color as a complement.
+ * 3. Set default grays.
+ */
+
+// 1. Primary palette
+$color__primary: #0077b0;
+$color__primary--dark: #00486a;
+$color__primary--light: #0badfb;
+
+// 2. Complementary color
+$color__accent--dark: #005d89;
+$color__accent--light: #00aafc;
+
+// 3. Gray Palette
+$color__gray--light: #999;
+$color__gray: #666;
+$color__gray--dark: #333;
+$color__gray--alt: #f5f5f5;

@@ -1,7 +1,7 @@
 /* NAVIGATION */
-$color-navigation__bg: #FFF;
-$color-nav__link: ep-color('gray');
-$color-nav__link--hover: ep-color('primary', 'dark');
+$color-navigation__bg: #fff;
+$color-nav__link: $color__gray;
+$color-nav__link--hover: $color__primary--dark;
 
 $navigation-padding: 1em;
 $navigation-height: 100px;
@@ -10,8 +10,6 @@ $navigation-submenu-padding: 1em;
 $navigation-submenu-width: 12em;
 
 .navigation {
-  @include clearfix;
-  @include outer-container;
   position: relative;
 
   &__logo {
@@ -22,14 +20,14 @@ $navigation-submenu-width: 12em;
     display: block;
     padding: 0 em(10);
 
-    @include media($horizontal-bar-mode) {
+    @include respond-to(horizontal-bar-mode) {
       float: left;
     }
 
     img {
       display: inline-block;
       vertical-align: middle;
-      transition: all .3s;
+      transition: all 0.3s;
       width: 300px;
     }
   }
@@ -42,7 +40,7 @@ $navigation-submenu-width: 12em;
     padding-left: em(10);
     padding-right: em(20);
 
-    @include media($horizontal-bar-mode) {
+    @include respond-to(horizontal-bar-mode) {
       display: none;
     }
   }
@@ -54,7 +52,7 @@ $navigation-submenu-width: 12em;
     text-align: center;
     background-color: $color-navigation__bg;
 
-    @include media($horizontal-bar-mode) {
+    @include respond-to(horizontal-bar-mode) {
       position: relative;
       display: flex;
       flex-direction: row;
@@ -70,10 +68,10 @@ $navigation-submenu-width: 12em;
 
   &__item {
     border-bottom: solid 1px black;
-    background-color: ep-color('primary', 'light');
+    background-color: ep-color("primary", "light");
     transition: all 0.3s;
 
-    @include media ($horizontal-bar-mode) {
+    @include respond-to (horizontal-bar-mode) {
       flex: 1;
       border-bottom: none;
       line-height: $navigation-height;
@@ -88,41 +86,36 @@ $navigation-submenu-width: 12em;
     text-transform: uppercase;
     padding: em(10);
 
-    @include media($horizontal-bar-mode) {
+    @include respond-to(horizontal-bar-mode) {
       color: $color-nav__link;
       padding: 0;
     }
 
-    &:hover {
+    &:hover,
+    &--active {
       color: $color-nav__link--hover;
     }
-
-    &--active {
-      color: $action-color;
-    }
   }
-}
 
-.navigation--small {
+  &.is-small {
+    .navigation__logo {
+      height: $navigation-resize;
+      line-height: $navigation-resize;
 
-  .navigation__logo {
-    height: $navigation-resize;
-    line-height: $navigation-resize;
+      img {
+        width: 225px;
 
-    img {
-      width: 225px;
-
-      @include media($horizontal-bar-mode) {
-        width: 75%;
-        line-height: $navigation-resize;
+        @include respond-to(horizontal-bar-mode) {
+          width: 75%;
+          line-height: $navigation-resize;
+        }
       }
     }
-  }
 
-  .navigation__item {
-
-    @include media($horizontal-bar-mode) {
-      line-height: $navigation-resize;
+    .navigation__item {
+      @include respond-to(horizontal-bar-mode) {
+        line-height: $navigation-resize;
+      }
     }
   }
 }

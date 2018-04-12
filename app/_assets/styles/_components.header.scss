@@ -8,15 +8,13 @@
 
   transition: height 0.3s;
 
-  &--fixed {
+  &.is-fixed {
     position: fixed;
     top: 0;
     left: 0;
   }
 
-
-  &--small {
+  &.is-small {
     height: 60px;
   }
-
 }

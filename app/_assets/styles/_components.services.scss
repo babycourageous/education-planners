@@ -1,0 +1,64 @@
+/* WHAT WE DO */
+$icon-color: $color__gray;
+$icon-hover: $color__accent--dark;
+$sevices-title-color: $color__gray--dark;
+$services-list-color: $color__gray--light;
+
+.c-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include respond-to(medium) {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  &__item {
+    flex: 0 1 em(330);
+    margin: 0 10px 10px;
+  }
+}
+
+.c-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+
+  &__icon {
+    @include size(125px);
+    border: 1px solid $color__gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 em(10);
+
+    /* target all icons with attribute wildcard selector that searches for "begins with..." */
+    [class^="c-service__icon-"] {
+      @include size(125px);
+      fill: $color__gray;
+      padding: 15px;
+    }
+  }
+
+  &__name {
+    color: $color__gray--dark;
+    text-transform: uppercase;
+    font-size: rem(14);
+    margin: 0 0 em(10);
+  }
+
+  &__list {
+    ul {
+      text-align: left;
+      color: $color__gray--light;
+      font-size: rem(14);
+      list-style-type: disc;
+      list-style-position: outside;
+      padding-left: em(15);
+    }
+  }
+}

@@ -1,13 +1,13 @@
 .hero {
   $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
+  $action-color: #477dca !default;
   $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE;
-  $hero-background-bottom: #20392B;
+  $hero-background-top: #7f99be;
+  $hero-background-bottom: #20392b;
   $hero-color: white;
-  $hero-text-background: rgba(0, 0, 0, .5);
+  $hero-text-background: rgba(0, 0, 0, 0.5);
   $gradient-angle: 10deg;
-  $hero-image: 'images/hero-v4.jpg';
+  $hero-image: "images/hero-v4.jpg";
 
   background: url($hero-image);
   background-position: center;
@@ -18,12 +18,11 @@
 
   height: 50vh;
 
-  @include media($large-screen) {
+  @include respond-to(large) {
     height: calc(100vh - #{$navigation-height});
   }
 
   .hero-inner {
-    @extend %container;
     //@include clearfix;
     //margin: 0 1em 0 0;
     padding-top: 3.5em;
@@ -31,9 +30,9 @@
 
     .hero-copy {
       text-transform: uppercase;
-      @include media($bp-medium) {
-        @include span-columns(6);
-        @include shift(6);
+      @include respond-to(medium) {
+        @include grid-column(6);
+        @include grid-shift(6);
       }
       //display: flex;
       //flex-direction: column;
@@ -45,14 +44,14 @@
         font-size: rem(16);
         padding: 5px;
         margin-bottom: 5px;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.75);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
         //display: inline-block;
-        &+p {
+        & + p {
           line-height: 1;
           font-size: rem(36);
         }
 
-        @include media($large-screen) {
+        @include respond-to(large) {
           font-size: 1.1em;
           //max-width: 40%;
         }
