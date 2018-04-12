@@ -2,7 +2,7 @@
 $color-footer__background: $color__primary--dark;
 $color-footer__icon: #fff;
 
-.footer {
+.c-footer {
   min-height: em(75);
   background-color: $color-footer__background;
   padding: em(20);
@@ -10,8 +10,8 @@ $color-footer__icon: #fff;
   color: white;
 
   &__icon {
+    display: inline-block;
     @include size(50px);
     fill: $color-footer__icon;
-    display: inline-block;
   }
 }
