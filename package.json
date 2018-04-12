@@ -4,6 +4,8 @@
   "description": "Website for Education Planners.",
   "main": "gulpfile.js",
   "scripts": {
+    "gulp": "gulp",
+    "tasks": "gulp --tasks",
     "serve": "gulp serve",
     "deploy": "gulp build:dev",
     "stage": "gulp build"
