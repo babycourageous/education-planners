@@ -1,4 +1,4 @@
-.hero {
+.c-hero {
   $base-border-radius: 3px !default;
   $action-color: #477dca !default;
   $large-screen: em(860) !default;
@@ -22,39 +22,39 @@
     height: calc(100vh - #{$navigation-height});
   }
 
-  .hero-inner {
+  &__inner {
     //@include clearfix;
     //margin: 0 1em 0 0;
     padding-top: 3.5em;
     text-align: right;
+  }
 
-    .hero-copy {
-      text-transform: uppercase;
-      @include respond-to(medium) {
-        @include grid-column(6);
-        @include grid-shift(6);
-      }
-      //display: flex;
-      //flex-direction: column;
-      //align-items: flex-end;
+  &__text {
+    text-transform: uppercase;
+    @include respond-to(medium) {
+      @include grid-column(6);
+      @include grid-shift(6);
+    }
+    //display: flex;
+    //flex-direction: column;
+    //align-items: flex-end;
 
-      p {
+    p {
+      line-height: 1;
+      color: $hero-color;
+      font-size: rem(16);
+      padding: 5px;
+      margin-bottom: 5px;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+      //display: inline-block;
+      & + p {
         line-height: 1;
-        color: $hero-color;
-        font-size: rem(16);
-        padding: 5px;
-        margin-bottom: 5px;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
-        //display: inline-block;
-        & + p {
-          line-height: 1;
-          font-size: rem(36);
-        }
+        font-size: rem(36);
+      }
 
-        @include respond-to(large) {
-          font-size: 1.1em;
-          //max-width: 40%;
-        }
+      @include respond-to(large) {
+        font-size: 1.1em;
+        //max-width: 40%;
       }
     }
   }
