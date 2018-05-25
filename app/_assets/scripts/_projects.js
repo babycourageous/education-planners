@@ -8,8 +8,17 @@ links.forEach(item => {
 
   item.addEventListener("click", function(e) {
     e.preventDefault();
+
     const v = vex.open({
-      unsafeContent: content.outerHTML
+      unsafeContent: content.outerHTML,
+      afterOpen: function() {
+        document.querySelector('html').setAttribute('style', 'margin-right: 15px');
+        document.querySelector('header').setAttribute('style', 'margin-right: 15px');
+      },
+      afterClose: function() {
+        document.querySelector('html').setAttribute('style', '');
+        document.querySelector('header').setAttribute('style', '');
+      }
       //className: "vex-theme-wireframe" // Overwrites defaultOptions
     });
 
