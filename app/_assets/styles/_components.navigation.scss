@@ -11,13 +11,15 @@ $navigation-submenu-width: 12em;
 
 .navigation {
   position: relative;
+  background-color: $color-navigation__bg;
 
   &__logo {
     height: $navigation-height;
     line-height: $navigation-height;
     transition: all 0.3s;
-    width: 300px;
-    display: block;
+    //width: 300px;
+    //display: block;
+    display: inline-block;
     padding: 0 em(10);
 
     @include respond-to(horizontal-bar-mode) {
@@ -37,6 +39,7 @@ $navigation-submenu-width: 12em;
     top: 50%;
     right: 0;
     margin-top: -10px;
+    z-index: 2;
 
     @include respond-to(horizontal-bar-mode) {
       display: none;
@@ -44,19 +47,34 @@ $navigation-submenu-width: 12em;
   }
 
   &__items {
-    display: none;
-    position: absolute;
+    //display: none;
+    position: fixed;
     width: 100%;
+    height: 100vh;
     text-align: center;
     background-color: $color-navigation__bg;
+    border-top: 1px solid #000;
+    transform: translateY(-100%);
+    transition: transform .4s;
+    z-index: -2;
+    &.open {
+      transform: translateY(0);
+
+    }
 
     @include respond-to(horizontal-bar-mode) {
       position: relative;
       display: flex;
       flex-direction: row;
       width: auto;
+      height: initial;
       margin: 0;
       padding: 0;
+      background-color: #fff;
+      border-top: none;
+      transform: translateY(0);
+      transition: none;
+      z-index: 0;
     }
 
     &--visible {
@@ -66,8 +84,7 @@ $navigation-submenu-width: 12em;
 
   &__item {
     border-bottom: solid 1px black;
-    background-color: ep-color("primary", "light");
-    transition: all 0.3s;
+    //background-color: $color__primary--light;
 
     @include respond-to (horizontal-bar-mode) {
       flex: 1;
@@ -79,20 +96,25 @@ $navigation-submenu-width: 12em;
 
   &__link {
     display: block;
-    color: white;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     padding: em(10);
-
-    @include respond-to(horizontal-bar-mode) {
-      color: $color-nav__link;
-      padding: 0;
-    }
+    background-color: $color__primary--light;
+    transition: all 0.4s;
 
     &:hover,
     &--active {
-      color: $color-nav__link--hover;
+      color: $color__primary--dark;
+      background-color: #fff
     }
+
+    @include respond-to(horizontal-bar-mode) {
+      color: $color-nav__link;
+      background-color: $color-navigation__bg;
+      padding: 0;
+    }
+
   }
 
   &.is-small {
