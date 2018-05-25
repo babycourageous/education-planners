@@ -35,3 +35,13 @@ window.addEventListener("scroll", function() {
 const scroll = new SmoothScroll('nav a[href*="#"]', {
   offset: topMenuHeight //() => document.querySelector("header").offsetHeight
 });
+
+menuToggle.addEventListener('click', function() {
+  topMenu.classList.toggle('open');
+});
+
+topMenu.addEventListener('click', function(e) {
+  if(e.target.className === 'navigation__link') {
+    this.classList.remove('open');
+  }
+});
