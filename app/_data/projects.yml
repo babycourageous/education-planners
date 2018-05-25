@@ -363,7 +363,10 @@
         - Facility Condition Assessment
         - Local Facility Plan Update
         - Master Plan Development
-
+    - type: Efficiency and Effectiveness
+      year: 2018
+      project_date: 2018
+      info: Plan to maximize organizational structure and performance, and reduce costs
 - school: Northwest Georgia RESA
   school_id: ngr
   logo: northwest-georgia-resa.png
@@ -410,6 +413,12 @@
   school_id: pcsd
   logo: paulding-county-school-district.png
   projects:
+    - year: 2018
+      project_date: 2018
+      info: |
+        - Long Range Facility Planning
+        - Classroom Utilization Study
+        - Communications Office interim management
     - type: Efficiency & Effectiveness Review
       year: 2011
       project_date: 2011
@@ -548,6 +557,74 @@
         - Surveyed departmental management, detailing time allocations for all department positions and identifying perceived process issues
         - Discussed and documented key issues with department leaders
         - Providing recommendations for improvement"
+
+- school: Clayton County Public Schools
+  school_id: ccps
+  logo: clayton-county-public-schools.jpg
+  projects:
+    - year: 2016
+      project_date: 2016
+      info:
+        E-SPLOST plan development
+
+- school: Dade County Schools
+  school_id: dcs
+  logo: dade-county-schools.jpg
+  projects:
+    - year: 2018
+      project_date: 2018
+      info: |
+        - Utilization of a Balanced Scorecard Approach to Measuring performance
+        - Restructured Organizational Chart
+
+- school: Dalton Public Schools
+  school_id: dps
+  logo: dalton-public-schools.jpg
+  projects:
+    - type: Efficiency and Effectiveness Review
+      year: 2018
+      project_date: 2018
+      info:
+        Plan to maximize organizational structure and performance, and reduce costs
+
+- school: Floyd County Schools
+  school_id: fcs
+  logo: floyd-county-schools.jpg
+  projects:
+    - year: 2018
+      project_date: 2018
+      info: |
+        - Enrollment Study and Long Range Facility Planning
+        - Classroom Utilization Plan
+
+- school: Peach County Schools
+  school_id: pcs
+  logo: peach-county-schools.png
+  projects:
+    - year: 2010
+      project_date: 2010
+      info: |
+        - Administrator Job Descriptions
+        - Salary Analysis
+
+- school: Heard County School System
+  school_id: hcss
+  logo: heard-county-school-system.png
+  projects:
+    - year: 2018
+      project_date: 2018
+      info: |
+        - Board Governance Training
+        - Project Delivery Methods for School Construction
+
+- school: Martin County (Fla.) School District
+  school_id: mcsd
+  logo: martin-county-school-district.png
+  projects:
+    - year: 2018
+      project_date: 2018
+      info:
+        Salary/Compensation and job classification study
 
 #- school:
 #  school_id:
