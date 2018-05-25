@@ -7,7 +7,7 @@
     "gulp": "gulp",
     "tasks": "gulp --tasks",
     "serve": "gulp serve",
-    "deploy": "gulp build:dev",
+    "deploy": "gulp deploy",
     "stage": "gulp build"
   },
   "repository": {
