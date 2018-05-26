@@ -20,8 +20,15 @@ const env = gutil.env.env || "development";
 
 const build = gulp.series(
   clean,
-  gulp.parallel(images, styles, scripts, svg, jekyll)
+  gulp.parallel(images, styles, scripts, svg),
+  jekyll
 );
+
+const deploy = gulp.series(
+  clean,
+  gulp.parallel(images, styles, scripts, svg),
+  jekyllserve
+)
 
 const serve = gulp.series(
   clean,
@@ -35,5 +42,5 @@ const def = done => {
   console.log(env); // development
   done();
 };
-export { serve, build };
+export { serve, build, deploy };
 export default def;

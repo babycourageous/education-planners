@@ -78,6 +78,7 @@
 // #ELEMENTS
 @import "elements.page";
 @import "elements.lists";
+@import "elements.buttons";
 @import "elements.typography";
 //@import "elements.images";
 
@@ -87,6 +88,7 @@
 // #COMPONENTS
 @import "components.header";
 @import "components.navigation";
+@import "components.menutoggle";
 @import "components.hero";
 @import "components.blurb";
 @import "components.achievements";
@@ -96,6 +98,7 @@
 @import "components.flickity";
 @import "components.quotes";
 @import "components.team";
+@import "components.location";
 @import "components.footer";
 
 // #UTILITIES

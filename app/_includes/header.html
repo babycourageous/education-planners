@@ -1,9 +1,11 @@
 <header role="banner" class="header is-fixed">
+
+  <button type="button" id="js-mobile-menu" class="c-toggle navigation__toggle">MENU</button>
   <nav role="navigation" class="navigation">
     <a href="{{site.baseurl}}/index.html" class="navigation__logo">
       <img src="{{site.baseurl}}/assets/images/logo.png" alt="Logo Image">
     </a>
-    <a href="javascript:void(0)" id="js-mobile-menu" class="navigation__toggle">MENU</a>
+
     <ul id="js-navigation-menu" class="navigation__items">
       {% for navitem in site.data.nav %}
       <li class="navigation__item">

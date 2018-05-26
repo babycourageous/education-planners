@@ -7,12 +7,13 @@
 
     <div class="o-container c-portfolio">
 
-      {% for project in site.data.projects %}
+      {% assign projects = site.data.projects | sort: 'school'%}
+      {% for project in projects %}
       <div class="c-portfolio__item">
         {% include project.html proj=project %}
       </div>
       {% endfor %}
-  
+
     </div>
 
 </section>
