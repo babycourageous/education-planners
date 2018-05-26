@@ -1,32 +1,34 @@
 {% assign project = include.proj %}
-<div class="project">
-  <a class="project__link" href="#{{project.school_id}}"><img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="project__logo" alt="{{project.school}}"></a>
+<div class="c-project">
+  <a id="js-modal-open" data-modal-open class="c-project__link" href="#{{project.school_id}}">
+    <img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="c-project__logo" alt="{{project.school}} logo">
+  </a>
+</div>
 
-  <div id="{{project.school_id}}" class="project__popup mfp-hide">
-    <img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="project__logo" alt="{{project.school}}">
-    <h2 class="project__heading">{{project.school}}</h2>
+<div id="{{project.school_id}}" class="c-project__popup">
+  <img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="c-project__logo" alt="{{project.school}} logo">
+  <h2 class="c-project__heading">{{project.school}}</h2>
 
-    <div class="project__carousel">
-      {% for item in project.projects %}
-      <div class="project__item">
-        <p><strong>{{item.type}}</strong></p>
-        <p class="project__date">{{item.date}}</p>
-        <div class="project__info">{{item.info | markdownify}}</div>
-        {% if item.file %}
-        <div class="project__file">
-          <a href="{{site.url}}{{site.baseurl}}/assets/images/schools/pdfs/{{item.file}}" target="_blank" class="project__pdf">{{item.type}}.pdf</a>
-          <span class="project__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="project__icon-link" role="img" aria-labelledby="title">
-              <switch>
-                <use xlink:href="#link"></use>
-                <foreignObject><img src="assets/images/png_fallback/link.png"></foreignObject>
-            </svg>
-          </span>
-        </div>
-        {% endif %}
+  <div class="c-project__carousel">
+    {% assign projects_sorted = project.projects | sort: 'year' | reverse %}
+    {% for item in projects_sorted %}
+    <div class="c-project__item">
+      {% if item.type %} <p><strong>{{item.type}}</strong></p> {% endif %}
+      <p class="c-project__date">{{item.project_date}}</p>
+      <div class="c-project__info">{{item.info | markdownify}}</div>
+      {% if item.file %}
+      <div class="c-project__file">
+        <a href="{{site.url}}{{site.baseurl}}/assets/images/schools/pdfs/{{item.file}}" target="_blank" class="c-project__pdf">{{item.type}}.pdf</a>
+        <span class="c-project__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="c-project__icon-link" role="img" aria-labelledby="title">
+            <switch>
+              <use xlink:href="#link"></use>
+              <foreignObject><img src="assets/images/png_fallback/link.png" alt="external file icon"></foreignObject>
+          </svg>
+        </span>
       </div>
-      {% endfor %}
+      {% endif %}
     </div>
+    {% endfor %}
   </div>
-
 </div>

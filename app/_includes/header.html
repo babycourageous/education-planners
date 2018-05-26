@@ -1,14 +1,18 @@
-<header role="banner" class="header header--fixed">
+<header role="banner" class="header is-fixed">
+
+  <button type="button" id="js-mobile-menu" class="c-toggle navigation__toggle">MENU</button>
   <nav role="navigation" class="navigation">
     <a href="{{site.baseurl}}/index.html" class="navigation__logo">
       <img src="{{site.baseurl}}/assets/images/logo.png" alt="Logo Image">
     </a>
-    <a href="javascript:void(0)" class="navigation__toggle" id="js-mobile-menu">MENU</a>
+
     <ul id="js-navigation-menu" class="navigation__items">
       {% for navitem in site.data.nav %}
       <li class="navigation__item">
-        {% if include.base %}<a href="{{site.baseurl}}/{{include.base}}{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
-        {% else %}<a href="{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
+        {% if include.base %}
+        <a href="{{site.baseurl}}/{{include.base}}{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
+        {% else %}
+        <a href="{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
         {% endif %}
       </li>
       {% endfor %}

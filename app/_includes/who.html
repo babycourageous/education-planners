@@ -1,29 +1,36 @@
-<section id="who" class="who">
-	<h1>The Team</h1>
-	<div class="who__blurb">
-		{{site.data.info.team | markdownify}}
-	</div>
-	<hr>
-	{% assign featured_members = site.team | where:"featured",true %}
-  {% for member in featured_members %}
-  <div class="team__member member member--featured">
-    <div class="member__info">
-      <h4><a href="{{site.baseurl}}{{member.url}}">{{member.name}}</a></h4>
-      <p>{{ member.position }}</p>
-    </div>
-  </div>
-  {% endfor %}
+<section id="who" class="o-section">
+	<div class="o-container">
 
-  {% assign members = site.team %}
-  {% for member in members %}
-	{% if member.featured %}
-		{% continue %}
-  {% endif %}
-  <div class="team__member member">
-    <div class="member__info">
-      <h4>{{member.name}}</h4>
-    </div>
-  </div>
-  {% endfor %}
+		<h1>The Team</h1>
+		<div class="c-blurb">
+			<div class="c-blurb__text">{{site.data.info.team | markdownify}}</div>
+		</div>
+
+		<hr>
+
+		{% assign featured_members = site.team | where:"featured",true %}
+	  {% for member in featured_members %}
+		  <div class="c-member c-member--featured">
+		    <div class="c-member__info">
+		      <h4><a href="{{site.baseurl}}{{member.url}}">{{member.name}}</a></h4>
+		      <p>{{ member.position }}<br> (<a href="mailto:{{member.email}}">{{member.email}}</a>)</p>
+		    </div>
+		  </div>
+	  {% endfor %}
+
+	  {% assign members = site.team %}
+	  {% for member in members %}
+			{% if member.featured %}
+				{% continue %}
+		  {% endif %}
+		  <div class="c-member">
+		    <div class="c-member__info">
+		      <h4>{{member.name}}</h4>
+					<p><a href="mailto:{{member.email}}">{{member.email}}</a></p>
+		    </div>
+		  </div>
+	  {% endfor %}
+
+		</div>
 
 </section>

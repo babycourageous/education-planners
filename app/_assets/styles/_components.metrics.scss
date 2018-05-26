@@ -1,0 +1,49 @@
+$icon-background-color: $color__primary--light;
+$icon-color: $color__primary--dark;
+
+.c-metrics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  @include respond-to(small) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+
+.c-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: em(25);
+
+  @include respond-to(small) {
+    width: 30%;
+  }
+
+  &__icon {
+    @include size(100px);
+    background-color: $color__primary--light;
+    border-radius: 50%;
+
+    /* target all icons with attribute wildcard selector that searches for "begins with..." */
+    [class^="c-metric__icon-"] {
+      @include size(100px);
+      fill: $color__primary--dark;
+      padding: em(15);
+    }
+  }
+
+  &__number {
+    font-size: rem(48);
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-size: rem(14);
+    text-transform: uppercase;
+  }
+}

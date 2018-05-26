@@ -1,85 +1,47 @@
-'use strict';
-var $ = require('jquery');
+import SmoothScroll from "smooth-scroll";
 
 // store references to header elements
-var header = $('header[role=banner]');
-var nav = $('nav');
+const header = document.querySelector("header[role=banner]");
+const nav = document.querySelector("nav");
+
+// reference to nav ul
+const topMenu = document.querySelector("#js-navigation-menu");
+// All list link items
+const menuItems = topMenu.querySelectorAll("a");
+const menuToggle = document.querySelector('#js-mobile-menu');
 
 // navigation scrolling and highlighting variables
-var lastId,
-    // reference to nav ul
-    topMenu = $("#js-navigation-menu"),
-    // use 60px base instead of calculating on load because of shrinking nav
-    topMenuHeight = 59, //topMenu.outerHeight(),
-    // All list link items
-    menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
+let lastId;
 
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
-menuItems.click(function(e){
-  var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  $('html, body').stop().animate({
-      scrollTop: offsetTop
-  }, 300);
-  e.preventDefault();
-});
-
+// use 60px base instead of calculating on load because of shrinking nav
+const topMenuHeight = 59; //topMenu.outerHeight(),
 
 // Bind to scroll
-$(window).scroll(function(){
+window.addEventListener("scroll", function() {
+  const scroll = window.scrollY;
+
   // SHRINKING FUNCTIONALITY
-  var stickDistance = 0;
-  var scroll = $(window).scrollTop();
-
-  if ( scroll >= 40 ) {
-    header.addClass('header--small');
-    nav.addClass('navigation--small');
+  if (scroll >= 40) {
+    //console.log('down')
+    header.classList.add("is-small");
+    nav.classList.add("is-small");
   } else {
-    header.removeClass('header--small');
-    nav.removeClass('navigation--small');
-    /*$('body').removeClass('shrink');*/
-  }
-  // HIGHLIGHTING ACTIVE AREA FUNCTIONALITY
-  // Get container scroll position
-  var fromTop = $(this).scrollTop()+topMenuHeight;
-
-  // Get id of current scroll item
-  var cur = scrollItems.map(function(){
-   if ($(this).offset().top < fromTop)
-     return this;
-  });
-  // Get the id of the current element
-  cur = cur[cur.length-1];
-  var id = cur && cur.length ? cur[0].id : "";
-
-  if (lastId !== id) {
-     lastId = id;
-     // Set/remove active class
-     //console.log(menuItems.removeClass('navigation__link--active'));
-     menuItems
-       .removeClass("navigation__link--active")
-       .filter("[href='#"+id+"']").addClass("navigation__link--active");
+    //console.log('up');
+    header.classList.remove("is-small");
+    nav.classList.remove("is-small");
   }
 });
 
+const scroll = new SmoothScroll('nav a[href*="#"]', {
+  offset: topMenuHeight //() => document.querySelector("header").offsetHeight
+});
 
-// menu toggle for mobile
-var menuToggle = $('#js-mobile-menu').unbind();
-$('#js-navigation-menu').removeClass("show");
+menuToggle.addEventListener('click', function() {
+  topMenu.classList.toggle('open');
+});
 
-menuToggle.on('click', function(e) {
-  console.log('nav click');
-
-  e.preventDefault();
-  $('#js-navigation-menu').slideToggle(function(){
-    if($('#js-navigation-menu').is(':hidden')) {
-      $('#js-navigation-menu').removeAttr('style');
-    }
-  });
+topMenu.addEventListener('click', function(e) {
+  if(e.target.className === 'navigation__link') {
+    this.classList.remove('open');
+  }
 });

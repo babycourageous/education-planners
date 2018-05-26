@@ -1,0 +1,24 @@
+<section id="achievements" class="o-section c-achievements">
+  <div class="o-container">
+		<h1>Our Reach</h1>
+		<div class="c-metrics">
+			{% for item in site.data.metrics.info %}
+			<div class="c-metric">
+				<span class="c-metric__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="c-metric__icon-{{ item.icon }}" role="img" aria-labelledby="title">
+            <switch>
+              <use xlink:href="#{{item.icon}}"></use>
+              <foreignObject><img src="assets/images/png_fallback/{{item.icon}}.png" alt="icon for about us {{item.text}}"></foreignObject>
+          </svg>
+        </span>
+				<p class="c-metric__number">{{ item.number }}</p>
+				<p class="c-metric__text">{{ item.text }}</p>
+			</div>
+			{% endfor %}
+
+		</div>
+    <div class="c-blurb">
+      <p class="c-blurb__text">{{site.data.metrics.blurb}}</p>
+    </div>
+  </div>
+</section>

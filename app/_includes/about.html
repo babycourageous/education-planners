@@ -1,28 +1,11 @@
-<section id="about" class="info">
-  <div class="info__blurb">
-  	{{site.data.info.about | markdownify}}
-  </div>
-</section>
+<section id="about" class="o-section">
+  <div class="o-container">
 
-<section id="achievements" class="achievements">
-  <div class="achievements__container">
-		<h1>Our Reach</h1>
-		<div class="achievements__metrics">
-			{% for item in site.data.metrics.info %}
-			<div class="achievements__metric">
-				<span class="achievements__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" class="achievements__icon-{{ item.icon }}" role="img" aria-labelledby="title">
-            <switch>
-              <use xlink:href="#{{item.icon}}"></use>
-              <foreignObject><img src="assets/images/png_fallback/{{item.icon}}.png"></foreignObject>
-          </svg>
-        </span>
-				<p class="achievements__number">{{ item.number }}</p>
-				<p class="achievements__text">{{ item.text }}</p>
-			</div>
-			{% endfor %}
-      <p class="achievements__blurb">{{site.data.metrics.blurb}}</p>
-
-		</div>
+    <div class="c-blurb">
+      <div class="c-blurb__text">
+        {{site.data.info.about | markdownify}}
+      </div>
+    </div>
+    
   </div>
 </section>

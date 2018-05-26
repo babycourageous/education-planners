@@ -1,52 +1,104 @@
+/* ==========================================================================
+   MAIN IMPORT
+   ========================================================================== */
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Project-wide variables and settings.
+ * Colors...............Project-wide colors.
+ * Typography...........Project-wide fonts.
+ * Transitions..........Project-wide transition settings.
+ * Breakpoints..........Project-wide breakpoint map.
+
+ *
+ * TOOLS
+ * Bourbon..............Mixin library.
+ * Breakpoint...........Breakpoint manager plugin.
+ * Modular Scale........Modular Scale calculator plugin.
+ * Typi.................Responsive Typography and Vertical Rhythm plugin.
+ * Hidden...............Mixin for hiding elements.
+ * Mixins...............Project-specific mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Typography...........Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6 and p.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ * Forms................Simple form styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ *
+ * COMPONENTS
+ *
+ *
+ * UTILITIES
+ */
+@import "plugins/bourbon/bourbon";
+//@import "plugins/base/base";
+
+// #SETTINGS
+@import "settings.global";
+@import "settings.breakpoints";
+@import "settings.colors";
+@import "settings.typography";
+@import "settings.transitions";
+@import "settings.variables";
+
 /*
- * 2- PLUGINS
- */
-@import 'plugins/normalize';
-@import 'plugins/bourbon/bourbon';
-@import 'plugins/base/base';
-@import 'plugins/neat/neat';
-// magnific popup
-@import "main";
+// #TOOLS
+@import 'bourbon';
+@import 'modular-scale';
+@import "typi";
+*/
+@import "tools.mixins";
+@import "breakpoint";
+//@import "plugins/neat/neat";
+@import "neat";
+@import "vex";
+//@import "vex-theme-wireframe";
 
+// #GENERIC (and plugins)
+@import "normalize";
+@import "generic.reset";
+@import "generic.box-sizing";
 
-/*
- * 1- UTILS
- */
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'utils/functions';
+// #ELEMENTS
+@import "elements.page";
+@import "elements.lists";
+@import "elements.buttons";
+@import "elements.typography";
+//@import "elements.images";
 
- /*
- * 3- BASE
- */
-@import 'base/base-ep';
-@import 'base/typography';
+// #OBJECTS
+@import "objects.containers";
 
-/*
- * 4- LAYOUT
- */
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/footer';
+// #COMPONENTS
+@import "components.header";
+@import "components.navigation";
+@import "components.menutoggle";
+@import "components.hero";
+@import "components.blurb";
+@import "components.achievements";
+@import "components.metrics";
+@import "components.services";
+@import "components.portfolio";
+@import "components.flickity";
+@import "components.quotes";
+@import "components.team";
+@import "components.location";
+@import "components.footer";
 
-/*
- * 5- MODULES
- */
-@import 'modules/hero';
-@import 'slick.scss';
-@import 'modules/quotes';
-@import 'modules/map';
-
-
- /*
- * 6- PAGES
- */
-@import 'pages/about';
-@import 'pages/what';
-@import 'pages/work';
-@import 'pages/who';
-@import 'pages/contact';
-@import 'pages/projects';
-@import 'pages/team';
-@import 'pages/resume';
+// #UTILITIES

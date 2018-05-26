@@ -2,13 +2,26 @@ url: "" # the base hostname & protocol for your site
 baseurl: "/education-planners" # the subpath of your site, e.g. /blog/
 
 title: Education Planners, LLC
+description: Education Planners is an educational consulting firm helping school districts across the Southeast handle organizational challenges and operate more efficiently.
+logo: assets/images/logo.png
+tagline: Helping schools run smarter.
+
 exclude: ["_assets"]
 keep_files: ["assets"]
 
+source: ./app
+destination: ./dist
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+social:
+  links:
+    - https://www.facebook.com/Education-Planners-103900076340208/
+
 collections:
   team:
-    output: true
-  projects:
     output: true
 
 defaults:
@@ -18,12 +31,3 @@ defaults:
       type: team
     values:
       layout: resume
-  -
-    scope:
-      path: ""
-      type: projects
-    values:
-      layout: project
-
-source: ./app
-destination: ./dist
