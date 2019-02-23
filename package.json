@@ -2,7 +2,7 @@
   "name": "education-planners",
   "version": "2.5.0",
   "description": "Website for Education Planners.",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
     "start": "npm-run-all clean build:assets build:jekyll:dev --parallel serve watch:*",
     "clean": "rm -rf _site/*",
