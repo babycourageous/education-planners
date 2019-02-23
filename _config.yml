@@ -7,12 +7,24 @@ url: "" # the base hostname & protocol for your site
 baseurl: "/education-planners" # the subpath of your site, e.g. /blog/
 
 # Build settings
-theme: false
+#theme: false
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-exclude: ["_assets"]
+exclude:
+  - _assets
+  - Gemfile
+  - Gemfile.lock
+  - imagemin.images.js
+  - imagemin.svg.js
+  - package.json
+  - postcss.config.js
+  - purgecss.config.js
+  - tailwind.js
+  - yarn-error.log
+  - yarn.lock
+
 keep_files: ["assets"]
 
 collections:
