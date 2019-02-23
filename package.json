@@ -12,7 +12,7 @@
     "build:assets:css": "postcss _assets/css/index.css -o _site/assets/styles.css",
     "build:assets:js": "webpack _assets/javascript/main.js -o _site/assets/bundle.js",
     "build:assets:images": "node imagemin.images.js",
-    "build:assets:svg": "node imagemin.svg.js",
+    "build:assets:svg": "svg-sprite --svg-xmldecl=false --svg-doctype=false --symbol --symbol-inline=true --dest=_includes/svg _assets/svg/*.svg",
     "build:purgecss": "purgecss -c purgecss.config.js -o _site/assets",
     "build:jekyll:dev": "jekyll build --config='_config.yml,_config.dev.yml'",
     "build:jekyll:prod": "jekyll build",
