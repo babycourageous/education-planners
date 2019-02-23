@@ -1,24 +1,24 @@
-<section id="achievements" class="o-section c-achievements">
-  <div class="o-container">
-		<h1>Our Reach</h1>
-		<div class="c-metrics">
-			{% for item in site.data.metrics.info %}
-			<div class="c-metric">
-				<span class="c-metric__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" class="c-metric__icon-{{ item.icon }}" role="img" aria-labelledby="title">
-            <switch>
-              <use xlink:href="#{{item.icon}}"></use>
-              <foreignObject><img src="assets/images/png_fallback/{{item.icon}}.png" alt="icon for about us {{item.text}}"></foreignObject>
+<section id="achievements" class="section bg-center bg-no-repeat" style="background: url(assets/images/stairs.jpg);background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(assets/images/stairs.jpg) center center no-repeat;">
+  <div class="container">
+    <h1 class="section-heading text-white ">Our Reach</h1>
+    <div class="flex flex-col sm:flex-row sm:flex-no-wrap justify-center sm:justify-around w-full">
+
+      {%- for item in site.data.metrics.info -%}
+      <div class="c-achievment flex flex-col items-center mb-8 sm:w-1/3">
+        <span class="w-100px h-100px rounded-full bg-blue text-blue-darker">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-100px h-100px p-4 fill-current" role="img" aria-hidden="true">
+            <title>{{item.icon}}</title>
+            <use xlink:href="#{{item.icon}}"></use>
           </svg>
         </span>
-				<p class="c-metric__number">{{ item.number }}</p>
-				<p class="c-metric__text">{{ item.text }}</p>
-			</div>
-			{% endfor %}
+        <p class="mb-0 text-5xl text-white">{{ item.number }}</p>
+        <p class="text-sm text-white uppercase">{{ item.text }}</p>
+      </div>
+      {%- endfor -%}
 
-		</div>
-    <div class="c-blurb">
-      <p class="c-blurb__text">{{site.data.metrics.blurb}}</p>
+    </div>
+    <div class="c-blurb text-white">
+      <p>{{site.data.metrics.blurb}}</p>
     </div>
   </div>
 </section>

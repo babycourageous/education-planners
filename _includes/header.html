@@ -1,21 +1,20 @@
 <header role="banner" class="fixed pin-t z-10 w-full h-60px md:h-100px bg-white shadow-lg" data-gumshoe-header>
 
-  <button type="button" id="js-mobile-menu" class="c-toggle navigation__toggle">MENU</button>
   <nav role="navigation" class="relative flex flex-col md:flex-row items-center md:justify-between bg-white">
     <a href="{{site.baseurl}}/index.html" class="inline-block h-60px md:h-100px py-0 px-3 leading-60 md:leading-100">
       <img width="300px" class="inline-block align-middle" src="{{site.baseurl}}/assets/images/logo.png" alt="Logo Image">
     </a>
 
     <ul id="js-navigation-menu" class="flex items-center border-b-1 border-gray-dark text-center list-reset" data-gumshoe>
-      {%- for navitem in site.data.nav -%}
+      {% for navitem in site.data.nav %}
       <li>
-        {%- if include.base -%}
+        {% if include.base %}
         <a class="block p-2 font-bold text-grey-darker hover:text-blue-darker uppercase text-xs md:text-base" href="{{site.baseurl}}/{{include.base}}{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
-        {%- else -%}
+        {% else %}
         <a class="block p-2 font-bold text-grey-darker hover:text-blue-darker uppercase text-xs md:text-base" href="{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
-        {%- endif -%}
+        {% endif %}
       </li>
-      {%- endfor -%}
+      {% endfor %}
     </ul>
   </nav>
 </header>

@@ -1,22 +1,23 @@
-<section class="o-section o-section--alt-bg">
-  <div class="o-container c-services">
-    {% for service in site.data.services %}
-    <div class="c-services__item c-service">
-      <span class="c-service__icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="c-service__icon-{{ service.icon }}" role="img" aria-labelledby="title">
-          <switch>
-            <use xlink:href="#{{service.icon}}"></use>
-            <foreignObject><img src="assets/images/png_fallback/{{service.icon}}.png" alt="{{service.name}} icon"></foreignObject>
-          </switch>
+<div class="section bg-grey-lightest">
+  <div class="container flex flex-wrap lg:flex-no-wrap justify-center lg:justify-around">
+
+    {%- for service in site.data.services -%}
+    <div style="flex-basis: 20rem;" class="c-service flex flex-col items-center flex-no-grow flex-shrink w-80 mt-0 mx-3 mb-3 p-4 bg-white">
+      <span class="c-service__icon flex items-center justify-center w-32 h-32 mb-3 text-gray border border-grey rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 p-4 fill-current" role="img" aria-hidden="true">
+          <title>{{service.icon}}</title>
+          <use xlink:href="#{{service.icon}}"></use>
         </svg>
       </span>
-      <h2 class="c-service__name">{{ service.name }}</h2>
-      <div class="c-service__list">
-        {% for item in service.items %}
+      <h2 class="mb-3 text-sm text-gray-darker uppercase">{{ service.name }}</h2>
+      <div class="text-grey-dark">
+
+        {%- for item in service.items -%}
         {{ item | replace: '!BASE_URL!', site.baseurl | markdownify }}
-        {% endfor %}
+        {%- endfor -%}
+
       </div>
     </div>
-    {% endfor %}
+    {%- endfor -%}
   </div>
-</section>
+</div>
