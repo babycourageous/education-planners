@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-{% include head.html %}
-<body>
+{%- include head.html -%}
+
+<body class="pt-100px font-sans text-grey-darker antialiased leading-normal">
 	<!-- include svg sprite -->
-	<span style="display:none;">{% include symbol/svg/sprite.symbol.svg %}</span>
-	{% if page.path == 'index.html' %}
-	  {% include header.html %}
-	{% else %}
-	  {% include header.html base="index.html" %}
-	{% endif %}
+	<span style="display:none;">{% include svg/sprite.symbol.svg %}</span>
+	{%- if page.path == 'index.html' -%}
+	{%- include header.html -%}
+	{%- else -%}
+	{%- include header.html base="index.html" -%}
+	{%- endif -%}
 	<main>
-	{{ content }}
+		{{ content }}
 	</main>
-	{% include footer.html %}
+	{%- include footer.html -%}
 
 </body>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXu7vUqT900bOlBAFLTUedjWQQg1tHHxI"></script>
-<script src="{{site.baseurl}}/assets/scripts.min.js"></script>
+<script src="{{site.baseurl}}/assets/bundle.js"></script>
+
 </html>
