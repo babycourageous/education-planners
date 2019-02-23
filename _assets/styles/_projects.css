@@ -1,0 +1,8 @@
+.is-disabled {
+  overflow: hidden;
+}
+
+.c-modal[aria-hidden='true'] {
+  visibility: hidden;
+  opacity: 0;
+}

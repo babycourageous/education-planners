@@ -112,3 +112,50 @@ https://flickity.metafizzy.co
   width: 60%;
   height: 60%;
 }
+
+/* ---- page dots ---- */
+.flickity-page-dots {
+  /* position: absolute;
+  width: 100%;
+  bottom: -25px; */
+  padding: 0;
+  margin: 16px 0 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.c-project__carousel {
+  .flickity-page-dots {
+    text-align: center;
+
+    .dot {
+      background: #477dca;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      margin: 0 5px;
+
+      &.is-selected {
+        border: 1px solid #00486a;
+
+        background-color: #00aafc;
+      }
+    }
+  }
+}
