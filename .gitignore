@@ -27,7 +27,7 @@ Temporary Items
 
 
 ### Jekyll ###
-dist
+_site
 .sass-cache/
 .jekyll-metadata
 
