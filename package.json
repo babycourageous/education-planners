@@ -36,14 +36,10 @@
   },
   "homepage": "https://github.com/babycourageous/education-planners#readme",
   "dependencies": {
-    "bourbon-neat": "3.0.1",
-    "breakpoint-sass": "^2.7.1",
+    "a11y-dialog-component": "^5.1.0",
     "flickity": "^2.2.0",
-    "lodash": "^4.17.11",
-    "normalize.css": "^8.0.1",
-    "smooth-scroll": "^15.0.0",
-    "vanilla-modal": "^1.6.5",
-    "vex-js": "^4.1.0"
+    "gumshoejs": "github:cferdinandi/gumshoe",
+    "smooth-scroll": "^15.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.8",
