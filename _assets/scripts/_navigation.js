@@ -1,21 +1,25 @@
-import SmoothScroll from "smooth-scroll";
+import SmoothScroll from 'smooth-scroll'
+import gumshoe from 'gumshoejs'
 
 // store references to header elements
-const header = document.querySelector("header[role=banner]");
-const nav = document.querySelector("nav");
+const header = document.querySelector('header[role=banner]')
+const nav = document.querySelector('nav')
 
 // reference to nav ul
-const topMenu = document.querySelector("#js-navigation-menu");
+const topMenu = document.querySelector('#js-navigation-menu')
+
 // All list link items
-const menuItems = topMenu.querySelectorAll("a");
-const menuToggle = document.querySelector('#js-mobile-menu');
+const menuItems = topMenu.querySelectorAll('a')
+const menuToggle = document.querySelector('#js-mobile-menu')
 
 // navigation scrolling and highlighting variables
-let lastId;
+let lastId
 
-// use 60px base instead of calculating on load because of shrinking nav
-const topMenuHeight = 59; //topMenu.outerHeight(),
-
+const scroll = new SmoothScroll('nav a[href*="#"]', {
+  offset: header.offsetHeight, //() => document.querySelector("header").offsetHeight
+})
+gumshoe.init({ activeClass: 'text-blue-dark' })
+/*
 // Bind to scroll
 window.addEventListener("scroll", function() {
   const scroll = window.scrollY;
@@ -32,9 +36,7 @@ window.addEventListener("scroll", function() {
   }
 });
 
-const scroll = new SmoothScroll('nav a[href*="#"]', {
-  offset: topMenuHeight //() => document.querySelector("header").offsetHeight
-});
+
 
 menuToggle.addEventListener('click', function() {
   topMenu.classList.toggle('open');
@@ -45,3 +47,4 @@ topMenu.addEventListener('click', function(e) {
     this.classList.remove('open');
   }
 });
+*/

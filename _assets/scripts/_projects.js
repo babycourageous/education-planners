@@ -1,87 +1,41 @@
-import vex from "vex-js";
-import Flickity from "flickity";
+import Dialog from 'a11y-dialog-component'
+import Flickity from 'flickity'
+if (document.getElementById('work')) {
+  const portfolio = document.querySelector('#js-portfolio')
+  const links = portfolio.querySelectorAll('a[data-target]')
+  const carousels = portfolio.querySelectorAll('.js-project-carousel')
+  for (var i = 0, len = carousels.length; i < len; i++) {
+    const galleryElem = carousels[i]
+    new Flickity(galleryElem, {
+      // options
+      contain: true,
+      prevNextButtons: false,
+      //     pageDots: true,
+    })
+  }
+  let currentProject
+  let currentProjectHome
 
-const links = document.querySelectorAll("#js-modal-open");
-links.forEach(item => {
-  const content = document.querySelector(item.getAttribute("href"));
-  const carousel = content.querySelector(".c-project__carousel");
+  links.forEach(link => {
+    const targetID = link.dataset.target
 
-  item.addEventListener("click", function(e) {
-    e.preventDefault();
+    const d = new Dialog(`#${targetID}`, {
+      closingSelector: '.js-dialog-close',
+      backdropSelector: `#${targetID}`,
+      labelledbyId: `${targetID}-title`,
+    })
 
-    const v = vex.open({
-      unsafeContent: content.outerHTML,
-      afterOpen: function() {
-        document.querySelector('html').setAttribute('style', 'margin-right: 15px');
-        document.querySelector('header').setAttribute('style', 'margin-right: 15px');
-      },
-      afterClose: function() {
-        document.querySelector('html').setAttribute('style', '');
-        document.querySelector('header').setAttribute('style', '');
-      }
-      //className: "vex-theme-wireframe" // Overwrites defaultOptions
-    });
+    link.addEventListener('click', function(e) {
+      e.preventDefault()
 
-    // vanilla JS
-    var cells = carousel.querySelectorAll(".c-project__item");
-    var hasMultipleCells = cells && cells.length > 1;
-    // init Flickity if mulitple cells
-    if (hasMultipleCells) {
-      const f = new Flickity(
-        v.contentEl.querySelector(".c-project__carousel"),
-        {
-          // options
-          contain: true,
-          prevNextButtons: false,
-          pageDots: true
-        }
-      );
+      currentProjectHome = e.currentTarget.parentNode.parentNode
+      currentProject = portfolio.querySelector(`#${targetID}`)
 
-      f.resize();
-    }
-  });
-});
+      const carousel = currentProject.querySelector('.js-project-carousel')
+      const cells = carousel.querySelectorAll('.js-project-item')
+      const hasMultipleCells = cells && cells.length > 1
 
-/*
-// instanciate new modal
-var modal = new tingle.modal({
-    footer: true,
-    stickyFooter: false,
-    closeMethods: ['overlay', 'button', 'escape'],
-    closeLabel: "Close",
-    cssClass: ['custom-class-1', 'custom-class-2'],
-    onOpen: function() {
-        console.log('modal open');
-    },
-    onClose: function() {
-        console.log('modal closed');
-    },
-    beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
-    }
-});
-
-// set content
-modal.setContent('<h1>here\'s some content</h1>');
-
-// add a button
-modal.addFooterBtn('Button label', 'tingle-btn tingle-btn--primary', function() {
-    // here goes some logic
-    modal.close();
-});
-
-// add another button
-modal.addFooterBtn('Dangerous action !', 'tingle-btn tingle-btn--danger', function() {
-    // here goes some logic
-    modal.close();
-});
-
-// open modal
-modal.open();
-
-// close modal
-modal.close();
-*/
+      d.open()
+    })
+  })
+}
