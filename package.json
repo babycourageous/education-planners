@@ -64,5 +64,11 @@
     "browser-sync": "^2.26.3",
     "cssnano": "^4.1.10",
     "imagemin-pngquant": "^7.0.0"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
