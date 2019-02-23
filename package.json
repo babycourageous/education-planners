@@ -23,12 +23,26 @@
   "dependencies": {
     "bourbon-neat": "3.0.1",
     "breakpoint-sass": "^2.7.1",
+    "chokidar": "^2.1.2",
+    "chokidar-cli": "^1.2.2",
     "flickity": "^2.2.0",
+    "imagemin": "^6.1.0",
+    "imagemin-cli": "^4.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-svgo": "^7.0.0",
     "lodash": "^4.17.11",
     "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1",
+    "precss": "^4.0.0",
+    "purgecss": "^1.1.0",
     "smooth-scroll": "^15.0.0",
+    "tailwindcss": "^0.7.4",
     "vanilla-modal": "^1.6.5",
-    "vex-js": "^4.1.0"
+    "vex-js": "^4.1.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.8",
