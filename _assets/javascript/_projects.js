@@ -1,41 +1,49 @@
-import Dialog from 'a11y-dialog-component'
-import Flickity from 'flickity'
-if (document.getElementById('work')) {
-  const portfolio = document.querySelector('#js-portfolio')
-  const links = portfolio.querySelectorAll('a[data-target]')
-  const carousels = portfolio.querySelectorAll('.js-project-carousel')
+import Dialog from "a11y-dialog-component";
+import Flickity from "flickity";
+
+if (document.getElementById("work")) {
+  const portfolio = document.querySelector("#js-portfolio");
+  const links = portfolio.querySelectorAll("a[data-target]");
+  const carousels = portfolio.querySelectorAll(".js-project-carousel");
+  const modals = document.querySelectorAll(".c-modal");
+
   for (var i = 0, len = carousels.length; i < len; i++) {
-    const galleryElem = carousels[i]
+    const galleryElem = carousels[i];
     new Flickity(galleryElem, {
       // options
       contain: true,
-      prevNextButtons: false,
+      prevNextButtons: false
       //     pageDots: true,
-    })
+    });
   }
-  let currentProject
-  let currentProjectHome
+
+  let currentProject;
+  let currentProjectHome;
 
   links.forEach(link => {
-    const targetID = link.dataset.target
+    const targetID = link.dataset.target;
 
     const d = new Dialog(`#${targetID}`, {
-      closingSelector: '.js-dialog-close',
+      closingSelector: ".js-dialog-close",
       backdropSelector: `#${targetID}`,
-      labelledbyId: `${targetID}-title`,
-    })
+      labelledbyId: `${targetID}-title`
+    });
 
-    link.addEventListener('click', function(e) {
-      e.preventDefault()
+    modals.forEach(modal => {
+      modal.classList.remove("invisible");
+    });
 
-      currentProjectHome = e.currentTarget.parentNode.parentNode
-      currentProject = portfolio.querySelector(`#${targetID}`)
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
 
-      const carousel = currentProject.querySelector('.js-project-carousel')
-      const cells = carousel.querySelectorAll('.js-project-item')
-      const hasMultipleCells = cells && cells.length > 1
+      currentProjectHome = e.currentTarget.parentNode.parentNode;
+      currentProject = portfolio.querySelector(`#${targetID}`);
 
-      d.open()
-    })
-  })
+      const carousel = currentProject.querySelector(".js-project-carousel");
+      const cells = carousel.querySelectorAll(".js-project-item");
+      const hasMultipleCells = cells && cells.length > 1;
+
+      d.open();
+    });
+  });
 }

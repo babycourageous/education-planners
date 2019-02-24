@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 
-.c-modal[aria-hidden='true'] {
+.c-modal[aria-hidden="true"] {
   visibility: hidden;
   opacity: 0;
 }
