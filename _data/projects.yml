@@ -1,5 +1,5 @@
 - school: Atlanta Public Schools
-  school_id: aps
+  school_id: atlanta-public-schools
   logo: atlanta-public-schools.png
   projects:
     - type: HR Management
@@ -29,7 +29,7 @@
       info: Training for Department of Strategy Development
 
 - school: Bartow County School System
-  school_id: bcss
+  school_id: bartow-county-school-system
   logo: bartow-county-school-system.png
   projects:
     - type: Compensation & Classification Analysis
@@ -61,7 +61,7 @@
       info: Whole Board Governance Training (State-approved local board governance provider)
 
 - school: Cartersville City Schools
-  school_id: ccs
+  school_id: cartersville-city-schools
   logo: cartersville-city-schools.png
   projects:
     - type: Whole Board Governance Training
@@ -84,7 +84,7 @@
       info: One-year update of enrollment study
 
 - school: Cobb County School District
-  school_id: ccsd
+  school_id: cobb-county-school-district
   logo: cobb-county-school-district.png
   projects:
     - type: Human Resources Management
@@ -144,7 +144,7 @@
       info: Development of SPLOST IV & SPLOST V project lists, and ongoing consultation throughout program implementation
 
 - school: Coweta County School System, GA
-  school_id: ccss
+  school_id: coweta-county-school-system
   logo: coweta-county-school-system.png
   projects:
     - year: 2017
@@ -157,7 +157,7 @@
         - Community/Local School Input/Communication.
 
 - school: Douglas County School System
-  school_id: dcss
+  school_id: douglas-county-school-system
   logo: douglas-county-school-system.png
   projects:
     - type: Five-Year Strategic Plan Development
@@ -195,7 +195,7 @@
         - Identified additional EIP students eligible for QBE funding
 
 - school: DeKalb County School District
-  school_id: dcsd
+  school_id: dekalb-county-school-district
   logo: dekalb-county-school-district.png
   projects:
     - type: Secondary School Facility Planning & Feasibility Study
@@ -213,7 +213,7 @@
         - [http://www.dekalbschoolsga.org/secondary-school-facility-planning-and-feasibility-study](http://www.dekalbschoolsga.org/secondary-school-facility-planning-and-feasibility-study){:target=_blank}
 
 - school: Fulton County Schools
-  school_id: fcs
+  school_id: fulton-county-schools
   logo: fulton-county-schools.png
   projects:
     - type: Leadership Training & Coaching
@@ -222,7 +222,7 @@
       info: Leadership Training and Coaching for Principals
 
 - school: Greene County School System
-  school_id: gcss
+  school_id: greene-county-school-system
   logo: greene-county-school-system.png
   projects:
     - type: District Operations Consulting
@@ -262,7 +262,7 @@
       info: Whole Board Governance Training (State-approved local board governance provider)
 
 - school: Georgia School Boards Association
-  school_id: gsba
+  school_id: georgia-school-boards-association
   logo: georgia-school-boards-association.png
   projects:
     - type: Efficiency & Effectiveness Financial Training
@@ -271,7 +271,7 @@
       info: Conducted workshops on Efficiency & Effectiveness of Financial Management training
 
 - school: Haralson County Schools
-  school_id: hcs
+  school_id: haralson-county-schools
   logo: haralson-county-schools.png
   projects:
     - type: Efficiency & Effectiveness Audit
@@ -304,7 +304,7 @@
         - Research – population data, enrollment history, projected SPLOST receipts, general facility upgrades, specific school projects, miscellaneous projects
 
 - school: Huntsville City Schools
-  school_id: hvcs
+  school_id: huntsville-city-schools
   logo: huntsville-city-schools.png
   projects:
     - type: Facility Utilization Study
@@ -317,7 +317,7 @@
         - Community Conversations with stakeholders
 
 - school: Jefferson County Schools, AL
-  school_id: jcsal
+  school_id: jefferson-county-board-of-education
   logo: jefferson-county-board-of-education.png
   projects:
     - year: 2017
@@ -338,7 +338,7 @@
         - Development of the Capital Plan
 
 - school: Marietta City Schools
-  school_id: mcs
+  school_id: marietta-city-schools
   logo: marietta-city-schools.png
   projects:
     - year: 2016
@@ -348,7 +348,7 @@
         - HR Investigations
 
 - school: Newton County Schools
-  school_id: ncs
+  school_id: newton-county-schools
   logo: newton-county-schools.png
   projects:
     - type: Facility Master Plan Study
@@ -367,8 +367,9 @@
       year: 2018
       project_date: 2018
       info: Plan to maximize organizational structure and performance, and reduce costs
+
 - school: Northwest Georgia RESA
-  school_id: ngr
+  school_id: northwest-georgia-resa
   logo: northwest-georgia-resa.png
   projects:
     - type: Leadership Training
@@ -391,7 +392,7 @@
         - Internal and External communications strategies and practices
 
 - school: Oconee County Schools
-  school_id: ocs
+  school_id: oconee-county-schools
   logo: oconee-county-schools.png
   projects:
     - type: Efficiency & Effectiveness Audit
@@ -410,7 +411,7 @@
       info: Provide Professional Service, Training and Support for the high school’s administrators in the high school scheduling process
 
 - school: Paulding County School District
-  school_id: pcsd
+  school_id: paulding-county-school-district
   logo: paulding-county-school-district.png
   projects:
     - year: 2018
@@ -477,7 +478,7 @@
       info: Oversight for replacing all high school football fields with turf
 
 - school: Polk County Schools
-  school_id: pcs
+  school_id: polk-county-schools
   logo: polk-county-schools.png
   projects:
     - type: Compensation Study
@@ -500,7 +501,7 @@
         - SPLOST Plan Development & Community Outreach
 
 - school: Richmond County School System
-  school_id: rcss
+  school_id: richmond-county-school-system
   logo: richmond-county-school-system.png
   projects:
     - type: Transportation Procedural Audit
@@ -515,7 +516,7 @@
         - Findings and recommendations
 
 - school: Savannah-Chatham County Public School System
-  school_id: sccpss
+  school_id: savannah-chatham
   logo: savannah-chatham-county-public-school-system.png
   projects:
     - type: Whole Board Governance Training
@@ -524,7 +525,7 @@
       info: Whole Board Governance Training (State-approved local board governance provider)
 
 - school: Southwest Georgia RESA
-  school_id: sgr
+  school_id: southwest-georgia-resa
   logo: southwest-georgia-resa.png
   projects:
     - type: Leadership Training
@@ -533,7 +534,7 @@
       info: In support of Southwest Georgia RESA’s efforts to develop new leaders, EP provided a "Developing New Leaders" class which helping school districts to build future capacity and enhance leadership skills that impact student achievement
 
 - school: Troup County Schools
-  school_id: tcs
+  school_id: troup-county-schools
   logo: troup-county-schools.png
   projects:
     - type: Leadership Training
@@ -542,7 +543,7 @@
       info: EP provided Leadership Training
 
 - school: Walker County Schools
-  school_id: wcs
+  school_id: walker-county-schools
   logo: walker-county-schools.png
   projects:
     - type: Efficiency & Effectiveness Audit
@@ -559,16 +560,15 @@
         - Providing recommendations for improvement"
 
 - school: Clayton County Public Schools
-  school_id: ccps
+  school_id: clayton-county-public-schools
   logo: clayton-county-public-schools.jpg
   projects:
     - year: 2016
       project_date: 2016
-      info:
-        E-SPLOST plan development
+      info: E-SPLOST plan development
 
 - school: Dade County Schools
-  school_id: dcs
+  school_id: dade-county-schools
   logo: dade-county-schools.jpg
   projects:
     - year: 2018
@@ -578,17 +578,16 @@
         - Restructured Organizational Chart
 
 - school: Dalton Public Schools
-  school_id: dps
+  school_id: dalton-public-schools
   logo: dalton-public-schools.jpg
   projects:
     - type: Efficiency and Effectiveness Review
       year: 2018
       project_date: 2018
-      info:
-        Plan to maximize organizational structure and performance, and reduce costs
+      info: Plan to maximize organizational structure and performance, and reduce costs
 
 - school: Floyd County Schools
-  school_id: fcs
+  school_id: floyd-county-schools
   logo: floyd-county-schools.jpg
   projects:
     - year: 2018
@@ -598,7 +597,7 @@
         - Classroom Utilization Plan
 
 - school: Peach County Schools
-  school_id: pcs
+  school_id: peach-county-schools
   logo: peach-county-schools.png
   projects:
     - year: 2010
@@ -608,7 +607,7 @@
         - Salary Analysis
 
 - school: Heard County School System
-  school_id: hcss
+  school_id: heard-county-school-system
   logo: heard-county-school-system.png
   projects:
     - year: 2018
@@ -618,14 +617,12 @@
         - Project Delivery Methods for School Construction
 
 - school: Martin County (Fla.) School District
-  school_id: mcsd
+  school_id: martin-county-school-district
   logo: martin-county-school-district.png
   projects:
     - year: 2018
       project_date: 2018
-      info:
-        Salary/Compensation and job classification study
-
+      info: Salary/Compensation and job classification study
 #- school:
 #  school_id:
 #  logo:
