@@ -100,8 +100,9 @@ try {
      * outputting to the same subfolders inside OUTPUT_DIR folder
      */
     for (let i in imageDirs) {
-      // store reference to directory string (imageDirs[i]) without leading "_assets/"
-      const dir = imageDirs[i] //.slice(String('_assets/').length)
+      // store reference to directory string (imageDirs[i])
+      const dir = imageDirs[i]
+      // without leading "_assets/"
       const dir2 = dir.slice(String('_assets/').length)
 
       await imagemin([`${dir}/*.{jpg,png,svg,gif}`], join(OUTPUT_DIR, dir2), {
