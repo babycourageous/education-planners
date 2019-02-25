@@ -101,21 +101,13 @@ try {
      */
     for (let i in imageDirs) {
       // store reference to directory string (imageDirs[i]) without leading "_assets/"
-      const dir = imageDirs[i].slice(String('_assets/').length)
+      const dir = imageDirs[i] //.slice(String('_assets/').length)
+      const dir2 = dir.slice(String('_assets/').length)
 
-      await imagemin([`${dir}/*.{jpg,png,svg,gif}`], join(OUTPUT_DIR, dir), {
+      await imagemin([`${dir}/*.{jpg,png,svg,gif}`], join(OUTPUT_DIR, dir2), {
         plugins: [
           imageminMozjpeg(options['mozjpegOptions']),
           imageminPngquant(),
-          imageminSvgo(options['svgoOptions']),
-          /**
-           * @todo
-           * Commenting out for now because gif plugin is broken at the moment
-           *
-           * @see https://github.com/imagemin/imagemin-gifsicle/issues/27
-           * @see https://github.com/sindresorhus/is-gif/issues/2
-           */
-          // imageminGifsicle(options['gifOptions']),
         ],
       })
       console.log(`...${(((+i + 1) / imageDirs.length) * 100).toFixed(0)}%`)
