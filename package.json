@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all clean build:assets build:jekyll:dev --parallel serve watch:*",
-    "clean": "rm -rf _site/*",
+    "clean": "rm -rf _site",
     "build": "run-s build:assets build:purgecss build:jekyll:prod",
     "prebuild": "npm run clean",
-    "build:assets": "run-p build:assets:*",
+    "build:assets": "mkdir _site && run-p build:assets:*",
     "build:assets:css": "postcss _assets/css/index.css -o _site/assets/styles.css",
     "build:assets:js": "webpack _assets/javascript/main.js -o _site/assets/bundle.js",
     "build:assets:images": "node imagemin.images.js",
