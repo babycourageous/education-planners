@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm-run-all clean build:assets build:jekyll:dev --parallel serve watch:*",
     "clean": "rm -rf _site",
-    "build": "run-s build:assets build:purgecss build:jekyll:prod",
+    "build": "run-s build:assets build:jekyll:prod build:purgecss",
     "prebuild": "npm run clean",
     "build:assets": "mkdir _site && run-p build:assets:*",
     "build:assets:css": "postcss _assets/css/index.css -o _site/assets/styles.css",
