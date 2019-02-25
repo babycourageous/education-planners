@@ -87,7 +87,6 @@ const getDirectoriesRecursive = source => [
 
 try {
   console.log('Beginning image compression...')
-
   ;(async () => {
     let imageDirs = []
 
@@ -104,7 +103,7 @@ try {
       // store reference to directory string (imageDirs[i]) without leading "_assets/"
       const dir = imageDirs[i].slice(String('_assets/').length)
 
-      await imagemin([`${dir}/*.{jpg,png,svg,gif}`], join(OUTPUT_DIR, dir2), {
+      await imagemin([`${dir}/*.{jpg,png,svg,gif}`], join(OUTPUT_DIR, dir), {
         plugins: [
           imageminMozjpeg(options['mozjpegOptions']),
           imageminPngquant(),
