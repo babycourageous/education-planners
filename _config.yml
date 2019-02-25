@@ -3,8 +3,8 @@ description: Education Planners is an educational consulting firm helping school
 tagline: Helping schools run smarter.
 logo: assets/images/logo.png
 
-url: "" # the base hostname & protocol for your site
-baseurl: "/education-planners" # the subpath of your site, e.g. /blog/
+url: '' # the base hostname & protocol for your site
+baseurl: '' # the subpath of your site, e.g. /blog/
 
 # Build settings
 #theme: false
@@ -25,7 +25,7 @@ exclude:
   - yarn-error.log
   - yarn.lock
 
-keep_files: ["assets"]
+keep_files: ['assets']
 
 collections:
   team:
@@ -33,7 +33,7 @@ collections:
 
 defaults:
   - scope:
-      path: ""
+      path: ''
       type: team
     values:
       layout: resume
