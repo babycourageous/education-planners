@@ -1,7 +1,7 @@
 <section id="about" class="section">
   <div class="container">
     <div class="c-blurb">
-      {{site.data.info.about | markdownify}}
+      {{info.about | md | safe }}
     </div>
   </div>
 </section>

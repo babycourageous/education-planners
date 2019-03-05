@@ -3,11 +3,11 @@
 		<title>quote icon</title>
 		<use xlink:href="#quote"></use>
 	</svg>
-	<h1 class="section-heading text-white">What Our Clients Say</h1>
+	<h1 class="section-heading text-white">{{quotes.headinig}}</h1>
 
 	<div class="c-carousel">
 		<ul id="js-slides" class="c-slides relative sm:w-3/4 sm:mx-auto list-reset">
-			{%- for quote in site.data.quotes -%}
+			{%- for quote in quotes.quote_list -%}
 			<li id="js-slide" class="c-slide w-full block p-3 text-center text-white">
 				<p>&ldquo;{{ quote.quote }}&rdquo;</p>
 				<p class="font-bold italic">- {{ quote.author }}</p>

@@ -1,30 +1,23 @@
-{%- assign projects = site.data.projects | sort: 'school'-%}
 <section id="work" class="section">
   <div class="container">
-    <h1 class="section-heading">Our Work</h1>
-    <div class="c-blurb">{{site.data.info.work | markdownify}}</div>
-
+    <h1 class="section-heading">{{work.heading}}</h1>
+    <div class="c-blurb">{{work.blurb | md | safe}}</div>
     <div id="js-portfolio" class="c-portfolio container flex flex-wrap mt-6 -mx-3 overflow-hidden">
-
-      {%- for project in projects -%}
+      {%- for project in work.projects -%}
       <div class="c-portfolio__item my-3 px-3 w-1/3 md:w-1/6 overflow-hidden">
         <!-- project thumbnail link -->
         <div class="w-full h-100px">
           <a class="flex justify-center items-center w-full h-full" href="portfolio.html#{{project.school_id}}" aria-haspopup="dialog" data-component="dialog" data-target="{{project.school_id}}" data-labelledby="{{project.school_id}}-title"
             data-describedby="{{project.school_id}}-content">
-            <img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="block mx-auto max-h-100px" alt="{{project.school}} logo">
+            <img src="assets/images/schools/logos/{{project.logo}}" class="block mx-auto max-h-100px" alt="{{project.school}} logo">
           </a>
         </div>
         <!-- end project thumbnail link -->
-
         <!-- project detail -->
-        {%- include project.html proj=project -%}
+        {%- include "project.html" -%}
         <!-- end project detail -->
       </div>
       {%- endfor -%}
-
     </div>
-
   </div>
-
 </section>

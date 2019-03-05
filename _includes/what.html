@@ -1,11 +1,11 @@
 <section id="what" class="section bg-grey-lightest">
   <div class="container">
 
-    <h1 class="section-heading text-grey-darker">What We Do</h1>
+    <h1 class="section-heading text-grey-darker">{{services.heading}}</h1>
     <div class="c-blurb">
-      {{site.data.info.what | markdownify}}
+      {{services.blurb | md | safe}}
     </div>
 
   </div>
-  {%- include services.html -%}
+  {%- include "services.html" -%}
 </section>

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-{%- include head.html -%}
+{%- include "head.njk" -%}
 
 <body class="pt-60px font-sans text-grey-darker antialiased leading-normal">
 	<!-- include svg sprite -->
-	<span style="display:none;">{% include svg/sprite.symbol.svg %}</span>
-	{%- if page.path == 'index.html' -%}
-	{%- include header.html -%}
+	<span style="display:none;">{% include "svg/sprite.symbol.svg" %}</span>
+	{%- if page.inputPath == 'index.html' -%}
+	{%- include "header.njk" -%}
 	{%- else -%}
-	{%- include header.html base="index.html" -%}
+	{%- set base = "index.html" -%}
+	{%- include "header.njk" -%}
 	{%- endif -%}
 	<main>
-		{{ content }}
+		{{ content | safe }}
 	</main>
-	{%- include footer.html -%}
+	{%- include "footer.njk" -%}
 
 </body>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXu7vUqT900bOlBAFLTUedjWQQg1tHHxI"></script>

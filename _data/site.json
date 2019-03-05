@@ -1,0 +1,27 @@
+{
+  "title": "Education Planners, LLC",
+  "tagline": "Helping schools run smarter.",
+  "logo": "assets/images/logo.png",
+  "nav": [
+    {
+      "name": "About Us",
+      "href": "#about"
+    },
+    {
+      "name": "What We Do",
+      "href": "#what"
+    },
+    {
+      "name": "Our Work",
+      "href": "#work"
+    },
+    {
+      "name": "Who We Are",
+      "href": "#who"
+    },
+    {
+      "name": "Contact",
+      "href": "#footer"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "heading": "Our Reach",
+  "info": [
+    { "icon": "bus", "number": "1,000,000+", "text": "Students" },
+    { "icon": "school", "number": "40+", "text": "School Systems" },
+    { "icon": "usa", "number": "6", "text": "States" }
+  ],
+  "blurb": "Many thousands of administrators, teachers, classified staff, parents, community leaders and other stakeholders."
+}
