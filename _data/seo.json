@@ -3,5 +3,8 @@
   "description": "Education Planners is an educational consulting firm helping school districts across the Southeast handle organizational challenges and operate more efficiently.",
   "social": {
     "facebook": "https://www.facebook.com/Education-Planners-103900076340208/"
+  },
+  "og": {
+    "image": "assets/images/og.png"
   }
 }
