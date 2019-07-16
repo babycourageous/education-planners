@@ -2,12 +2,12 @@
  * Main Javascript file
  * Place all require statements here
  *
- * require('./FILENAME.js');
+ * require('./FILENAME');
  *
  *
  */
-import './_init.js'
-import './_navigation.js'
+import './_init'
+import './_navigation'
 import './_projects'
 import './_quotes'
-import './_map.js'
+import './_map'
