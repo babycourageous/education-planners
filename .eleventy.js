@@ -34,7 +34,9 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: './', // Equivalent to Jekyll's source property
       output: './_site', // Equivalent to Jekyll's destination property
+      layouts: "_layouts"
     },
-    htmlTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',    
+    templateFormats: ['html', 'njk', 'md'],
   }
 }
