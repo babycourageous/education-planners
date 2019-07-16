@@ -1,10 +1,6 @@
 const marked = require('marked')
 
 module.exports = function(eleventyConfig) {
-  // Aliases are in relation to the _includes folder
-  eleventyConfig.addLayoutAlias('default', 'layouts/default.njk')
-  eleventyConfig.addLayoutAlias('project', 'layouts/project.njk')
-  eleventyConfig.addLayoutAlias('resume', 'layouts/resume.njk')
 
   eleventyConfig.addFilter('md', function(value) {
     let result
