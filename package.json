@@ -14,7 +14,7 @@
     "build:assets:css": "postcss src/_assets/css/index.css -o _site/css/styles.css",
     "build:assets:js": "webpack src/_assets/javascript/index.js -o _site/javascript/main.js",
     "build:assets:images": "node imagemin.images.js",
-    "build:assets:svg": "svg-sprite --svg-xmldecl=false --svg-doctype=false --symbol --symbol-inline=true --symbol-dest=. --dest=_includes src/_assets/svg/*.svg",
+    "build:assets:svg": "svg-sprite --svg-xmldecl=false --svg-doctype=false --symbol --symbol-inline=true --symbol-dest=src/_includes src/_assets/svg/*.svg",
     "build:assets:pdf": "mkdir -p _site/assets/pdf && cp -R src/_assets/pdf/* _site/assets/pdf",
     "build:assets:favicons": "cp src/_assets/favicons/* _site",
     "build:11ty": "eleventy",
