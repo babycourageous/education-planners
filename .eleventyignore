@@ -1,11 +1,8 @@
 _assets
 .gitignore
 .prettierrc
-CNAME
-imagemin.images.js
 package.json
 postcss.config.js
-purgecss.config.js
 README.md
-tailwind.js
+tailwind.config.js
 yarn.lock
