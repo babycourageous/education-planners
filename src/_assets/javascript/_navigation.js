@@ -1,5 +1,5 @@
 import SmoothScroll from 'smooth-scroll'
-import gumshoe from 'gumshoejs'
+import Gumshoe from 'gumshoejs'
 
 // store references to header elements
 const header = document.querySelector('header[role=banner]')
@@ -16,9 +16,13 @@ const menuToggle = document.querySelector('#js-mobile-menu')
 let lastId
 
 const scroll = new SmoothScroll('nav a[href*="#"]', {
-  offset: header.offsetHeight, //() => document.querySelector("header").offsetHeight
+  offset: header.offsetHeight, // () => document.querySelector("header").offsetHeight
 })
-gumshoe.init({ activeClass: 'text-blue-dark' })
+const gum = new Gumshoe('#js-navigation-menu a', {
+  offset() {
+    return header.getBoundingClientRect().height
+  },
+})
 /*
 // Bind to scroll
 window.addEventListener("scroll", function() {

@@ -1,9 +1,9 @@
 import Flickity from 'flickity'
 
-var elem = document.querySelector('#js-slides')
+const elem = document.querySelector('#js-slides')
 
 if (elem) {
-  var flkty = new Flickity(elem, {
+  const flkty = new Flickity(elem, {
     // options
     contain: true,
     prevNextButtons: false,

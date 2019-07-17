@@ -22,14 +22,17 @@ function adjustedGoToHash(hash) {
     const targetAdjustment = targetY - headerOffset
 
     if (targetElement) {
-      //smoothScroll.animateScroll(targetAdjustment) //(targetAdjustment)
+      // smoothScroll.animateScroll(targetAdjustment) //(targetAdjustment)
       window.scrollTo(0, targetAdjustment)
     }
   })
 }
 
 ready(() => {
+  console.log('doc ready')
   if (window.location.pathname === '/portfolio.html') {
+    console.log('portfolio hash')
+
     const hash = window.location.hash.slice(1)
     if (window.location.hash) {
       adjustedGoToHash(hash)

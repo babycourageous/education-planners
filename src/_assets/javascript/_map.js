@@ -1,18 +1,19 @@
-"use strict";
-if (document.getElementById("map")) {
+'use strict'
+
+if (document.getElementById('map')) {
   // Google Maps Scripts
-  var map = null;
+  let map = null
   // When the window has finished loading create our google map below
-  google.maps.event.addDomListener(window, "load", initMap);
-  google.maps.event.addDomListener(window, "resize", function() {
-    map.setCenter(new google.maps.LatLng(33.9501295, -84.5442008));
-  });
+  google.maps.event.addDomListener(window, 'load', initMap)
+  google.maps.event.addDomListener(window, 'resize', function() {
+    map.setCenter(new google.maps.LatLng(33.9501295, -84.5442008))
+  })
 
   function initMap() {
-    console.log("google maps init");
+    console.log('google maps init')
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
+    let mapOptions = {
       // How zoomed in you want the map to start at (always required)
       zoom: 15,
 
@@ -20,7 +21,7 @@ if (document.getElementById("map")) {
       center: new google.maps.LatLng(33.9501295, -84.5442008), // EDPLANNERS ADDRESS
 
       // Disables the default Google Maps UI components
-      //disableDefaultUI: true,
+      // disableDefaultUI: true,
       scrollwheel: false,
       draggable: false,
 
@@ -28,63 +29,63 @@ if (document.getElementById("map")) {
       // This is where you would paste any style found on Snazzy Maps.
       styles: [
         {
-          featureType: "administrative",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#444444" }]
+          featureType: 'administrative',
+          elementType: 'labels.text.fill',
+          stylers: [{ color: '#444444' }],
         },
         {
-          featureType: "landscape",
-          elementType: "all",
-          stylers: [{ color: "#f2f2f2" }]
+          featureType: 'landscape',
+          elementType: 'all',
+          stylers: [{ color: '#f2f2f2' }],
         },
         {
-          featureType: "poi",
-          elementType: "all",
-          stylers: [{ visibility: "off" }]
+          featureType: 'poi',
+          elementType: 'all',
+          stylers: [{ visibility: 'off' }],
         },
         {
-          featureType: "road",
-          elementType: "all",
-          stylers: [{ saturation: -100 }, { lightness: 45 }]
+          featureType: 'road',
+          elementType: 'all',
+          stylers: [{ saturation: -100 }, { lightness: 45 }],
         },
         {
-          featureType: "road.highway",
-          elementType: "all",
-          stylers: [{ visibility: "simplified" }]
+          featureType: 'road.highway',
+          elementType: 'all',
+          stylers: [{ visibility: 'simplified' }],
         },
         {
-          featureType: "road.arterial",
-          elementType: "labels.icon",
-          stylers: [{ visibility: "off" }]
+          featureType: 'road.arterial',
+          elementType: 'labels.icon',
+          stylers: [{ visibility: 'off' }],
         },
         {
-          featureType: "transit",
-          elementType: "all",
-          stylers: [{ visibility: "off" }]
+          featureType: 'transit',
+          elementType: 'all',
+          stylers: [{ visibility: 'off' }],
         },
         {
-          featureType: "water",
-          elementType: "all",
-          stylers: [{ color: "#46bcec" }, { visibility: "on" }]
-        }
-      ]
-    };
+          featureType: 'water',
+          elementType: 'all',
+          stylers: [{ color: '#46bcec' }, { visibility: 'on' }],
+        },
+      ],
+    }
 
     // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById("map");
+    let mapElement = document.getElementById('map')
 
     // Create the Google Map using out element and options defined above
-    map = new google.maps.Map(mapElement, mapOptions);
+    map = new google.maps.Map(mapElement, mapOptions)
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    //var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(33.9501295, -84.5442008);
-    var beachMarker = new google.maps.Marker({
+    // var image = 'img/map-marker.png';
+    let myLatLng = new google.maps.LatLng(33.9501295, -84.5442008)
+    let beachMarker = new google.maps.Marker({
       position: myLatLng,
-      map: map
-      //icon: image
-    });
+      map,
+      // icon: image
+    })
   }
 
   // function initMap() {
