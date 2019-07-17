@@ -1,0 +1,7 @@
+p {
+  @apply mb-2;
+}
+a {
+  @apply text-blue-dark no-underline;
+  transition: all 0.4s;
+}
