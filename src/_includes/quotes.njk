@@ -1,0 +1,26 @@
+<section
+  class="c-quotes section min-h-400px bg-center bg-no-repeat bg-cover text-blue"
+  style="background-image: url(assets/images/quotes-bg.jpg);background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(assets/images/quotes-bg.jpg)"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="block mx-auto w-13 h-13 fill-current"
+    role="img"
+    aria-hidden="true"
+  >
+    <title>quote icon</title>
+    <use xlink:href="#quote"></use>
+  </svg>
+  <h1 class="section-heading text-white">{{ quotes.headinig }}</h1>
+
+  <div class="c-carousel">
+    <ul id="js-slides" class="c-slides relative sm:w-3/4 sm:mx-auto">
+      {%- for quote in quotes.quote_list -%}
+        <li id="js-slide" class="c-slide w-full block p-3 text-center text-white">
+          <p>&ldquo;{{ quote.quote }}&rdquo;</p>
+          <p class="font-bold italic">- {{ quote.author }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>

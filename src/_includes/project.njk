@@ -1,0 +1,37 @@
+<div id="{{project.school_id}}" class="c-modal fixed inset-0 z-20 p-10 bg-overlay overflow-y-scroll invisible">
+  <div class="c-modal__inner relative mx-auto my-5 p-5 w-auto max-w-sm bg-white">
+    <div class="c-modal__project block">
+      <header class="relative">
+        <img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="block mx-auto max-h-100px" alt="{{project.school}} logo">
+        <h2 id="{{project.school_id}}-title" class="my-4 text-xl text-center uppercase">{{project.school}}</h2>
+        <button type="button" class="js-dialog-close absolute top-0 right-0">Close</button>
+      </header>
+
+      <div id="{{project.school_id}}-content" class="c-project__carousel js-project-carousel">
+        {%- set projects_sorted = project.project_list -%}
+        {%- for item in projects_sorted -%}
+          <div class="w-full js-project-item">
+            {%- if item.type %}
+              <p class="text-center">
+                <strong>{{item.type}}</strong>
+              </p>
+            {%- endif -%}
+            <p class="text-sm text-center text-grey-dark">{{item.project_date}}</p>
+            <div class="c-project__info w-full">{{item.info | md | safe}}</div>
+            {%- if item.file -%}
+              <div class="c-project__file">
+                <a href="assets/pdf/work/{{item.file}}" target="_blank" class="text-blue-dark underline">{{item.type}}.pdf</a>
+                <span class="c-project__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 fill-current" role="img" aria-hidden="true">
+                    <title>link icon</title>
+                    <use xlink:href="#link"></use>
+                  </svg>
+                </span>
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
