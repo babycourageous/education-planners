@@ -71,25 +71,6 @@ module.exports = {
       normal: 400,
       bold: 700,
     },
-
-    lineHeight: {
-      hero: 0.7,
-      60: '60px',
-      100: '100px',
-    },
-
-    height: {
-      '60px': '60px',
-      '100px': '100px',
-      '13': '3.25rem',
-      '50vh': '50vh',
-      '70vh': '75vh',
-    },
-
-    maxHeight: {
-      '100px': '100px',
-    },
-
     maxWidth: {
       xs: '20rem',
       sm: '30rem',
@@ -103,21 +84,39 @@ module.exports = {
       full: '100%',
     },
 
-    minHeight: {
-      '400px': '400px',
-    },
+    extend: {
+      lineHeight: {
+        hero: 0.7,
+        60: '60px',
+        100: '100px',
+      },
+      height: {
+        '60px': '60px',
+        '100px': '100px',
+        '13': '3.25rem',
+        '50vh': '50vh',
+        '70vh': '75vh',
+      },
+      maxHeight: {
+        '100px': '100px',
+      },
+      minHeight: {
+        '400px': '400px',
+      },
+      margin: {
+        '7': '1.75rem', // 28
+      },
 
-    padding: {
-      '60px': '60px',
-    },
-
-    width: {
-      '100px': '100px',
-    },
-
-    zIndex: {
-      '999': 999,
-      'nav-ul': '-2',
+      padding: {
+        '60px': '60px',
+      },
+      width: {
+        '100px': '100px',
+      },
+      zIndex: {
+        '999': 999,
+        'nav-ul': '-2',
+      },
     },
   },
 
