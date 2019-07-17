@@ -15,13 +15,12 @@ module.exports = function(eleventyConfig) {
   })
 
   // {{ array | where: key,value }}
-  eleventyConfig.addFilter('where', function(array, key, value) {
+  eleventyConfig.addFilter('where', function(array, key, value) {    
     return array.filter(item => item.data[key] === value)
   })
 
   eleventyConfig.addCollection('team', collection => {
-    const stuff = collection.getFilteredByGlob('_team/*.md')
-    return stuff
+    return collection.getFilteredByGlob('src/team/*.md')
   })
 
   //eleventyConfig.addPassthroughCopy('admin')
