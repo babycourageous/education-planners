@@ -205,7 +205,7 @@
       "school": "Fulton County Schools",
       "school_id": "fulton-county-schools",
       "logo": "fulton-county-schools.png",
-      "projects_list": [
+      "project_list": [
         {
           "type": "Leadership Training & Coaching",
           "year": "2016",
