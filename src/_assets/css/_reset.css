@@ -2,6 +2,6 @@ p {
   @apply mb-2;
 }
 a {
-  @apply text-blue-dark no-underline;
+  @apply text-blue-dark;
   transition: all 0.4s;
 }
