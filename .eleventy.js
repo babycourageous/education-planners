@@ -23,7 +23,14 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob('src/team/*.md')
   })
 
-  //eleventyConfig.addPassthroughCopy('admin')
+  eleventyConfig.addCollection('services', collection => {
+    const items = collection.getFilteredByGlob('src/services/*.md')
+    const sorted = items.sort((a, b) => {
+      return a.data.order - b.data.order
+    })
+
+    return sorted
+  })
 
   return {
     dir: {
