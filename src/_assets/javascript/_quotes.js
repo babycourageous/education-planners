@@ -1,13 +1,21 @@
 import Flickity from 'flickity'
 
-const elem = document.querySelector('#js-slides')
+function initQuotes() {
+  if (!document.querySelector('.c-quotes')) {
+    return
+  }
 
-if (elem) {
-  const flkty = new Flickity(elem, {
-    // options
-    contain: true,
-    prevNextButtons: false,
-    pageDots: true,
-    autoPlay: 8000,
-  })
+  const elem = document.querySelector('#js-slides')
+
+  if (elem) {
+    const flkty = new Flickity(elem, {
+      // options
+      contain: true,
+      prevNextButtons: false,
+      pageDots: true,
+      autoPlay: 8000,
+    })
+  }
 }
+
+export default initQuotes
