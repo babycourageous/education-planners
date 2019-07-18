@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<section class="o-section c-resume">
-  <div class="o-container">
-    <h1 class="c-resume__name">{{page.name}}</h1>
-    <h2 class="c-resume__position">{{page.position}}</h2>
-    <h3 class="c-resume__meta">LinkedIn: <a href="{{page.linkedin}}" target="_blank">{{page.linkedin}}</a>
-    </h3>
-    <div class="c-resume__bio">{{content}}</div>
+<section class="section c-resume">
+  <div class="container">
+    <h1 class="mb-7 font-bold text-2xl text-center uppercase">{{name}}</h1>
+    <p class="mb-0 font-bold">{{position}}</p>
+    <p class="mb-0">
+      <strong>LinkedIn: </strong>
+      <a href="{{linkedin}}" target="_blank">{{linkedin}}</a>
+    </p>
+    <div class="mt-6 ">{{content | safe}}</div>
   </div>
 </section>
