@@ -20,7 +20,13 @@ module.exports = function(eleventyConfig) {
   })
 
   eleventyConfig.addCollection('team', collection => {
-    return collection.getFilteredByGlob('src/team/*.md')
+    return collection.getFilteredByGlob('src/team/*.md').sort((a, b) => 
+    {
+      if (a.data.name > b.data.name) return 1;
+      else if (a.data.name < b.data.name) return -1;
+      else return 0;
+    })
+    
   })
 
   eleventyConfig.addCollection('services', collection => {
