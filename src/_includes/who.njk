@@ -1,5 +1,6 @@
 {%- set featured_members = collections.team | where("featured",true) -%}
 {%- set members = collections.team | where("featured",undefined) -%}
+
 <section id="who" class="section">
 		<div class="container">
 				<h1 class="section-heading">{{ team.heading }}</h1>
