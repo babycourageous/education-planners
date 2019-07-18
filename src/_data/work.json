@@ -631,6 +631,59 @@
           "info": "Salary/Compensation and job classification study"
         }
       ]
+    },
+    {
+      "school": "Elbert County Schools",
+      "school_id": "elbert-county-schools",
+      "logo": "elbert-county-schools.png",
+      "project_list": [
+        {
+          "year": "2012",
+          "project_date": "2012",
+          "info": "Classroom/Enrollment Study"
+        },
+        {
+          "year": "2019",
+          "project_date": "2019",
+          "info": "Classroom/Enrollment Study"
+        }
+      ]
+    },
+    {
+      "school": "Effingham County Schools",
+      "school_id": "effingham-county-schools",
+      "logo": "effingham-county-schools.png",
+      "project_list": [
+        {
+          "year": "2019",
+          "project_date": "2019",
+          "info": "Classroom/Enrollment Study"
+        }
+      ]
+    },
+    {
+      "school": "Fayette County Schools",
+      "school_id": "fayette-county-schools",
+      "logo": "fayette-county-schools.png",
+      "project_list": [
+        {
+          "year": "2019",
+          "project_date": "2019",
+          "info": "Classroom/Enrollment Study"
+        }
+      ]
+    },
+    {
+      "school": "Gordon County Schools",
+      "school_id": "gordon-county-schools",
+      "logo": "gordon-county-schools.png",
+      "project_list": [
+        {
+          "year": "2019",
+          "project_date": "2019",
+          "info": "Superintendent Search"
+        }
+      ]
     }
   ]
 }
