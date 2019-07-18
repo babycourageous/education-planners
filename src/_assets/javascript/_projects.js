@@ -28,7 +28,6 @@ links.forEach(link => {
 
   link.addEventListener('click', e => {
     e.preventDefault()
-    console.log('click')
 
     currentProjectHome = e.currentTarget.parentNode.parentNode
     currentProject = portfolio.querySelector(`#${targetID}`)
