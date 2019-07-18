@@ -1,3 +1,5 @@
+// <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXu7vUqT900bOlBAFLTUedjWQQg1tHHxI"></script>
+
 function initMap() {
   if (document.getElementById('map')) {
     // Google Maps Scripts
