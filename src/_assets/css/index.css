@@ -1,10 +1,10 @@
 @import 'tailwindcss/base';
-@import '_reset';
+@import './_reset';
 
 @import 'tailwindcss/components';
-@import '_flickity.css';
-@import '_micromodal.css';
-@import '_projects.css';
-@import 'components';
+@import './_flickity.css';
+@import './_micromodal.css';
+@import './_projects.css';
+@import './components';
 
 @import 'tailwindcss/utilities';
