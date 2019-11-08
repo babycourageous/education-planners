@@ -3,14 +3,14 @@
 
     {%- for service in collections.services -%}
       <div class="c-service flex flex-col items-center flex-grow-0 flex-shrink w-full md:w-4/5 lg:w-full mt-0 mx-3 mb-3 p-4 bg-white">
-        <span class="c-service__icon flex items-center justify-center w-32 h-32 mb-3 text-gray border border-grey rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 p-4 fill-current" role="img" aria-hidden="true">
+        <h2 class="order-2 mb-3 font-bold text-sm text-gray-darker uppercase">{{ service.data.name }}</h2>
+        <span class="c-service__icon flex order-1 items-center justify-center w-32 h-32 mb-3 border border-grey-dark rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 p-4 text-gray-darker fill-current" role="img" aria-hidden="true">
             <title>{{service.data.icon}}</title>
             <use xlink:href="#{{service.data.icon}}"></use>
           </svg>
         </span>
-        <h2 class="mb-3 font-bold text-sm text-gray-darker uppercase">{{ service.data.name }}</h2>
-        <div class="text-grey-dark">
+        <div class="order-3 text-grey-darker">
           {{service.templateContent | md | safe}}
         </div>
       </div>
