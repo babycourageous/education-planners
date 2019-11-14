@@ -4,7 +4,7 @@ icon: coach
 order: 3
 ---
 
-- [Coaching/Training Overview](assets/images/pdf/coaching-training-overview.pdf)
+- [Coaching/Training Overview](assets/pdf/general/coaching-training-overview.pdf)
 - Strategic Planning, strategy and change management
 - Local Board Governance Training
 - Leadership Training & Coaching
