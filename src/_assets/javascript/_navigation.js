@@ -3,22 +3,12 @@ import Gumshoe from 'gumshoejs'
 
 // store references to header elements
 const header = document.querySelector('header[role=banner]')
-const nav = document.querySelector('nav')
 
-// reference to nav ul
-const topMenu = document.querySelector('#js-navigation-menu')
-
-// All list link items
-const menuItems = topMenu.querySelectorAll('a')
-const menuToggle = document.querySelector('#js-mobile-menu')
-
-// navigation scrolling and highlighting variables
-let lastId
-
-const scroll = new SmoothScroll('nav a[href*="#"]', {
+SmoothScroll('nav a[href*="#"]', {
   offset: header.offsetHeight, // () => document.querySelector("header").offsetHeight
 })
-const gum = new Gumshoe('#js-navigation-menu a', {
+
+Gumshoe('#js-navigation-menu a', {
   offset() {
     return header.getBoundingClientRect().height
   },

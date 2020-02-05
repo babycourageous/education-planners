@@ -2,6 +2,13 @@ const marked = require('marked')
 
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.setBrowserSyncConfig({
+    files: [
+      '_site/css/*',
+      '_site/javascript/*'
+    ]
+  });
+
   eleventyConfig.addFilter('md', function(value) {
     let result
     try {
@@ -37,6 +44,10 @@ module.exports = function(eleventyConfig) {
 
     return sorted
   })
+
+  eleventyConfig.addPassthroughCopy({ "src/_assets/images": "assets/images" });
+  eleventyConfig.addPassthroughCopy({ "src/_assets/pdf": "assets/pdf" });
+  eleventyConfig.addPassthroughCopy({ "src/_assets/favicons/": "/" });
 
   return {
     dir: {
