@@ -7,15 +7,15 @@
     "start": "yarn dev",
     "dev": "NODE_ENV=development npm-run-all --serial build:assets --parallel serve watch:assets:*",
     "serve": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "watch:assets:css": "chokidar 'src/_assets/css/**/*' 'tailwind.config.js' --command 'yarn build:assets:css'",
+    "watch:assets:js": "rollup -c -w",
+    "watch:assets:svg": "chokidar 'src/_assets/svg/**/*.svg' --command 'run-s build:svg'",
     "build": "NODE_ENV=production run-s build:11ty build:assets",
     "build:assets": "run-p build:assets:*",
     "build:assets:css": "postcss src/_assets/css/index.css -o _site/css/styles.css",
     "build:assets:js": "rollup -c",
     "build:assets:svg": "svg-sprite --svg-xmldecl=false --svg-doctype=false --symbol --symbol-inline=true --symbol-dest=src/_includes src/_assets/svg/*.svg",
-    "build:11ty": "ELEVENTY_ENV=production npx eleventy",
-    "watch:assets:css": "chokidar 'src/_assets/css/**/*' 'tailwind.config.js' --command 'yarn build:assets:css'",
-    "watch:assets:js": "rollup -c -w",
-    "watch:assets:svg": "chokidar 'src/_assets/svg/**/*.svg' --command 'run-s build:svg'"
+    "build:11ty": "ELEVENTY_ENV=production npx eleventy"
   },
   "repository": {
     "type": "git",
