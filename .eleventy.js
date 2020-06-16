@@ -1,5 +1,3 @@
-const marked = require('marked')
-
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.setBrowserSyncConfig({
@@ -9,22 +7,10 @@ module.exports = function(eleventyConfig) {
     ]
   });
 
-  eleventyConfig.addFilter('md', function(value) {
-    let result
-    try {
-      result = marked(value).trim()
-      //result = result.replace(/^<p>|<\/p>$/g, '')
-      return result
-    } catch (e) {
-      console.error('Error processing markdown:', e)
-      return value
-    }
-  })
+  eleventyConfig.addFilter('md', require('./_11ty/filters/md'))
 
   // {{ array | where: key,value }}
-  eleventyConfig.addFilter('where', function(array, key, value) {    
-    return array.filter(item => item.data[key] === value)
-  })
+  eleventyConfig.addFilter('where', require('./_11ty/filters/where'))
 
   eleventyConfig.addCollection('team', collection => {
     return collection.getFilteredByGlob('src/team/*.md').sort((a, b) => 
