@@ -1,10 +1,10 @@
 <section id="achievements" class="section bg-center bg-no-repeat" style="background: url(assets/images/stairs.jpg);background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(assets/images/stairs.jpg) center center no-repeat;">
   <div class="container">
     <h1 class="section-heading text-white ">{{metrics.heading}}</h1>
-    <div class="flex flex-col sm:flex-row sm:flex-no-wrap justify-center sm:justify-around w-full">
+    <div class="flex flex-col justify-center w-full sm:flex-row sm:flex-no-wrap sm:justify-around">
 
       {%- for item in metrics.info -%}
-        <div class="c-achievment flex flex-col items-center mb-8 sm:w-1/3">
+        <div class="flex flex-col items-center mb-8 sm:w-1/3">
           <span class="w-100px h-100px rounded-full bg-blue">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-100px h-100px p-4 text-blue-darkest fill-current" role="img" aria-hidden="true">
               <title>{{item.icon}}</title>
