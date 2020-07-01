@@ -1,6 +1,6 @@
 ---
 name: Ann Ferrell
-email: aferrell@edplanners.org
+email: aferrell@edplanners.com
 ---
 Dr. Ann Ferrell has over thirty years of successful experience in education as a teacher, curriculum consultant, and school-based administrator. While serving as a middle school principal for 15 years, Ann recognized that school administrators have a profound need for assistance – partners, if you will – to help with a variety of tasks, especially professional learning. With the increasing demands placed on principals, it can be difficult to design and deliver the perfect training for a school staff. Ann steps in and works with principals to help them articulate unique needs and intended outcomes. She does the research/legwork, develops and delivers the training, and provides follow- up support. Ann is committed to providing teachers and administrators with practical strategies that they can implement in classrooms and schools immediately. With Ann as your partner, you can be assured that your teachers will receive quality professional learning and will come away with techniques that will advance achievement at your school.
 
