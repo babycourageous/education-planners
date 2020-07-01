@@ -1,6 +1,7 @@
 ---
 name: Judy Comer
 email: jcomer@edplanners.org
+past: true
 ---
 Ms. Comer is an educational professional with more than 30 years of public school experience. She has held various leadership and support roles in curriculum and instruction, in staff development, and in general administration at the district level. During her educational career, she:
 
