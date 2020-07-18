@@ -20,7 +20,10 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addCollection('services', (collection) => {
-    const items = collection.getFilteredByGlob('src/services/*.md')
+    const items = collection
+      .getFilteredByGlob('src/services/*.md')
+      .filter((service) => service.data.past !== true)
+
     const sorted = items.sort((a, b) => {
       return a.data.order - b.data.order
     })
