@@ -2,6 +2,7 @@
 name: 'Coaching/Training'
 icon: coach
 order: 3
+past: true
 ---
 
 - [Coaching/Training Overview](assets/pdf/general/coaching-training-overview.pdf)
