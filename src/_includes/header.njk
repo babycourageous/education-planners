@@ -1,18 +1,18 @@
-<header role="banner" class="fixed top-0 z-10 w-full h-auto lg:h-60px bg-white shadow-lg" data-gumshoe-header>
-  <div class="container flex justify-between items-center flex-col lg:flex-row">
+<header class="fixed top-0 z-10 w-full h-auto bg-white shadow-lg lg:h-60px" data-gumshoe-header>
+  <div class="container flex flex-col justify-between items-center lg:flex-row">
     <a href="/" class="inline-block h-60px py-0 px-3 leading-60">
-      <img width="250px" class="inline-block align-middle" src="/assets/images/logo.png" alt="Education Planners, LLC">
+      <img width="250px" class="inline-block align-middle" src="/assets/images/logo.png" alt="Education Planners, LLC logo">
     </a>
 
-    <nav role="navigation" class="relative flex flex-col md:flex-row items-center md:justify-between bg-white">
+    <nav class="relative flex flex-col items-center bg-white md:flex-row md:justify-between">
       <ul id="js-navigation-menu" class="flex items-center border-b-1 border-gray-dark text-center" data-gumshoe>
         {% for navitem in site.nav %}
-
           <li{{- " class=ml-2 sm:ml-4" if not loop.first -}}>
             <a class="block p-2 font-bold text-grey-darker hover:text-blue-darker uppercase text-xs md:text-base" href="/{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
           </li>
         {% endfor %}
       </ul>
     </nav>
+
   </div>
 </header>

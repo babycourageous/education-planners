@@ -2,7 +2,7 @@ import SmoothScroll from 'smooth-scroll'
 import Gumshoe from 'gumshoejs'
 
 // store references to header elements
-const header = document.querySelector('header[role=banner]')
+const header = document.querySelector('header')
 
 SmoothScroll('nav a[href*="#"]', {
   offset: header.offsetHeight, // () => document.querySelector("header").offsetHeight
