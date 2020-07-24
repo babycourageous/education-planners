@@ -8,6 +8,11 @@ module.exports = function (eleventyConfig) {
   // {{ array | where: key,value }}
   eleventyConfig.addFilter('where', require('./_11ty/filters/where'))
 
+  eleventyConfig.addPairedShortcode(
+    'blurb',
+    require('./_11ty/shortcodes/blurb')
+  )
+
   eleventyConfig.addCollection('team', (collection) => {
     return collection
       .getFilteredByGlob('src/team/*.md')
