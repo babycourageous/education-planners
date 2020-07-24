@@ -1,28 +1,4 @@
-/*
-
-Tailwind - The Utility-First CSS Framework
-
-A project by Adam Wathan (@adamwathan), Jonathan Reinink (@reinink),
-David Hemphill (@davidhemphill) and Steve Schoger (@steveschoger).
-
-Welcome to the Tailwind config file. This is where you can customize
-Tailwind specifically for your project. Don't be intimidated by the
-length of this file. It's really just a big JavaScript object and
-we've done our very best to explain each section.
-
-View the full documentation at https://tailwindcss.com.
-
-
-|-------------------------------------------------------------------------------
-| The default config
-|-------------------------------------------------------------------------------
-|
-| This variable contains the default Tailwind config. You don't have
-| to use it, but it can sometimes be helpful to have available. For
-| example, you may choose to merge your custom configuration
-| values with some of the Tailwind defaults.
-|
-*/
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   theme: {
@@ -121,56 +97,42 @@ module.exports = {
     },
   },
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Variants                  https://tailwindcss.com/docs/configuration#modules
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you control which modules are generated and what variants are
-  | generated for each of those modules.
-  |
-  | Currently supported variants:
-  |   - responsive
-  |   - hover
-  |   - focus
-  |   - focus-within
-  |   - active
-  |   - group-hover
-  |
-  | To disable a module completely, use `false` instead of an array.
-  |
-  */
-
-  variants: {
-    fill: [],
-    stroke: [],
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Plugins                                https://tailwindcss.com/docs/plugins
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you can register any plugins you'd like to use in your
-  | project. Tailwind's built-in `container` plugin is enabled by default to
-  | give you a Bootstrap-style responsive container component out of the box.
-  |
-  | Be sure to view the complete plugin documentation to learn more about how
-  | the plugin system works.
-  |
-  */
+  // variants: {
+  //   fill: [],
+  //   stroke: [],
+  // },
 
   plugins: [
-    ({ addUtilities }) => {
-      const newUtilities = {
-        '.-transformY-100': {
-          transform: 'translateY(-100%)',
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.text-shadow': {
+          textShadow: '0px 4px 4px rgba(0, 0, 0, 0.6)',
         },
-      }
-
-      addUtilities(newUtilities, {
-        variants: ['responsive'],
       })
-    },
+    }),
+
+    plugin(function ({ addComponents }) {
+      addComponents({
+        '.wrapper': {
+          width: '100%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
+          columnGap: '1rem',
+          paddingLeft: '1rem',
+          paddingRight: '1rem',
+          '@screen sm': {
+            maxWidth: '640px',
+          },
+          '@screen md': {
+            maxWidth: '768px',
+          },
+          '@screen lg': {
+            maxWidth: '1024px',
+          },
+        },
+      })
+    }),
   ],
 }
