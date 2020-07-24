@@ -13,30 +13,6 @@ module.exports = {
       xl: '1200px',
     },
 
-    colors: {
-      transparent: 'transparent',
-
-      black: '#212934',
-      'grey-darkest': '#404A59',
-      'grey-darker': '#5F6B7A',
-      'grey-dark': '#8895A7',
-      grey: '#B8C4CF',
-      'grey-light': '#CFD6DE',
-      'grey-lighter': '#E1E6EB',
-      'grey-lightest': '#F8F9FA',
-      white: '#ffffff',
-
-      'blue-darkest': '#1D3E4E',
-      'blue-darker': '#00486a',
-      'blue-dark': '#0078AE', // '#1B7098',
-      blue: '#0BADFB', // '#339CCC',
-      'blue-light': '#71C8F4', // '#5CAFD6',
-      'blue-lighter': '#BAE4F7',
-      'blue-lightest': '#E5F7FF',
-
-      overlay: 'rgba(0,0,0,0.6)',
-    },
-
     fontFamily: {
       sans: ['PT Sans', 'sans-serif'],
       serif: ['Constantia', 'Georgia', 'serif'],
@@ -61,6 +37,30 @@ module.exports = {
     },
 
     extend: {
+      colors: {
+        transparent: 'transparent',
+
+        black: '#212934',
+        // 'grey-darkest': '#404A59',
+        // 'grey-darker': '#5F6B7A',
+        // 'grey-dark': '#8895A7',
+        // grey: '#B8C4CF',
+        // 'grey-light': '#CFD6DE',
+        // 'grey-lighter': '#E1E6EB',
+        // 'grey-lightest': '#F8F9FA',
+        // white: '#ffffff',
+
+        'blue-darkest': '#1D3E4E',
+        'blue-darker': '#00486a',
+        'blue-dark': '#0078AE', // '#1B7098',
+        blue: '#0BADFB', // '#339CCC',
+        'blue-light': '#71C8F4', // '#5CAFD6',
+        'blue-lighter': '#BAE4F7',
+        'blue-lightest': '#E5F7FF',
+
+        overlay: 'rgba(0,0,0,0.6)',
+      },
+
       lineHeight: {
         hero: 0.7,
         60: '60px',
