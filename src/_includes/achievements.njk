@@ -1,24 +1,29 @@
 <section id="achievements" class="section bg-center bg-no-repeat" style="background: url(assets/images/stairs.jpg);background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(assets/images/stairs.jpg) center center no-repeat;">
-  <div class="container">
-    <h1 class="section-heading text-white ">{{metrics.heading}}</h1>
-    <div class="flex flex-col justify-center w-full sm:flex-row sm:flex-no-wrap sm:justify-around">
+  <h1 class="section-heading text-white ">{{metrics.heading}}</h1>
+  <div class="wrapper">
+
+    <div class="col-span-12 flex flex-col justify-center w-full sm:flex-row sm:flex-no-wrap sm:justify-around">
 
       {%- for item in metrics.info -%}
-        <div class="flex flex-col items-center mb-8 sm:w-1/3">
-          <span class="w-100px h-100px rounded-full bg-blue">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-100px h-100px p-4 text-blue-darkest fill-current" role="img" aria-hidden="true">
+        <div class="flex">
+          <span class="w-20 h-20 p-2 rounded-md bg-blue-darkest text-white">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" role="img" aria-hidden="true">
               <title>{{item.icon}}</title>
               <use xlink:href="#{{item.icon}}"></use>
             </svg>
           </span>
-          <p class="mb-0 text-5xl text-white">{{ item.number }}</p>
-          <p class="text-sm text-white uppercase">{{ item.text }}</p>
+          <div class="ml-4">
+            <span class="block text-2xl leading-none text-white uppercase text-shadow">{{item.intro}}</span>
+            <span class="block text-4xl leading-none text-blue text-shadow">{{ item.number }}</span>
+            <span class="block text-2xl leading-none text-white uppercase text-shadow">{{ item.text }}</span>
+          </div>
         </div>
       {%- endfor -%}
 
     </div>
-    <div class="c-blurb text-white">
-      <p>{{metrics.blurb}}</p>
-    </div>
+
+    {% blurb %}
+    <p class="pt-8 text-white">{{metrics.blurb}}</p>
+    {% endblurb %}
   </div>
 </section>
