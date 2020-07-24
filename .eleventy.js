@@ -1,3 +1,5 @@
+const toml = require('toml')
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     files: ['_site/css/*', '_site/javascript/*'],
@@ -35,6 +37,8 @@ module.exports = function (eleventyConfig) {
 
     return sorted
   })
+
+  eleventyConfig.addDataExtension('toml', (contents) => toml.parse(contents))
 
   eleventyConfig.addPassthroughCopy({ 'src/_assets/images': 'assets/images' })
   eleventyConfig.addPassthroughCopy({ 'src/_assets/pdf': 'assets/pdf' })
