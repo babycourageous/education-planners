@@ -4,13 +4,13 @@
     {%- for service in collections.services -%}
       <div class="c-service bg-white border c-service flex flex-col flex-grow-0 flex-shrink items-center lg:w-full mb-3 md:w-4/5 mt-0 mx-3 pb-4 px-4 rounded-lg w-full">
         <h2 class="mb-3 order-2 text-2xl text-gray-darker uppercase">{{ service.data.name }}</h2>
-        <span class="-mt-10 bg-grey-lightest border border-grey-dark flex h-20 items-center justify-center mb-3 order-1 rounded-lg w-20">
+        <span class="-mt-10 bg-gray-100 border border-gray-600 flex h-20 items-center justify-center mb-3 order-1 rounded-lg w-20">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-full text-gray-darker w-full" role="img" aria-hidden="true" fill="currentColor">
             <title>{{service.data.icon}}</title>
             <use xlink:href="#{{service.data.icon}}"></use>
           </svg>
         </span>
-        <div class="order-3 text-grey-darker">
+        <div class="order-3 text-gray-700">
           {{service.templateContent | mdli | safe}}
         </div>
       </div>
