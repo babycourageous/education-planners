@@ -5,8 +5,8 @@ const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
 const purgecss = require('@fullhuman/postcss-purgecss')({
   // Specify the paths to all of the template files in your project
-  // content: ['./src/**/*.html', './src/**/*.njk', './_11ty/**/*.js'],
-  content: ['./_site/**/*.html'],
+  content: ['./src/**/*.html', './src/**/*.njk', './_11ty/**/*.js'],
+  // content: ['./_site/**/*.html'],
   whitelistPatterns: [/^flickity/],
   whitelistPatternsChildren: [/^flickity/],
 
