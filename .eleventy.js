@@ -4,7 +4,7 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addFilter('md', require('./_11ty/filters/md'))
-
+  eleventyConfig.addFilter('mdli', require('./_11ty/filters/mdli'))
   // {{ array | where: key,value }}
   eleventyConfig.addFilter('where', require('./_11ty/filters/where'))
 
