@@ -2,35 +2,42 @@
 {%- set members = collections.team | where("featured",undefined) -%}
 
 <section id="who" class="section">
-	<div class="container">
-		<h1 class="section-heading">{{ team.heading }}</h1>
-		<div class="c-blurb">{{ team.blurb | md | safe }}</div>
+	<h1 class="section-heading">{{ team.heading }}</h1>
+	<div class="wrapper">
+		{% blurb %}
+		{{ team.blurb | md | safe }}
+		{% endblurb %}
 
-		<hr class="w-32 mx-auto mt-4 mb-6 border border-grey-lighter clearfix"/>
+		<hr class="col-span-12 w-32 mx-auto mt-4 mb-6 border border-grey-lighter clearfix"/>
 
-		{%- for member in featured_members -%}
-			<div class="c-member mb-8">
-				<div class="text-center">
-					<p>
-						<a href="{{member.url}}" class="font-bold">{{member.data.name}}</a><br/>
-						{{ member.data.position }}<br/>
+		<div class="col-span-4">
+			{%- for member in featured_members -%}
+				<div class="c-member mb-8">
+					<div>
+						<p>
+							<a href="{{member.url}}" class="font-bold">{{member.data.name}}</a><br/>
+							{{ member.data.position }}<br/>
 (<a href="mailto:{{member.data.email}}">{{member.data.email}}</a>)
 </p>
+					</div>
 				</div>
-			</div>
-		{%- endfor -%}
+			{%- endfor -%}
+		</div>
 
-		{%- for member in members -%}
-			<div class="c-member mt-4">
-				<div class="text-center">
-					<p class="mb-0">{{member.data.name}}</p>
-					{% if member.data.email %}
-						<p>
-							<a href="mailto:{{member.data.email}}">{{member.data.email}}</a>
-						</p>
-					{% endif %}
+		<div class="col-span-8 grid grid-cols-8">
+
+			{%- for member in members -%}
+				<div class="c-member col-span-4 mt-4">
+					<div>
+						<p class="mb-0">{{member.data.name}}</p>
+						{% if member.data.email %}
+							<p>
+								<a href="mailto:{{member.data.email}}">{{member.data.email}}</a>
+							</p>
+						{% endif %}
+					</div>
 				</div>
-			</div>
-		{%- endfor -%}
+			{%- endfor -%}
+		</div>
 	</div>
 </section>
