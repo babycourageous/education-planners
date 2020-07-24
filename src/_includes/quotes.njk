@@ -3,22 +3,21 @@
   style="background-image: url(assets/images/quotes-bg.jpg);background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(assets/images/quotes-bg.jpg)"
 >
   <h1 class="section-heading text-white order-2">{{ quotes.heading }}</h1>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="block mx-auto w-13 h-13 fill-current order-1"
-    role="img"
-    aria-hidden="true"
-  >
-    <title>quote icon</title>
-    <use xlink:href="#quote"></use>
-  </svg>
-
   <div class="c-carousel order-3">
-    <ul id="js-slides" class="c-slides relative sm:w-3/4 sm:mx-auto">
+    <ul id="js-slides" class="c-slides relative sm:w-3/5 sm:mx-auto">
       {%- for quote in quotes.quote_list -%}
-        <li id="js-slide-{{loop.index}}" class="c-slide block w-full p-3 text-center text-white">
-          <p>&ldquo;{{ quote.quote }}&rdquo;</p>
-          <p class="font-bold italic">- {{ quote.author }}</p>
+        <li id="js-slide-{{loop.index}}" class="c-slide block w-full p-3 text-white">
+          <blockquote class="relative">
+            <div class="absolute -ml-2 -mt-2">
+              <svg viewBox="0 0 64 64" class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.96892 8.11084H22.2578C26.0978 8.11084 29.2267 11.2397 29.2267 15.0797V30.3686C29.2267 34.2086 26.0978 37.3375 22.2578 37.3375H9.74225V38.2619C9.74225 42.6708 13.2978 46.2264 17.7067 46.2264C20.4089 46.2264 22.5422 48.4308 22.5422 51.0619C22.5422 53.7642 20.3378 55.8975 17.7067 55.8975C7.96447 55.9686 3.05298e-05 48.0042 3.05298e-05 38.2619V15.0797C3.05298e-05 11.2397 3.12892 8.11084 6.96892 8.11084Z" fill="white" fill-opacity="0.2"/>
+                <path d="M41.7422 8.11084H57.0311C60.8711 8.11084 64 11.2397 64 15.0797V30.3686C64 34.2086 60.8711 37.3375 57.0311 37.3375H44.5156V38.2619C44.5156 42.6708 48.0711 46.2264 52.48 46.2264C55.1822 46.2264 57.3156 48.4308 57.3156 51.0619C57.3156 53.7642 55.1111 55.8975 52.48 55.8975C42.6667 55.8975 34.7733 47.933 34.7733 38.1908V15.0797C34.7733 11.2397 37.9022 8.11084 41.7422 8.11084Z" fill="white" fill-opacity="0.2"/>
+              </svg>
+
+            </div>
+            <p class="italic">{{ quote.quote }}</p>
+          </blockquote>
+          <div>- <span class="font-bold uppercase">{{ quote.author }}</span>, <span class="text-sm">{{quote.role}}</span></div>
         </li>
       {%- endfor -%}
     </ul>
