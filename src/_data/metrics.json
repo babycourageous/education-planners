@@ -1,9 +1,19 @@
 {
   "heading": "Our Reach",
   "info": [
-    { "icon": "bus", "number": "1,000,000+", "text": "Students" },
-    { "icon": "school", "number": "40+", "text": "School Systems" },
-    { "icon": "usa", "number": "6", "text": "States" }
+    {
+      "icon": "bus",
+      "intro": "Over",
+      "number": "1,000,000+",
+      "text": "Students"
+    },
+    {
+      "icon": "school",
+      "intro": "In",
+      "number": "50+",
+      "text": "School Systems"
+    },
+    { "icon": "usa", "intro": "Across", "number": "6", "text": "States" }
   ],
-  "blurb": "Many thousands of administrators, teachers, classified staff, parents, community leaders and other stakeholders."
+  "blurb": "In addition, we’ve helped many thousands of administrators, teachers, classified staff, parents, community leaders, and other stakeholders."
 }
