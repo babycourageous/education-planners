@@ -14,8 +14,7 @@
       {%- for member in featured_members -%}
         <div class="c-member mb-8">
           <div>
-            <p>
-              <a href="{{member.url}}" class="font-bold">{{member.data.name}}</a><br/>
+            <p>{{member.data.name}} (<a href="{{member.url}}" class="font-bold">Bio</a>)<br/>
               {{ member.data.position }}<br/>
 (<a href="mailto:{{member.data.email}}">{{member.data.email}}</a>)
 </p>
