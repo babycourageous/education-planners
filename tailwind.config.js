@@ -118,7 +118,7 @@ module.exports = {
           marginLeft: 'auto',
           marginRight: 'auto',
           display: 'grid',
-          gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
+          gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
           columnGap: '1rem',
           paddingLeft: '1rem',
           paddingRight: '1rem',
@@ -126,6 +126,7 @@ module.exports = {
             maxWidth: '640px',
           },
           '@screen md': {
+            gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
             maxWidth: '768px',
           },
           '@screen lg': {

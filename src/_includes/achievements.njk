@@ -2,20 +2,20 @@
   <h1 class="section-heading text-white ">{{metrics.heading}}</h1>
   <div class="wrapper">
 
-    <div class="col-span-12 flex flex-col justify-center w-full sm:flex-row sm:flex-no-wrap sm:justify-around">
+    <div class="flex flex-col justify-center col-start-2 col-span-3 w-full space-y-4 md:flex-row md:flex-no-wrap md:justify-around md:col-span-12 md:space-y-0">
 
       {%- for item in metrics.info -%}
-        <div class="flex">
+        <div class="flex items-center md:items-start">
           <span class="w-20 h-20 p-2 rounded-md bg-blue-darkest text-white">
             <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" role="img" aria-hidden="true">
               <title>{{item.icon}}</title>
               <use xlink:href="#{{item.icon}}"></use>
             </svg>
           </span>
-          <div class="ml-4">
-            <span class="block text-2xl leading-none text-white uppercase text-shadow">{{item.intro}}</span>
-            <span class="block text-4xl leading-none text-blue text-shadow">{{ item.number }}</span>
-            <span class="block text-2xl leading-none text-white uppercase text-shadow">{{ item.text }}</span>
+          <div class="ml-4 space-y-1">
+            <span class="block text-xl md:text-xl lg:text-2xl leading-none text-white uppercase text-shadow">{{item.intro}}</span>
+            <span class="block text-xl md:text-2xl lg:text-4xl leading-none text-blue text-shadow">{{ item.number }}</span>
+            <span class="block text-xl md:text-xl lg:text-2xl leading-none text-white uppercase text-shadow">{{ item.text }}</span>
           </div>
         </div>
       {%- endfor -%}

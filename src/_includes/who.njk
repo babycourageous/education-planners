@@ -8,32 +8,47 @@
     {{ team.blurb | md | safe }}
     {% endblurb %}
 
-    <hr class="col-span-12 w-32 mx-auto mt-4 mb-6 border border-gray-300 clearfix"/>
+    <hr class="col-span-4 w-32 mx-auto mt-4 mb-6 border border-gray-300 clearfix md:col-span-12"/>
 
     <div class="col-span-4">
       {%- for member in featured_members -%}
         <div class="c-member mb-8">
-          <div>
-            <p>{{member.data.name}} (<a href="{{member.url}}" class="font-bold">Bio</a>)<br/>
-              {{ member.data.position }}<br/>
-(<a href="mailto:{{member.data.email}}">{{member.data.email}}</a>)
-</p>
-          </div>
+          <p class="flex items-center mb-0">
+            <span class="block">{{member.data.name}}
+            </span>
+            {% if member.data.email %}
+
+              <a class="ml-2" href="mailto:{{member.data.email}}">
+                <svg class="w-4 h-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </a>
+            {% endif %}
+          </p>
+          <p>
+            <span class="block">{{ member.data.position }}</span>
+            <span class="block">(<a href="{{member.url}}" class="font-bold">Bio</a>)</span>
+          </p>
         </div>
       {%- endfor -%}
     </div>
 
-    <div class="col-span-8 grid grid-cols-8">
+    <div class="col-span-4 md:col-span-8 grid grid-cols-8 gap-4">
 
       {%- for member in members -%}
-        <div class="c-member col-span-4 mt-4">
+        <div class="c-member col-span-4">
           <div>
-            <p class="mb-0">{{member.data.name}}</p>
-            {% if member.data.email %}
-              <p>
-                <a href="mailto:{{member.data.email}}">{{member.data.email}}</a>
-              </p>
-            {% endif %}
+            <p class="flex items-center mb-0">
+              <span>{{member.data.name}}</span>
+              {% if member.data.email %}
+
+                <a class="ml-2" href="mailto:{{member.data.email}}">
+                  <svg class="w-4 h-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </a>
+              {% endif %}
+            </p>
           </div>
         </div>
       {%- endfor -%}
