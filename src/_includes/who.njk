@@ -13,23 +13,24 @@
     <div class="col-span-4">
       {%- for member in featured_members -%}
         <div class="c-member mb-8">
-          <p class="flex items-center mb-0">
-            <span class="block">{{member.data.name}}
-            </span>
-            {% if member.data.email %}
-
-              <a class="p-2" href="mailto:{{member.data.email}}">
+          <p class="mb-0">
+            <span class="block text-lg">{{member.data.name}}</span>
+            <span class="block font-bold">{{ member.data.position }}</span>
+          </p>
+          <p>
+            <span class="flex">
+              <a href="{{member.url}}" class="block font-bold">Bio</a>
+              <span class="mx-2">|</span>
+              <a class="flex items-center" href="mailto:{{member.data.email}}">
                 <svg class="w-4 h-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                   <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
+                <span class="ml-1 text-sm">email</span>
               </a>
-            {% endif %}
-          </p>
-          <p>
-            <span class="block">{{ member.data.position }}</span>
-            <span class="block">(<a href="{{member.url}}" class="font-bold">Bio</a>)</span>
+            </span>
           </p>
         </div>
+
       {%- endfor -%}
     </div>
 
@@ -37,19 +38,17 @@
 
       {%- for member in members -%}
         <div class="c-member col-span-4">
-          <div>
-            <p class="flex items-center mb-0">
-              <span>{{member.data.name}}</span>
-              {% if member.data.email %}
-
-                <a class="p-2" href="mailto:{{member.data.email}}">
-                  <svg class="w-4 h-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                </a>
-              {% endif %}
-            </p>
-          </div>
+          <span class="block">{{member.data.name}}</span>
+          {% if member.data.email %}
+            <span class="flex">
+              <a class="flex items-center" href="mailto:{{member.data.email}}">
+                <svg class="w-4 h-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span class="ml-1 text-sm">email</span>
+              </a>
+            </span>
+          {% endif %}
         </div>
       {%- endfor -%}
     </div>
