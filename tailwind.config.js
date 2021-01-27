@@ -41,14 +41,6 @@ module.exports = {
         transparent: 'transparent',
 
         black: '#212934',
-        // 'grey-darkest': '#404A59',
-        // 'grey-darker': '#5F6B7A',
-        // 'grey-dark': '#8895A7',
-        // grey: '#B8C4CF',
-        // 'grey-light': '#CFD6DE',
-        // 'grey-lighter': '#E1E6EB',
-        // 'grey-lightest': '#F8F9FA',
-        // white: '#ffffff',
 
         'blue-darkest': '#1D3E4E',
         'blue-darker': '#00486a',
@@ -69,7 +61,7 @@ module.exports = {
       height: {
         '60px': '60px',
         '100px': '100px',
-        '13': '3.25rem',
+        13: '3.25rem',
         '50vh': '50vh',
         '70vh': '75vh',
       },
@@ -80,27 +72,22 @@ module.exports = {
         '400px': '400px',
       },
       margin: {
-        '7': '1.75rem', // 28
+        7: '1.75rem', // 28
       },
 
       padding: {
         '60px': '60px',
-        '14': '3.5rem',
+        14: '3.5rem',
       },
       width: {
         '100px': '100px',
       },
       zIndex: {
-        '999': 999,
+        999: 999,
         'nav-ul': '-2',
       },
     },
   },
-
-  // variants: {
-  //   fill: [],
-  //   stroke: [],
-  // },
 
   plugins: [
     plugin(function ({ addUtilities }) {
@@ -136,4 +123,15 @@ module.exports = {
       })
     }),
   ],
+
+  purge: {
+    content: ['./src/**/*.html', './src/**/*.njk', './_11ty/**/*.js'],
+    options: {
+      defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+      safelist: {
+        standard: [/^flickity/],
+        deep: [/^flickity/],
+      },
+    },
+  },
 }

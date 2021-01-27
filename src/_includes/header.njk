@@ -8,7 +8,7 @@
       <ul id="js-navigation-menu" class="flex items-center border-b-1 border-gray-dark text-center" data-gumshoe>
         {% for navitem in site.nav %}
           <li{{- " class=ml-2 sm:ml-4" if not loop.first -}}>
-            <a class="block p-2 font-bold text-gray-700 hover:text-blue-darker uppercase text-xs md:text-base" href="/{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
+            <a class="block p-2 font-bold text-gray-700 hover:text-blue-darker uppercase text-xs md:text-base md:leading-normal" href="/{{ navitem.href }}" class="navigation__link">{{ navitem.name }}</a>
           </li>
         {% endfor %}
       </ul>

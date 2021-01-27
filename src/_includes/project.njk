@@ -3,7 +3,7 @@
     <div class="c-modal__project block">
       <header class="relative">
         <img src="{{site.baseurl}}/assets/images/schools/logos/{{project.logo}}" class="block mx-auto max-h-100px" alt="">
-        <h2 id="{{project.school_id}}-title" class="my-4 text-xl text-center uppercase">{{project.school}}</h2>
+        <h2 id="{{project.school_id}}-title" class="my-4 text-xl leading-normal text-center uppercase">{{project.school}}</h2>
         <button type="button" class="js-dialog-close absolute top-0 right-0">Close</button>
       </header>
 
@@ -16,7 +16,7 @@
                 <strong>{{item.type}}</strong>
               </p>
             {%- endif -%}
-            <p class="text-sm text-center text-gray-600">{{item.project_date}}</p>
+            <p class="text-sm leading-normal text-center text-gray-600">{{item.project_date}}</p>
             <div class="c-project__info w-full">{{item.info | md | safe}}</div>
             {%- if item.file -%}
               <div class="">
