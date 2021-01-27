@@ -1,7 +1,7 @@
 <section id="about" class="section">
-  <div class="container">
-    <div class="c-blurb">
-      {{info.about | md | safe }}
-    </div>
+  <div class="wrapper">
+    {% blurb %}
+    {{site.about | md | safe }}
+    {% endblurb %}
   </div>
 </section>

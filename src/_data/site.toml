@@ -1,0 +1,25 @@
+name = "Education Planners, LLC"
+url = "https://edplanners.org"
+tagline = "Helping schools run smarter."
+logo = "assets/images/logo.png"
+about = '''
+Education Planners is an educational consulting firm helping school districts across the Southeast handle organizational challenges and operate more efficiently.
+
+Founded by James Wilson, nationally acknowledged education leader and innovator of instructional technology as Superintendent of the Fulton and Cobb County school systems in Georgia, Education Planners has solutions for the wide range of issues that impact all school systems.
+'''
+
+[[nav]]
+"name" = "About Us"
+"href" = "#about"
+[[nav]]
+"name" = "What We Do"
+"href" = "#what"
+[[nav]]
+"name" = "Our Work"
+"href" = "#work"
+[[nav]]
+"name" = "Who We Are"
+"href" = "#who"
+[[nav]]
+"name" = "Contact"
+"href" = "#location"

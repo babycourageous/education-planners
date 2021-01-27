@@ -1,8 +1,8 @@
 <section id="work" class="section">
-  <div class="container">
-    <h1 class="section-heading">{{work.heading}}</h1>
-    <div class="c-blurb">{{work.blurb | md | safe}}</div>
-    <div id="js-portfolio" class="c-portfolio container flex flex-wrap mt-6 -mx-3 overflow-hidden">
+  <h1 class="section-heading">{{work.heading}}</h1>
+  <div class="wrapper">
+    {% blurb %}{{work.blurb | md | safe}}{% endblurb %}
+    <div id="js-portfolio" class="c-portfolio col-span-4 flex flex-wrap mt-6 -mx-3 overflow-hidden md:col-span-12">
       {%- for project in work.projects | sort(false, true, 'school') -%}
         <div class="c-portfolio__item w-1/3 my-3 px-3 overflow-hidden md:w-1/6">
           <!-- project thumbnail link -->

@@ -1,11 +1,18 @@
-<section id="what" class="section bg-grey-lightest">
-  <div class="container">
+<section id="what" class="section bg-gray-100">
+  <h1 class="section-heading text-gray-700">{{services.heading}}</h1>
 
-    <h1 class="section-heading text-grey-darker">{{services.heading}}</h1>
-    <div class="c-blurb">
-      {{services.blurb | md | safe}}
-    </div>
+  <div class="wrapper">
+
+    {% blurb %}
+    {{services.intro}}
+    {% endblurb %}
+
+    {%- include "services.njk" -%}
+
+    {% blurb %}
+    {{services.blurb | md | safe}}
+    {% endblurb %}
 
   </div>
-  {%- include "services.njk" -%}
+
 </section>

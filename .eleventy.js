@@ -1,12 +1,19 @@
+const toml = require('toml')
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     files: ['_site/css/*', '_site/javascript/*'],
   })
 
   eleventyConfig.addFilter('md', require('./_11ty/filters/md'))
-
+  eleventyConfig.addFilter('mdli', require('./_11ty/filters/mdli'))
   // {{ array | where: key,value }}
   eleventyConfig.addFilter('where', require('./_11ty/filters/where'))
+
+  eleventyConfig.addPairedShortcode(
+    'blurb',
+    require('./_11ty/shortcodes/blurb')
+  )
 
   eleventyConfig.addCollection('team', (collection) => {
     return collection
@@ -30,6 +37,8 @@ module.exports = function (eleventyConfig) {
 
     return sorted
   })
+
+  eleventyConfig.addDataExtension('toml', (contents) => toml.parse(contents))
 
   eleventyConfig.addPassthroughCopy({ 'src/_assets/images': 'assets/images' })
   eleventyConfig.addPassthroughCopy({ 'src/_assets/pdf': 'assets/pdf' })

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-	{% include "head.njk" %}
-	<body id="top" class="pt-60px font-sans text-grey-darker antialiased leading-normal">
-		<!-- include svg sprite -->
-		<span style="display:none;">{% include "svg/sprite.symbol.svg" %}</span>
-		{%- if page.inputPath == 'index.html' -%}
-			{% include "header.njk" %}
-		{%- else -%}
-			{%- set base = "index.html" -%}
-			{% include "header.njk" %}
-		{%- endif -%}
-		<main>
-			{{ content | safe }}
-		</main>
-		{% include "footer.njk" %}
-	</body>
-	<script src="{{ site.baseurl }}/javascript/index.js"></script>
+  {% include "head.njk" %}
+  <body id="top" class="pt-60px font-sans text-gray-700 antialiased leading-normal">
+    <!-- include svg sprite -->
+    <span style="display:none;">{% include "svg/sprite.symbol.svg" %}</span>
+    {%- if page.inputPath == 'index.html' -%}
+      {% include "header.njk" %}
+    {%- else -%}
+      {%- set base = "index.html" -%}
+      {% include "header.njk" %}
+    {%- endif -%}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+  </body>
+  <script src="{{ site.baseurl }}/javascript/index.js"></script>
 </html>
