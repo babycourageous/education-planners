@@ -41,14 +41,6 @@ module.exports = {
         transparent: 'transparent',
 
         black: '#212934',
-        // 'grey-darkest': '#404A59',
-        // 'grey-darker': '#5F6B7A',
-        // 'grey-dark': '#8895A7',
-        // grey: '#B8C4CF',
-        // 'grey-light': '#CFD6DE',
-        // 'grey-lighter': '#E1E6EB',
-        // 'grey-lightest': '#F8F9FA',
-        // white: '#ffffff',
 
         'blue-darkest': '#1D3E4E',
         'blue-darker': '#00486a',
@@ -97,11 +89,6 @@ module.exports = {
     },
   },
 
-  // variants: {
-  //   fill: [],
-  //   stroke: [],
-  // },
-
   plugins: [
     plugin(function ({ addUtilities }) {
       addUtilities({
@@ -136,6 +123,7 @@ module.exports = {
       })
     }),
   ],
+
   purge: {
     content: ['./src/**/*.html', './src/**/*.njk', './_11ty/**/*.js'],
     options: {
