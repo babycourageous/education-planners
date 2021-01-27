@@ -69,7 +69,7 @@ module.exports = {
       height: {
         '60px': '60px',
         '100px': '100px',
-        '13': '3.25rem',
+        13: '3.25rem',
         '50vh': '50vh',
         '70vh': '75vh',
       },
@@ -80,18 +80,18 @@ module.exports = {
         '400px': '400px',
       },
       margin: {
-        '7': '1.75rem', // 28
+        7: '1.75rem', // 28
       },
 
       padding: {
         '60px': '60px',
-        '14': '3.5rem',
+        14: '3.5rem',
       },
       width: {
         '100px': '100px',
       },
       zIndex: {
-        '999': 999,
+        999: 999,
         'nav-ul': '-2',
       },
     },
@@ -136,4 +136,14 @@ module.exports = {
       })
     }),
   ],
+  purge: {
+    content: ['./src/**/*.html', './src/**/*.njk', './_11ty/**/*.js'],
+    options: {
+      defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+      safelist: {
+        standard: [/^flickity/],
+        deep: [/^flickity/],
+      },
+    },
+  },
 }

@@ -6,7 +6,7 @@ function initMap() {
     let map = null
     // When the window has finished loading create our google map below
     google.maps.event.addDomListener(window, 'load', initMap)
-    google.maps.event.addDomListener(window, 'resize', function() {
+    google.maps.event.addDomListener(window, 'resize', function () {
       map.setCenter(new google.maps.LatLng(33.9501295, -84.5442008))
     })
 
